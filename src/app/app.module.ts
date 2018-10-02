@@ -19,4 +19,4 @@ import { AboutComponent } from './about/about.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }//git crm
+export class AppModule { }//git crm 2-oct
