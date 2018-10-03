@@ -23,6 +23,7 @@ import { PiChartComponent } from './widgets/charts/pi-chart/pi-chart.component';
 import { BarChartComponent } from './widgets/charts/bar-chart/bar-chart.component';
 import { DoughnutChartComponent } from './widgets/charts/doughnut-chart/doughnut-chart.component';
 import { TextboxComponent } from './widgets/textbox/textbox.component';
+import { TempComponent } from './temp/temp.component';
 
 
 @NgModule({
@@ -47,7 +48,8 @@ import { TextboxComponent } from './widgets/textbox/textbox.component';
     PiChartComponent,
     BarChartComponent,
     DoughnutChartComponent,
-    TextboxComponent
+    TextboxComponent,
+    TempComponent
   ],
   imports: [
     BrowserModule,
