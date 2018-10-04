@@ -23,8 +23,11 @@ import { PiChartComponent } from './widgets/charts/pi-chart/pi-chart.component';
 import { BarChartComponent } from './widgets/charts/bar-chart/bar-chart.component';
 import { DoughnutChartComponent } from './widgets/charts/doughnut-chart/doughnut-chart.component';
 import { TextboxComponent } from './widgets/textbox/textbox.component';
-import { TempComponent } from './temp/temp.component';
-
+import {router} from './route.config'
+import { RouterModule } from '@angular/router';
+import { AboutComponent } from './about/about.component';
+import { LeftNavbarComponent } from './left-navbar/left-navbar.component';
+import { ListComponent } from './demand-plan/list/list.component';
 
 @NgModule({
   declarations: [
@@ -49,11 +52,14 @@ import { TempComponent } from './temp/temp.component';
     BarChartComponent,
     DoughnutChartComponent,
     TextboxComponent,
-    TempComponent
+    AboutComponent,
+    LeftNavbarComponent,
+    ListComponent,
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot(router)
   ],
   providers: [],
   bootstrap: [AppComponent]
