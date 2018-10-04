@@ -27,6 +27,7 @@ import {router} from './route.config'
 import { RouterModule } from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { LeftNavbarComponent } from './left-navbar/left-navbar.component';
+import { ListComponent } from './demand-plan/list/list.component';
 
 @NgModule({
   declarations: [
@@ -53,6 +54,7 @@ import { LeftNavbarComponent } from './left-navbar/left-navbar.component';
     TextboxComponent,
     AboutComponent,
     LeftNavbarComponent,
+    ListComponent,
   ],
   imports: [
     BrowserModule,
