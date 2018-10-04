@@ -29,6 +29,8 @@ import { AboutComponent } from './about/about.component';
 import { LeftNavbarComponent } from './left-navbar/left-navbar.component';
 import { ListComponent } from './demand-plan/list/list.component';
 import { CreateComponent } from './demand-plan/create/create.component';
+import { EditComponent } from './demand-plan/edit/edit.component';
+import { ViewComponent } from './demand-plan/view/view.component';
 
 @NgModule({
   declarations: [
@@ -57,6 +59,8 @@ import { CreateComponent } from './demand-plan/create/create.component';
     LeftNavbarComponent,
     ListComponent,
     CreateComponent,
+    EditComponent,
+    ViewComponent,
   ],
   imports: [
     BrowserModule,
