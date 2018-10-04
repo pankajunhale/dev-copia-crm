@@ -28,6 +28,7 @@ import { RouterModule } from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { LeftNavbarComponent } from './left-navbar/left-navbar.component';
 import { ListComponent } from './demand-plan/list/list.component';
+import { CreateComponent } from './demand-plan/create/create.component';
 
 @NgModule({
   declarations: [
@@ -55,6 +56,7 @@ import { ListComponent } from './demand-plan/list/list.component';
     AboutComponent,
     LeftNavbarComponent,
     ListComponent,
+    CreateComponent,
   ],
   imports: [
     BrowserModule,

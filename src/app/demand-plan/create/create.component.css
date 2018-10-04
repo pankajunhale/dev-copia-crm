@@ -1,0 +1,23 @@
+.col-md-3{
+    align-content: flex-start;
+    position: relative;
+    text-align: left;
+    vertical-align: left;
+}
+.filter{
+    width: 70%;
+    position: relative;
+}
+label{
+    text-align: left;
+    position: relative;
+    float: left;
+
+}
+.upBtn{
+    float: right;
+    margin: 2px;
+}
+.dpCreate{
+    margin-right: 20px;
+}
