@@ -2,17 +2,13 @@
   <div class="list-group" id="list-tab" role="tablist">
       <a [routerLink]="['/home']" class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Home</a>     
       <a [routerLink]="['/about']" class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">About</a>     
-      <div class="dropdown dropdown-menu-right">
+      <div class="dropdown">
           <button class="dropbtn">Demand Plan
-            <i class="fa fa-caret-right"></i>
+            <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-content">
             <a [routerLink]="['/demandplan']" class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">List</a>     
-            <a [routerLink]="['/demandplancreate']" class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Create</a>     
-            <a [routerLink]="['/demandplanedit']" class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Edit</a>     
-            <a [routerLink]="['/demandplanview']" class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">View</a>     
           </div>
-      </div> 
-      
+        </div> 
   </div>
 </div>
