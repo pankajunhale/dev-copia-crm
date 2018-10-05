@@ -250,3 +250,10 @@ td{
 .form-control{
  width: 100%
 }
+
+td{
+  display: table-cell; vertical-align: middle;
+  height: 100%;
+  line-height: 100%;
+  text-align: center;
+}
