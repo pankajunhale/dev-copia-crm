@@ -6,6 +6,7 @@ import { CreateComponent } from './demand-plan/create/create.component';
 import { EditComponent } from './demand-plan/edit/edit.component';
 import { ViewComponent } from './demand-plan/view/view.component';
 import { BomlistComponent } from './bill-of-material/bomlist/bomlist.component';
+import { BomcreateComponent } from './bill-of-material/bomcreate/bomcreate.component';
 export const router: Routes = [
   {path: 'home',component:HomeComponent},
   {path: 'about',component:AboutComponent},
@@ -15,6 +16,7 @@ export const router: Routes = [
   {path: 'demandplan/edit',component:EditComponent},
   {path: 'demandplan/view',component:ViewComponent},
   {path: 'bill-of-material/list',component:BomlistComponent},
+  {path: 'bill-of-material/create',component:BomcreateComponent},
   {path: "",pathMatch:"full",redirectTo:'/home'},
   {path:"**",component:HomeComponent}
 ];
