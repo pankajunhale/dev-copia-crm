@@ -9,9 +9,11 @@ import { BomlistComponent } from './bill-of-material/bomlist/bomlist.component';
 import { BomcreateComponent } from './bill-of-material/bomcreate/bomcreate.component';
 import { BomeditComponent } from './bill-of-material/bomedit/bomedit.component';
 import { BomviewComponent } from './bill-of-material/bomview/bomview.component';
-import { PocreateComponent } from './production-order/pocreate/pocreate.component';
-import { PoeditComponent } from './production-order/poedit/poedit.component';
-import { PolistComponent } from './production-order/polist/polist.component';
+import { ProductionOrderCreateComponent } from './production-order/production-order-create/production-order-create.component';
+import { ProductionOrderEditComponent } from './production-order/production-order-edit/production-order-edit.component';
+import { ProductionOrderListComponent } from './production-order/production-order-list/production-order-list.component';
+import { ProductionOrderViewComponent } from './production-order/production-order-view/production-order-view.component';
+
 export const router: Routes = [
   {path: 'home',component:HomeComponent},
   {path: 'about',component:AboutComponent},
@@ -25,9 +27,10 @@ export const router: Routes = [
   {path: 'bill-of-material/edit',component:BomeditComponent},
   {path: 'bill-of-material/view',component:BomviewComponent},
   {path: 'bill-of-material/view',component:BomviewComponent},
-  {path: 'production-order/create',component:PocreateComponent},
-  {path: 'production-order/edit',component:PoeditComponent},
-  {path: 'production-order/list',component:PolistComponent},
+  {path: 'production-order/create',component:ProductionOrderCreateComponent},
+  {path: 'production-order/edit',component:ProductionOrderEditComponent},
+  {path: 'production-order/list',component:ProductionOrderListComponent},
+  {path: 'production-order/view',component:ProductionOrderViewComponent},
   {path: "",pathMatch:"full",redirectTo:'/home'},
   {path:"**",component:HomeComponent}
 ];
