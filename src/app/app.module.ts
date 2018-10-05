@@ -35,6 +35,9 @@ import { BomlistComponent } from './bill-of-material/bomlist/bomlist.component';
 import { BomcreateComponent } from './bill-of-material/bomcreate/bomcreate.component';
 import { BomeditComponent } from './bill-of-material/bomedit/bomedit.component';
 import { BomviewComponent } from './bill-of-material/bomview/bomview.component';
+import { PocreateComponent } from './production-order/pocreate/pocreate.component';
+import { PoeditComponent } from './production-order/poedit/poedit.component';
+import { PolistComponent } from './production-order/polist/polist.component';
 
 @NgModule({
   declarations: [
@@ -69,6 +72,9 @@ import { BomviewComponent } from './bill-of-material/bomview/bomview.component';
     BomcreateComponent,
     BomeditComponent,
     BomviewComponent,
+    PocreateComponent,
+    PoeditComponent,
+    PolistComponent,
   ],
   imports: [
     BrowserModule,

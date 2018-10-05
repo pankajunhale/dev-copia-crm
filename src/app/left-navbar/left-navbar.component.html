@@ -15,15 +15,26 @@
       </div> 
 
       <div class="dropdown">
-        <button class="dropbtn">Bill of Material
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a [routerLink]="['/bill-of-material/list']" class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">BOM / List</a>     
-          <a [routerLink]="['/bill-of-material/create']" class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">BOM / Create</a>     
-          <a [routerLink]="['/bill-of-material/edit']" class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">BOM / Edit</a>     
-          <a [routerLink]="['/bill-of-material/view']" class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">BOM / View</a>     
-        </div>
-      </div> 
-  </div>
+          <button class="dropbtn">Bill of Material
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a [routerLink]="['/bill-of-material/list']" class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">BOM / List</a>     
+            <a [routerLink]="['/bill-of-material/create']" class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">BOM / Create</a>     
+            <a [routerLink]="['/bill-of-material/edit']" class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">BOM / Edit</a>     
+            <a [routerLink]="['/bill-of-material/view']" class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">BOM / View</a>     
+          </div>
+        </div> 
+    
+        <div class="dropdown">
+            <button class="dropbtn">Production Order
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a [routerLink]="['/production-order/create']" class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">PO / Create</a>     
+                <a [routerLink]="['/production-order/edit']" class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">PO / Edit</a>     
+                <a [routerLink]="['/production-order/list']" class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">PO / List</a>     
+              </div>
+          </div> 
+      </div>
 </div>
