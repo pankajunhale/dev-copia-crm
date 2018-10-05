@@ -28,6 +28,9 @@ import { RouterModule } from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { LeftNavbarComponent } from './left-navbar/left-navbar.component';
 import { ListComponent } from './demand-plan/list/list.component';
+import { CreateComponent } from './demand-plan/create/create.component';
+import { EditComponent } from './demand-plan/edit/edit.component';
+import { ViewComponent } from './demand-plan/view/view.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +49,7 @@ import { ListComponent } from './demand-plan/list/list.component';
     FileuploadComponent,
     ProgressbarComponent,
     OnetimepasswordComponent,
-    ButtonComponent,
+    ButtonComponent, 
     ChartsComponent,
     PiChartComponent,
     BarChartComponent,
@@ -55,6 +58,9 @@ import { ListComponent } from './demand-plan/list/list.component';
     AboutComponent,
     LeftNavbarComponent,
     ListComponent,
+    CreateComponent,
+    EditComponent,
+    ViewComponent,
   ],
   imports: [
     BrowserModule,
@@ -65,3 +71,6 @@ import { ListComponent } from './demand-plan/list/list.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+   
+
+
