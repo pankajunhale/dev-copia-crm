@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PoeditComponent } from './poedit.component';
+import { PolistComponent } from './production-order-list.component';
 
-describe('PoeditComponent', () => {
-  let component: PoeditComponent;
-  let fixture: ComponentFixture<PoeditComponent>;
+describe('PolistComponent', () => {
+  let component: PolistComponent;
+  let fixture: ComponentFixture<PolistComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PoeditComponent ]
+      declarations: [ PolistComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PoeditComponent);
+    fixture = TestBed.createComponent(PolistComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

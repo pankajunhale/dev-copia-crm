@@ -35,9 +35,10 @@ import { BomlistComponent } from './bill-of-material/bomlist/bomlist.component';
 import { BomcreateComponent } from './bill-of-material/bomcreate/bomcreate.component';
 import { BomeditComponent } from './bill-of-material/bomedit/bomedit.component';
 import { BomviewComponent } from './bill-of-material/bomview/bomview.component';
-import { PocreateComponent } from './production-order/pocreate/pocreate.component';
-import { PoeditComponent } from './production-order/poedit/poedit.component';
-import { PolistComponent } from './production-order/polist/polist.component';
+import { ProductionOrderCreateComponent } from './production-order/production-order-create/production-order-create.component';
+import { ProductionOrderEditComponent } from './production-order/production-order-edit/production-order-edit.component';
+import { ProductionOrderListComponent } from './production-order/production-order-list/production-order-list.component';
+import { ProductionOrderViewComponent } from './production-order/production-order-view/production-order-view.component';
 
 @NgModule({
   declarations: [
@@ -72,9 +73,10 @@ import { PolistComponent } from './production-order/polist/polist.component';
     BomcreateComponent,
     BomeditComponent,
     BomviewComponent,
-    PocreateComponent,
-    PoeditComponent,
-    PolistComponent,
+    ProductionOrderCreateComponent,
+    ProductionOrderEditComponent,
+    ProductionOrderListComponent,
+    ProductionOrderViewComponent,
   ],
   imports: [
     BrowserModule,
