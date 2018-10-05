@@ -1,5 +1,8 @@
-export class BaseService{
-    public BasePath:string="http://12.232.54.5/api/"
-    constructor(){
-    }
+import { Injectable } from '@angular/core';
+
+@Injectable()
+export class BaseService {
+
+  constructor() { }
+
 }
