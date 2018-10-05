@@ -5,6 +5,7 @@ import {ListComponent} from './demand-plan/list/list.component'
 import { CreateComponent } from './demand-plan/create/create.component';
 import { EditComponent } from './demand-plan/edit/edit.component';
 import { ViewComponent } from './demand-plan/view/view.component';
+import { BomlistComponent } from './bill-of-material/bomlist/bomlist.component';
 export const router: Routes = [
   {path: 'home',component:HomeComponent},
   {path: 'about',component:AboutComponent},
@@ -13,6 +14,7 @@ export const router: Routes = [
   {path: 'demandplan/create',component:CreateComponent},
   {path: 'demandplan/edit',component:EditComponent},
   {path: 'demandplan/view',component:ViewComponent},
+  {path: 'bill-of-material/list',component:BomlistComponent},
   {path: "",pathMatch:"full",redirectTo:'/home'},
   {path:"**",component:HomeComponent}
 ];
