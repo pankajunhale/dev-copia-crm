@@ -1,0 +1,107 @@
+<div class="dpList">
+    <br>
+    <h2>Bill of Material / View</h2>
+    
+    <button class="btn btn-primary upBtn" type="button" id="cancel" >Cancel</button>
+    <button class="btn btn-primary upBtn" type="button" id="submit" >Submit</button> 
+      <br><br>
+      <div class="form-inline">
+            <div class="col-md-12">
+              <label for="plan-name">WH Name:</label><br>
+              <input type="text" class="form-control" style="width : auto;">
+            </div>
+            
+            <div class="col-md-2">
+              <label for="plan-name">Item Code:</label><br>
+              <input type="text" class="form-control"  readonly value="39920">
+            </div>
+            
+            <div class="col-md-5">
+                <label for="plan-name">Item Description:</label><br>
+                <input type="text" class="form-control">
+              </div>
+              
+            <div class="col-md-2">
+              <label for="plan-name">Quantity:</label><br>
+              <input type="text" class="form-control"  readonly value="230">
+            </div>
+            
+            <div class="col-md-3">
+              <label for="plan-name">BUOM:</label><br>
+              <input type="text" class="form-control">
+            </div>
+            
+            <div class="col-md-2">
+              <label for="plan-name">BOM Version:</label><br>
+              <input type="text" class="form-control">
+            </div>
+            <div class="col-md-2">
+              <label for="plan-name">BOM No:</label><br>
+              <input type="text" class="form-control">
+            </div>
+            
+            <div class="dropdown col-md-3">
+                <label for="status">Status</label><br>
+                <button class="btn btn-default dropdown-toggle " type="button" id="status" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  Select Status
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="status">
+                  <li><a href="#">Created</a></li>
+                  <li><a href="#">Valid</a></li>
+                  <li><a href="#">Invalid</a></li>
+                  <li><a href="#">Closed</a></li>
+                </ul>
+              </div>
+                
+           
+            <!-- <div class="col-md-3"  style="align-content: left;position: relative; text-align: left; float: left;">
+              <br>
+              <button class="btn btn-primary filter" type="button" id="filter" >Submit</button>
+            </div> -->
+        </div>
+        <hr />
+  
+        <table class="table table-hover">
+          <thead >
+            <tr>
+              <th></th>
+              <th>Sr No.</th>
+              <th>Component Description</th>
+              <th>Component Qty</th>
+              <th>UOM</th>
+              <th>Qty in BUOM</th>
+              <th>Base UOM</th>
+              <th>Item Type</th>
+              <th>Item Category</th>
+              <th>By Product</th>
+            </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td><i class="fa fa-th-large" aria-hidden="true"></i></td>
+                  <td>1</td>
+                  <td>Milk Powder</td>
+                  <td>70</td>
+                  <td>gm</td>
+                  <td>70</td>
+                  <td>gm</td>
+                  <td>Inv</td>
+                  <td>Inv</td>
+                  <td>Yes/No</td>
+              </tr>
+              <tr>
+                  <td><i class="fa fa-th-large" aria-hidden="true"></i></td>
+                  <td>2</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+              </tr>
+          </tbody>
+        </table>
+    </div>

@@ -31,6 +31,10 @@ import { ListComponent } from './demand-plan/list/list.component';
 import { CreateComponent } from './demand-plan/create/create.component';
 import { EditComponent } from './demand-plan/edit/edit.component';
 import { ViewComponent } from './demand-plan/view/view.component';
+import { BomlistComponent } from './bill-of-material/bomlist/bomlist.component';
+import { BomcreateComponent } from './bill-of-material/bomcreate/bomcreate.component';
+import { BomeditComponent } from './bill-of-material/bomedit/bomedit.component';
+import { BomviewComponent } from './bill-of-material/bomview/bomview.component';
 
 @NgModule({
   declarations: [
@@ -61,6 +65,10 @@ import { ViewComponent } from './demand-plan/view/view.component';
     CreateComponent,
     EditComponent,
     ViewComponent,
+    BomlistComponent,
+    BomcreateComponent,
+    BomeditComponent,
+    BomviewComponent,
   ],
   imports: [
     BrowserModule,
