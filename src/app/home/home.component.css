@@ -1,0 +1,27 @@
+
+@media screen and (max-width: 767px) {
+  .sidenav {
+    height: auto;
+  }
+  .row.content {height: auto;} 
+}
+.navbar{
+    width: 100%;
+    background-color: #555;
+    color: dimgray;
+    border-radius: 0;
+}
+.btn-primary{
+  margin: 10px;
+}
+
+.table{
+width: 100%;
+}
+.rsHeader{
+background: #dcdcdc;
+}
+.mast-line{
+min-height: 3px;
+background: #274a4a;
+}
