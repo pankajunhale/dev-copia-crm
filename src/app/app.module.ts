@@ -49,7 +49,7 @@ import { ViewComponent } from './demand-plan/view/view.component';
     FileuploadComponent,
     ProgressbarComponent,
     OnetimepasswordComponent,
-    ButtonComponent,
+    ButtonComponent, 
     ChartsComponent,
     PiChartComponent,
     BarChartComponent,
@@ -71,3 +71,6 @@ import { ViewComponent } from './demand-plan/view/view.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+   
+
+
