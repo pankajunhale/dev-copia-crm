@@ -37,7 +37,6 @@ import { BomlistComponent } from './bill-of-material/bomlist/bomlist.component';
 import { BomcreateComponent } from './bill-of-material/bomcreate/bomcreate.component';
 import { BomeditComponent } from './bill-of-material/bomedit/bomedit.component';
 import { BomviewComponent } from './bill-of-material/bomview/bomview.component';
-
 import { RoutingEditComponent } from './routing/routing-edit/routing-edit.component';
 import { RoutingViewComponent } from './routing/routing-view/routing-view.component';
 import { ProductionOrderCreateComponent } from './production-order/production-order-create/production-order-create.component';
