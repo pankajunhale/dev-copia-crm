@@ -24,8 +24,21 @@
             <a [routerLink]="['/bill-of-material/edit']" class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">BOM / Edit</a>     
             <a [routerLink]="['/bill-of-material/view']" class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">BOM / View</a>     
           </div>
+
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Routing
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a [routerLink]="['/routing/routing-list']" class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">List</a>     
+            <a [routerLink]="['/routing/routing-create']" class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Create</a> 
+            <a [routerLink]="['/routing/routing-edit']" class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Edit</a>     
+            <a [routerLink]="['/routing/routing-view']" class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">View</a>
+          </div>
+        </div>  
+
         </div> 
-    
         <div class="dropdown">
             <button class="dropbtn">Production Order
               <i class="fa fa-caret-down"></i>
@@ -36,6 +49,12 @@
                 <a [routerLink]="['/production-order/list']" class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">PO / List</a>     
                 <a [routerLink]="['/production-order/view']" class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">PO / View</a>     
               </div>
+
+        </div> 
+</div>
+          
+</div>    
+
           </div> 
     
 <!-- 
@@ -133,4 +152,6 @@
           
         });
     </script>
+</div> -->
+
 </div> -->
