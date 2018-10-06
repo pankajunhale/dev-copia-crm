@@ -1,0 +1,4 @@
+<ng-container *ngFor="let item of CheckBoxList">
+  <input type="checkbox" [(ngModel)]="item.IsChecked" (change)="OnChecked(item)"/>
+  <label>{{item.DisplayValue}}</label>
+</ng-container>

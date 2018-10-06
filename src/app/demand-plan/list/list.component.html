@@ -1,0 +1,74 @@
+<div class="dpList">
+  <br>
+  <h2>Detail Plan / List</h2>
+    <button class="btn btn-primary create-new" type="button" id="create-new" >Create New</button>
+    <br><br>
+    <div class="form-inline">
+          <div class="col-md-3">
+            <label for="plan-name">Plan Name:</label><br>
+            <input type="text" class="form-control" id="plan-name">
+          </div>
+          
+          <div class="col-md-3">
+            <label for="plan-name">Plan No:</label><br>
+            <input type="text" class="form-control" id="plan-name">
+          </div>
+          
+          <div class="col-md-3">
+            <label for="plan-name">For Mrp:</label><br>
+            <input type="text" class="form-control" id="plan-name">
+          </div>
+          
+          <div class="col-md-3">
+            <label for="plan-name">BE Name:</label><br>
+            <input type="text" class="form-control" id="plan-name">
+          </div>
+          
+          <div class="dropdown col-md-3">
+          <label for="status">Status</label><br>
+            <button class="btn btn-default dropdown-toggle " type="button" id="status" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              Select Status
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="status">
+              <li><a href="#">Created</a></li>
+              <li><a href="#">Valid</a></li>
+              <li><a href="#">Invalid</a></li>
+              <li><a href="#">Closed</a></li>
+            </ul>
+          </div>
+            
+          <div class="col-md-3">
+            <br>
+            <button class="btn btn-primary filter" type="button" id="filter" >Filter</button>
+          </div>
+      </div>
+      <hr />
+
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>Demand Plan No</th>
+            <th>Plan Name</th>
+            <th>Version No</th>
+            <th>Status</th>
+            <th>Use for MRP</th>
+            <th>Edit</th>
+            <th>View</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+              <td>8004321</td>
+              <td>Bisleri Bottles</td>
+              <td>v1.6</td>
+              <td>Inprocess</td>
+              <td>YES</td>
+              <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+              <td><i class="fa fa-folder-open" aria-hidden="true"></i></td>
+              <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
