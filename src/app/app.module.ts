@@ -43,12 +43,21 @@ import { ProductionOrderCreateComponent } from './production-order/production-or
 import { ProductionOrderEditComponent } from './production-order/production-order-edit/production-order-edit.component';
 import { ProductionOrderListComponent } from './production-order/production-order-list/production-order-list.component';
 import { ProductionOrderViewComponent } from './production-order/production-order-view/production-order-view.component';
+import { StoreRequestListComponent } from './store-request/store-request-list/store-request-list.component';
+import { StoreRequestCreateComponent } from './store-request/store-request-create/store-request-create.component';
+import { StoreRequestEditComponent } from './store-request/store-request-edit/store-request-edit.component';
+import { StoreRequestViewComponent } from './store-request/store-request-view/store-request-view.component';
+import { StoreIssueListComponent } from './store-issue/store-issue-list/store-issue-list.component';
+import { StoreIssueCreateComponent } from './store-issue/store-issue-create/store-issue-create.component';
+import { StoreIssueEditComponent } from './store-issue/store-issue-edit/store-issue-edit.component';
+import { StoreIssueViewComponent } from './store-issue/store-issue-view/store-issue-view.component';
 import { MrpRunComponent } from './mrp/mrp-run/mrp-run.component';
 import { MrpListComponent } from './mrp/mrp-list/mrp-list.component';
 import { PurchaseRequisitionListComponent } from './purchase-requisition/purchase-requisition-list/purchase-requisition-list.component';
 import { PurchaseRequisitionCreateComponent } from './purchase-requisition/purchase-requisition-create/purchase-requisition-create.component';
 import { PurchaseRequisitionEditComponent } from './purchase-requisition/purchase-requisition-edit/purchase-requisition-edit.component';
 import { PurchaseRequisitionViewComponent } from './purchase-requisition/purchase-requisition-view/purchase-requisition-view.component';
+
 
 @NgModule({
   declarations: [
@@ -91,6 +100,14 @@ import { PurchaseRequisitionViewComponent } from './purchase-requisition/purchas
     ProductionOrderEditComponent,
     ProductionOrderListComponent,
     ProductionOrderViewComponent,
+    StoreRequestListComponent,
+    StoreRequestCreateComponent,
+    StoreRequestEditComponent,
+    StoreRequestViewComponent,
+    StoreIssueListComponent,
+    StoreIssueCreateComponent,
+    StoreIssueEditComponent,
+    StoreIssueViewComponent,
     MrpRunComponent,
     MrpListComponent,
     PurchaseRequisitionListComponent,
