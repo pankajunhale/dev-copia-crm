@@ -20,6 +20,7 @@ import { ProductionOrderViewComponent } from './production-order/production-orde
 import { MrpRunComponent } from './mrp/mrp-run/mrp-run.component';
 import { MrpListComponent } from './mrp/mrp-list/mrp-list.component';
 import { PurchaseRequisitionListComponent } from './purchase-requisition/purchase-requisition-list/purchase-requisition-list.component';
+import { PurchaseRequisitionCreateComponent } from './purchase-requisition/purchase-requisition-create/purchase-requisition-create.component';
 
 export const router: Routes = [
   {path: 'home',component:HomeComponent},
@@ -45,6 +46,7 @@ export const router: Routes = [
   {path: 'mrp/run',component:MrpRunComponent},
   {path: 'mrp/list',component:MrpListComponent},
   {path: 'purchase-requisition/list',component:PurchaseRequisitionListComponent},
+  {path: 'purchase-requisition/create',component:PurchaseRequisitionCreateComponent},
   {path: "",pathMatch:"full",redirectTo:'/home'},
   {path:"**",component:HomeComponent}
 ];

@@ -47,6 +47,7 @@ import { MrpRunComponent } from './mrp/mrp-run/mrp-run.component';
 import { MrpListComponent } from './mrp/mrp-list/mrp-list.component';
 import { PurchaseRequisitionListComponent } from './purchase-requisition/purchase-requisition-list/purchase-requisition-list.component';
 import { PurchaseRequisitionCreateComponent } from './purchase-requisition/purchase-requisition-create/purchase-requisition-create.component';
+import { PurchaseRequisitionEditComponent } from './purchase-requisition/purchase-requisition-edit/purchase-requisition-edit.component';
 
 @NgModule({
   declarations: [
@@ -93,6 +94,7 @@ import { PurchaseRequisitionCreateComponent } from './purchase-requisition/purch
     MrpListComponent,
     PurchaseRequisitionListComponent,
     PurchaseRequisitionCreateComponent,
+    PurchaseRequisitionEditComponent,
   ],
   imports: [
     BrowserModule,
