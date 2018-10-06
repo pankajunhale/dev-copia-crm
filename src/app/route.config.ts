@@ -25,6 +25,11 @@ import { StoreIssueListComponent } from './store-issue/store-issue-list/store-is
 import { StoreIssueCreateComponent } from './store-issue/store-issue-create/store-issue-create.component';
 import { StoreIssueEditComponent } from './store-issue/store-issue-edit/store-issue-edit.component';
 import { StoreIssueViewComponent } from './store-issue/store-issue-view/store-issue-view.component';
+import { MrpRunComponent } from './mrp/mrp-run/mrp-run.component';
+import { MrpListComponent } from './mrp/mrp-list/mrp-list.component';
+import { PurchaseRequisitionListComponent } from './purchase-requisition/purchase-requisition-list/purchase-requisition-list.component';
+import { ReturnToStoreListComponent } from './return-to-store/return-to-store-list/return-to-store-list.component';
+import { ReturnToStoreCreateComponent } from './return-to-store/return-to-store-create/return-to-store-create.component';
 
 export const router: Routes = [
   {path: 'home',component:HomeComponent},
@@ -55,6 +60,11 @@ export const router: Routes = [
   {path: 'store-issue/store-issue-create',component:StoreIssueCreateComponent},
   {path: 'store-issue/store-issue-edit',component:StoreIssueEditComponent},
   {path: 'store-issue/store-issue-view',component:StoreIssueViewComponent},
+  {path: 'mrp/run',component:MrpRunComponent},
+  {path: 'mrp/list',component:MrpListComponent},
+  {path: 'purchase-requisition/list',component:PurchaseRequisitionListComponent},
+  {path: 'return-to-store/return-to-store-list',component:ReturnToStoreListComponent},
+  {path: 'return-to-store/return-to-store-create',component:ReturnToStoreCreateComponent},
   {path: "",pathMatch:"full",redirectTo:'/home'},
   {path:"**",component:HomeComponent}
 ];

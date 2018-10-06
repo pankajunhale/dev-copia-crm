@@ -51,6 +51,12 @@ import { StoreIssueListComponent } from './store-issue/store-issue-list/store-is
 import { StoreIssueCreateComponent } from './store-issue/store-issue-create/store-issue-create.component';
 import { StoreIssueEditComponent } from './store-issue/store-issue-edit/store-issue-edit.component';
 import { StoreIssueViewComponent } from './store-issue/store-issue-view/store-issue-view.component';
+import { MrpRunComponent } from './mrp/mrp-run/mrp-run.component';
+import { MrpListComponent } from './mrp/mrp-list/mrp-list.component';
+import { PurchaseRequisitionListComponent } from './purchase-requisition/purchase-requisition-list/purchase-requisition-list.component';
+import { PurchaseRequisitionCreateComponent } from './purchase-requisition/purchase-requisition-create/purchase-requisition-create.component';
+import { ReturnToStoreListComponent } from './return-to-store/return-to-store-list/return-to-store-list.component';
+import { ReturnToStoreCreateComponent } from './return-to-store/return-to-store-create/return-to-store-create.component';
 
 @NgModule({
   declarations: [
@@ -101,6 +107,12 @@ import { StoreIssueViewComponent } from './store-issue/store-issue-view/store-is
     StoreIssueCreateComponent,
     StoreIssueEditComponent,
     StoreIssueViewComponent,
+    MrpRunComponent,
+    MrpListComponent,
+    PurchaseRequisitionListComponent,
+    PurchaseRequisitionCreateComponent,
+    ReturnToStoreListComponent,
+    ReturnToStoreCreateComponent,
   ],
   imports: [
     BrowserModule,
