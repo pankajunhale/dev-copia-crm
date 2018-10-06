@@ -17,10 +17,8 @@ export class LeftNavbarComponent implements OnInit {
       $(".mmm").metisMenu(
         {
           toggle: false
-
         }
       );
-      
     });
   }
 
