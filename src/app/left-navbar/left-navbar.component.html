@@ -79,8 +79,6 @@
                 </ul>
             </li>
         </ul>
-
-      </ul>
         <ul class="metismenu mmm">
             <li>
                 <a href="#" aria-expanded="false">MRP<span class="fa arrow"></span></a>
@@ -128,16 +126,16 @@
                 <a href="#" aria-expanded="false">Store Request<span class="fa arrow"></span></a>
                 <ul aria-expanded="false">
                   <li>
-                    <a [routerLink]="['/store-request/store-request-list']" class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">List</a>     
+                    <a [routerLink]="['/store-request/store-request-list']">List</a>     
                   </li>
                   <li>
-                    <a [routerLink]="['/store-request/store-request-create']" class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Create</a>        
+                    <a [routerLink]="['/store-request/store-request-create']">Create</a>        
                   </li>
                   <li>
-                    <a [routerLink]="['/store-request/store-request-edit']" class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Edit</a>        
+                    <a [routerLink]="['/store-request/store-request-edit']">Edit</a>        
                   </li>
                   <li>
-                    <a [routerLink]="['/store-request/store-request-view']" class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home"> View</a>           
+                    <a [routerLink]="['/store-request/store-request-view']"> View</a>           
                   </li>
               </ul>
               </li>
@@ -147,16 +145,16 @@
                 <a href="#" aria-expanded="false">Store Issue<span class="fa arrow"></span></a>
                 <ul aria-expanded="false">
                   <li>
-                    <a [routerLink]="['/store-issue/store-issue-list']" class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home"> List</a>  
+                    <a [routerLink]="['/store-issue/store-issue-list']"> List</a>  
                   </li>
                   <li>
-                    <a [routerLink]="['/store-issue/store-issue-create']" class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Create</a>             
+                    <a [routerLink]="['/store-issue/store-issue-create']">Create</a>             
                   </li>
                   <li>
-                    <a [routerLink]="['/store-issue/store-issue-edit']" class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Edit</a>         
+                    <a [routerLink]="['/store-issue/store-issue-edit']">Edit</a>         
                   </li>
                   <li>
-                    <a [routerLink]="['/store-issue/store-issue-view']" class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home"> View</a>               
+                    <a [routerLink]="['/store-issue/store-issue-view']"> View</a>               
                   </li>
               </ul>
               </li>
@@ -166,22 +164,24 @@
               <a href="#" aria-expanded="false">Return to Store<span class="fa arrow"></span></a>
               <ul aria-expanded="false">
                 <li>
-                  <a [routerLink]="['/return-to-store/return-to-store-list']" class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home"> List</a>  
+                  <a [routerLink]="['/return-to-store/return-to-store-list']"> List</a>  
                 </li>
                 <li>
-                  <a [routerLink]="['/return-to-store/return-to-store-create']" class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Create</a>             
+                  <a [routerLink]="['/return-to-store/return-to-store-create']">Create</a>             
                 </li>
                 <li>
-                  <a [routerLink]="['/return-to-store/return-to-store-edit']" class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Edit</a>         
+                  <a [routerLink]="['/return-to-store/return-to-store-edit']">Edit</a>         
                 </li>
                 <li>
-                  <a [routerLink]="['/return-to-store/return-to-store-view']" class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home"> View</a>               
+                  <a [routerLink]="['/return-to-store/return-to-store-view']"> View</a>               
                 </li>
             </ul>
             </li>
         </ul>                 
-    </nav>
-
+        <ul class="metismenu mmm" >
+                <li>
+                        <a href="#" aria-expanded="false">Purchase Requisition<span class="fa arrow"></span></a>
+                <ul aria-expanded="false">
                     <li>
                         <a [routerLink]="['/purchase-requisition/list']">List</a>     
                     </li>
@@ -195,64 +195,30 @@
                             <a [routerLink]="['/purchase-requisition/view']">View</a>     
                     </li>
                 </ul>
-            </li>
-            </ul>
+                </li>
+        </ul>               
         <ul class="metismenu mmm" >
-            <li>
-                <a href="#" aria-expanded="false">Store Request<span class="fa arrow"></span></a>
-                <ul aria-expanded="false">
-                    <li>
-                    <a [routerLink]="['/store-request/store-request-list']" >List</a>     
-                    </li>
-                    <li>
-                    <a [routerLink]="['/store-request/store-request-create']" >Create</a>        
-                    </li>
-                    <li>
-                    <a [routerLink]="['/store-request/store-request-edit']" >Edit</a>        
-                    </li>
-                    <li>
-                    <a [routerLink]="['/store-request/store-request-view']" > View</a>           
-                    </li>
-                </ul>
-                </li>
-        </ul>
-        <ul class="metismenu mmm" >
-            <li>
-                <a href="#" aria-expanded="false">Store Issue<span class="fa arrow"></span></a>
-                <ul aria-expanded="false">
                 <li>
-                    <a [routerLink]="['/store-issue/store-issue-list']" > List</a>  
+                <a href="#" aria-expanded="false">Confirmation<span class="fa arrow"></span></a>
+
+                    <ul aria-expanded="false">
+                        <li>
+                            <a [routerLink]="['/confirmation/production-order']">Production Order</a>     
+                        </li>
+                        <li>
+                            <a [routerLink]="['']">List</a>     
+                        </li>
+                        <li>
+                                <a [routerLink]="['']">Bulk</a>     
+                        </li>
+                        <li>
+                                <a [routerLink]="['']">Edit</a>     
+                        </li>
+                        <li>
+                                <a [routerLink]="['']">View</a>     
+                        </li>
+                    </ul>
                 </li>
-                <li>
-                    <a [routerLink]="['/store-issue/store-issue-create']" >Create</a>             
-                </li>
-                <li>
-                    <a [routerLink]="['/store-issue/store-issue-edit']" >Edit</a>         
-                </li>
-                <li>
-                    <a [routerLink]="['/store-issue/store-issue-view']" > View</a>               
-                </li>
-            </ul>
-            </li>
-        </ul>  
-        <ul class="metismenu mmm" >
-        <li>
-            <a href="#" aria-expanded="false">Return to Store<span class="fa arrow"></span></a>
-            <ul aria-expanded="false">
-                <li>
-                <a [routerLink]="['/return-to-store/return-to-store-list']" > List</a>  
-                </li>
-                <li>
-                <a [routerLink]="['/return-to-store/return-to-store-create']" >Create</a>             
-                </li>
-                <!-- <li>
-                <a [routerLink]="['/store-issue/store-issue-edit']" >Edit</a>         
-                </li>
-                <li>
-                <a [routerLink]="['/store-issue/store-issue-view']" > View</a>               
-                </li> -->
-            </ul>
-            </li>
         </ul>
   </nav>
 </div>
