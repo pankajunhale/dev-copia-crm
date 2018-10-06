@@ -55,6 +55,8 @@ import { MrpRunComponent } from './mrp/mrp-run/mrp-run.component';
 import { MrpListComponent } from './mrp/mrp-list/mrp-list.component';
 import { PurchaseRequisitionListComponent } from './purchase-requisition/purchase-requisition-list/purchase-requisition-list.component';
 import { PurchaseRequisitionCreateComponent } from './purchase-requisition/purchase-requisition-create/purchase-requisition-create.component';
+import { ReturnToStoreListComponent } from './return-to-store/return-to-store-list/return-to-store-list.component';
+import { ReturnToStoreCreateComponent } from './return-to-store/return-to-store-create/return-to-store-create.component';
 import { PurchaseRequisitionEditComponent } from './purchase-requisition/purchase-requisition-edit/purchase-requisition-edit.component';
 import { PurchaseRequisitionViewComponent } from './purchase-requisition/purchase-requisition-view/purchase-requisition-view.component';
 
@@ -112,6 +114,8 @@ import { PurchaseRequisitionViewComponent } from './purchase-requisition/purchas
     MrpListComponent,
     PurchaseRequisitionListComponent,
     PurchaseRequisitionCreateComponent,
+    ReturnToStoreListComponent,
+    ReturnToStoreCreateComponent,
     PurchaseRequisitionEditComponent,
     PurchaseRequisitionViewComponent,
   ],
