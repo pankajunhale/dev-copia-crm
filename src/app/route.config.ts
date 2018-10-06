@@ -22,6 +22,7 @@ import { MrpListComponent } from './mrp/mrp-list/mrp-list.component';
 import { PurchaseRequisitionListComponent } from './purchase-requisition/purchase-requisition-list/purchase-requisition-list.component';
 import { PurchaseRequisitionCreateComponent } from './purchase-requisition/purchase-requisition-create/purchase-requisition-create.component';
 import { PurchaseRequisitionEditComponent } from './purchase-requisition/purchase-requisition-edit/purchase-requisition-edit.component';
+import { PurchaseRequisitionViewComponent} from './purchase-requisition/purchase-requisition-view/purchase-requisition-view.component';
 
 export const router: Routes = [
   {path: 'home',component:HomeComponent},
@@ -49,6 +50,7 @@ export const router: Routes = [
   {path: 'purchase-requisition/list',component:PurchaseRequisitionListComponent},
   {path: 'purchase-requisition/create',component:PurchaseRequisitionCreateComponent},
   {path: 'purchase-requisition/edit',component:PurchaseRequisitionEditComponent},
+  {path: 'purchase-requisition/view',component:PurchaseRequisitionViewComponent},
   {path: "",pathMatch:"full",redirectTo:'/home'},
   {path:"**",component:HomeComponent}
 ];
