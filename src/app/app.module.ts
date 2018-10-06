@@ -59,6 +59,7 @@ import { ReturnToStoreListComponent } from './return-to-store/return-to-store-li
 import { ReturnToStoreCreateComponent } from './return-to-store/return-to-store-create/return-to-store-create.component';
 import { PurchaseRequisitionEditComponent } from './purchase-requisition/purchase-requisition-edit/purchase-requisition-edit.component';
 import { PurchaseRequisitionViewComponent } from './purchase-requisition/purchase-requisition-view/purchase-requisition-view.component';
+import { ProductionOrderConfirmationComponent } from './confirmation/production-order-confirmation/production-order-confirmation.component';
 
 
 @NgModule({
@@ -118,6 +119,7 @@ import { PurchaseRequisitionViewComponent } from './purchase-requisition/purchas
     ReturnToStoreCreateComponent,
     PurchaseRequisitionEditComponent,
     PurchaseRequisitionViewComponent,
+    ProductionOrderConfirmationComponent,
   ],
   imports: [
     BrowserModule,
