@@ -1,173 +1,104 @@
 <div class="sidenav">
-  <div class="list-group" id="list-tab" role="tablist">
-      <a [routerLink]="['/home']" class="list-group-item list-group-item-action active"  role="tab" aria-controls="home">Home</a>     
-      <a [routerLink]="['/about']" class="list-group-item list-group-item-action active"  role="tab" aria-controls="home">About</a>     
-      <div class="dropdown">
-        <button class="dropbtn">Demand Plan
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a [routerLink]="['/demandplan/list']" class="list-group-item list-group-item-action active"  role="tab" aria-controls="home">Demand Plan /List</a>     
-          <a [routerLink]="['/demandplan/create']" class="list-group-item list-group-item-action active"  role="tab" aria-controls="home">Demand Plan /Create</a>     
-          <a [routerLink]="['/demandplan/edit']" class="list-group-item list-group-item-action active"  role="tab" aria-controls="home">Demand Plan /Edit</a>     
-          <a [routerLink]="['/demandplan/view']" class="list-group-item list-group-item-action active"  role="tab" aria-controls="home">Demand Plan /View</a>     
-        </div>
-      </div> 
+    <nav class="sidebar-nav">
+        <ul class="metismenu mmm">
+            <li>
+                <a href="#" aria-expanded="false">Demand Plan<span class="fa arrow"></span></a>
+                <ul aria-expanded="false">
+                  <li>
+                      <a [routerLink]="['/demandplan/list']">List</a>     
+                    </li>
+                    <li>
+                        <a [routerLink]="['/demandplan/create']">Create</a>     
+                    </li>
+                    <li>
+                      <a [routerLink]="['/demandplan/edit']">Edit</a>     
+                    </li>
+                    <li>
+                    <a [routerLink]="['/demandplan/view']">View</a>     
+                    </li>
+                </ul>
+              </li>
+        </ul>
+      <ul class="metismenu mmm" >
+          <li>
+              <a href="#" aria-expanded="false">Bill of Material<span class="fa arrow"></span></a>
+              <ul aria-expanded="false">
+                <li>
+                    <a [routerLink]="['/bill-of-material/list']">List</a>  
+                  </li>
+                  <li>
+                    <a [routerLink]="['/bill-of-material/create']">Create</a>     
+                  </li>
+                  <li>
+                      <a [routerLink]="['/bill-of-material/edit']">Edit</a>     
+                  </li>
+                  <li>
+                      <a [routerLink]="['/bill-of-material/view']">View</a>  
+                  </li>
+              </ul>
+            </li>
+      </ul>
+      <ul class="metismenu mmm">
+          <li>
+              <a href="#" aria-expanded="false">Routing<span class="fa arrow"></span></a>
+              <ul aria-expanded="false">
+                <li>
+                    <a [routerLink]="['/routing/routing-list']">List</a>     
+                  </li>
+                  <li>
+                      <a [routerLink]="['/routing/routing-create']">Create</a> 
+                    </li>
+                  <li>
+                      <a [routerLink]="['/routing/routing-edit']">Edit</a>     
+                    </li>
+                  <li>
+                      <a [routerLink]="['/routing/routing-view']">View</a>
+                    </li>
+              </ul>
+            </li>
+      </ul>
+      <ul class="metismenu mmm" >
+          <li>
+              <a href="#" aria-expanded="false">Production Order<span class="fa arrow"></span></a>
+              <ul aria-expanded="false">
+                <li>
+                    <a [routerLink]="['/production-order/create']">Create</a>     
+                  </li>
+                  <li>
+                      <a [routerLink]="['/production-order/edit']">Edit</a>     
+                    </li>
+                  <li>
+                      <a [routerLink]="['/production-order/list']">List</a>     
+                    </li>
+                  <li>
+                      <a [routerLink]="['/production-order/view']">View</a>
+                    </li>
+              </ul>
+            </li>
+      </ul>
 
-      <div class="dropdown">
-          <button class="dropbtn">Bill of Material
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a [routerLink]="['/bill-of-material/list']" class="list-group-item list-group-item-action active"  role="tab" aria-controls="home">BOM / List</a>     
-            <a [routerLink]="['/bill-of-material/create']" class="list-group-item list-group-item-action active"  role="tab" aria-controls="home">BOM / Create</a>     
-            <a [routerLink]="['/bill-of-material/edit']" class="list-group-item list-group-item-action active"  role="tab" aria-controls="home">BOM / Edit</a>     
-            <a [routerLink]="['/bill-of-material/view']" class="list-group-item list-group-item-action active"  role="tab" aria-controls="home">BOM / View</a>     
-          </div>
-
-        </div>
-        <div class="dropdown">
-          <button class="dropbtn">Routing
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a [routerLink]="['/routing/routing-list']" class="list-group-item list-group-item-action active"  role="tab" aria-controls="home">List</a>     
-            <a [routerLink]="['/routing/routing-create']" class="list-group-item list-group-item-action active"  role="tab" aria-controls="home">Create</a> 
-            <a [routerLink]="['/routing/routing-edit']" class="list-group-item list-group-item-action active"  role="tab" aria-controls="home">Edit</a>     
-            <a [routerLink]="['/routing/routing-view']" class="list-group-item list-group-item-action active"  role="tab" aria-controls="home">View</a>
-          </div>
-        </div>  
-
-        <div class="dropdown">
-          <button class="dropbtn">Production Order
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-              <a [routerLink]="['/production-order/create']" class="list-group-item list-group-item-action active"  role="tab" aria-controls="home">PO / Create</a>     
-              <a [routerLink]="['/production-order/edit']" class="list-group-item list-group-item-action active"  role="tab" aria-controls="home">PO / Edit</a>     
-              <a [routerLink]="['/production-order/list']" class="list-group-item list-group-item-action active"  role="tab" aria-controls="home">PO / List</a>     
-              <a [routerLink]="['/production-order/view']" class="list-group-item list-group-item-action active"  role="tab" aria-controls="home">PO / View</a>     
-            </div>
-
-      </div> 
-
-      
-      <div class="dropdown">
-          <button class="dropbtn">MRP
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-              <a [routerLink]="['/mrp/list']" class="list-group-item list-group-item-action active"  role="tab" aria-controls="home">MRP / List</a>     
-              <a [routerLink]="['/mrp/run']" class="list-group-item list-group-item-action active"  role="tab" aria-controls="home">MRP / Run</a>     
-              </div>
-      </div> 
-      
-      <div class="dropdown">
-          <button class="dropbtn">Purchase Requisition
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-              <a [routerLink]="['/purchase-requisition/list']" class="list-group-item list-group-item-action active"  role="tab" aria-controls="home">PR / List</a>     
-              </div>
-      </div> 
-</div>          
-
-    
-<!-- 
-
-          <div class="container-fluid">
-              <div class="row">
-                <div class="col-xs-6">
-                  <aside class="sidebar">
-                    <nav class="sidebar-nav">
-                      <ul class="metismenu" id="menu">
-                        <li class="active">
-                          <a href="#" aria-expanded="true">
-                            <span class="sidebar-nav-item-icon fa fa-github fa-lg"></span>
-                            <span class="sidebar-nav-item">metisMenu</span>
-                            <span class="fa arrow"></span>
-                          </a>
-                          <ul aria-expanded="true">
-                            <li>
-                              <a href="https://github.com/onokumus/metisMenu">
-                                <span class="sidebar-nav-item-icon fa fa-code-fork"></span> Fork
-                              </a>
-                            </li>
-                            <li>
-                              <a href="https://github.com/onokumus/metisMenu">
-                                <span class="sidebar-nav-item-icon fa fa-star"></span> Star
-                              </a>
-                            </li>
-                            <li>
-                              <a href="https://github.com/onokumus/metisMenu/issues">
-                                <span class="sidebar-nav-item-icon fa fa-exclamation-triangle"></span> Issues
-                              </a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li>
-                          <a href="#" aria-expanded="false">Menu 0 <span class="fa arrow"></span></a>
-                          <ul aria-expanded="false">
-                            <li><a href="#">item 0.1</a></li>
-                            <li><a href="#">item 0.2</a></li>
-                            <li><a href="http://onokumus.com">onokumus</a></li>
-                            <li><a href="#">item 0.4</a></li>
-                          </ul>
-                        </li>
-                        <li>
-                          <a href="#" aria-expanded="false">Menu 1 <span class="glyphicon arrow"></span></a>
-                          <ul aria-expanded="false">
-                            <li><a href="#">item 1.1</a></li>
-                            <li><a href="#">item 1.2</a></li>
-                            <li>
-                              <a href="#" aria-expanded="false">Menu 1.3 <span class="fa plus-times"></span></a>
-                              <ul aria-expanded="false">
-                                <li><a href="#">item 1.3.1</a></li>
-                                <li><a href="#">item 1.3.2</a></li>
-                                <li><a href="#">item 1.3.3</a></li>
-                                <li><a href="#">item 1.3.4</a></li>
-                              </ul>
-                            </li>
-                            <li><a href="#">item 1.4</a></li>
-                            <li>
-                              <a href="#" aria-expanded="false">Menu 1.5 <span class="fa plus-minus"></span></a>
-                              <ul aria-expanded="false">
-                                <li><a href="#">item 1.5.1</a></li>
-                                <li><a href="#">item 1.5.2</a></li>
-                                <li><a href="#">item 1.5.3</a></li>
-                                <li><a href="#">item 1.5.4</a></li>
-                              </ul>
-                            </li>
-                          </ul>
-                        </li>
-                        <li>
-                          <a href="#" aria-expanded="false">Menu 2 <span class="glyphicon arrow"></span></a>
-                          <ul aria-expanded="false">
-                            <li><a href="#">item 2.1</a></li>
-                            <li><a href="#">item 2.2</a></li>
-                            <li><a href="#">item 2.3</a></li>
-                            <li><a href="#">item 2.4</a></li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </nav>
-                  </aside>
-                </div>
-              </div>
-            </div>
-            
-          </div>
-    <script>
-        $(document).ready(function(){
-          $("#menu").metisMenu(
-            {
-              toggle: false
-
-            }
-          );
-          
-        });
-    </script>
-</div> -->
-
-</div> -->
+      <ul class="metismenu mmm">
+          <li>
+              <a href="#" aria-expanded="false">MRP<span class="fa arrow"></span></a>
+              <ul aria-expanded="false">
+                <li>
+                    <a [routerLink]="['/mrp/list']">List</a>     
+                  </li>
+                  <li>
+                      <a [routerLink]="['/mrp/run']">Run</a>    
+                    </li>
+              </ul>
+            </li>
+      </ul>
+    <ul class="metismenu mmm" >
+        <li>
+            <a href="#" aria-expanded="false">Purchase Requisition<span class="fa arrow"></span></a>
+            <ul aria-expanded="false">
+              <li>
+                  <a [routerLink]="['/purchase-requisition/list']">List</a>     
+                </li>
+            </ul>
+          </li>
+    </ul>
+  </nav>
+</div>
