@@ -55,12 +55,9 @@ import { MrpRunComponent } from './mrp/mrp-run/mrp-run.component';
 import { MrpListComponent } from './mrp/mrp-list/mrp-list.component';
 import { PurchaseRequisitionListComponent } from './purchase-requisition/purchase-requisition-list/purchase-requisition-list.component';
 import { PurchaseRequisitionCreateComponent } from './purchase-requisition/purchase-requisition-create/purchase-requisition-create.component';
-<<<<<<< HEAD
 import { ReturnToStoreListComponent } from './return-to-store/return-to-store-list/return-to-store-list.component';
 import { ReturnToStoreCreateComponent } from './return-to-store/return-to-store-create/return-to-store-create.component';
-=======
 import { PurchaseRequisitionEditComponent } from './purchase-requisition/purchase-requisition-edit/purchase-requisition-edit.component';
->>>>>>> 0ac0a0e6e30b558085a2757a5c723c7790456b9c
 
 @NgModule({
   declarations: [
@@ -115,12 +112,9 @@ import { PurchaseRequisitionEditComponent } from './purchase-requisition/purchas
     MrpListComponent,
     PurchaseRequisitionListComponent,
     PurchaseRequisitionCreateComponent,
-<<<<<<< HEAD
     ReturnToStoreListComponent,
     ReturnToStoreCreateComponent,
-=======
     PurchaseRequisitionEditComponent,
->>>>>>> 0ac0a0e6e30b558085a2757a5c723c7790456b9c
   ],
   imports: [
     BrowserModule,
