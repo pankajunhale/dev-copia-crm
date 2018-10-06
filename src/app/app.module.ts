@@ -58,6 +58,7 @@ import { PurchaseRequisitionCreateComponent } from './purchase-requisition/purch
 import { ReturnToStoreListComponent } from './return-to-store/return-to-store-list/return-to-store-list.component';
 import { ReturnToStoreCreateComponent } from './return-to-store/return-to-store-create/return-to-store-create.component';
 import { PurchaseRequisitionEditComponent } from './purchase-requisition/purchase-requisition-edit/purchase-requisition-edit.component';
+import { PurchaseRequisitionViewComponent } from './purchase-requisition/purchase-requisition-view/purchase-requisition-view.component';
 
 @NgModule({
   declarations: [
@@ -115,6 +116,7 @@ import { PurchaseRequisitionEditComponent } from './purchase-requisition/purchas
     ReturnToStoreListComponent,
     ReturnToStoreCreateComponent,
     PurchaseRequisitionEditComponent,
+    PurchaseRequisitionViewComponent,
   ],
   imports: [
     BrowserModule,

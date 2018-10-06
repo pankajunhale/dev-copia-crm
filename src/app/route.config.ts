@@ -32,6 +32,7 @@ import { ReturnToStoreListComponent } from './return-to-store/return-to-store-li
 import { ReturnToStoreCreateComponent } from './return-to-store/return-to-store-create/return-to-store-create.component';
 import { PurchaseRequisitionCreateComponent } from './purchase-requisition/purchase-requisition-create/purchase-requisition-create.component';
 import { PurchaseRequisitionEditComponent } from './purchase-requisition/purchase-requisition-edit/purchase-requisition-edit.component';
+import { PurchaseRequisitionViewComponent} from './purchase-requisition/purchase-requisition-view/purchase-requisition-view.component';
 
 export const router: Routes = [
   {path: 'home',component:HomeComponent},
@@ -69,6 +70,7 @@ export const router: Routes = [
   {path: 'return-to-store/return-to-store-create',component:ReturnToStoreCreateComponent},
   {path: 'purchase-requisition/create',component:PurchaseRequisitionCreateComponent},
   {path: 'purchase-requisition/edit',component:PurchaseRequisitionEditComponent},
+  {path: 'purchase-requisition/view',component:PurchaseRequisitionViewComponent},
   {path: "",pathMatch:"full",redirectTo:'/home'},
   {path:"**",component:HomeComponent}
 ];
