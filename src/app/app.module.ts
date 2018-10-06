@@ -43,6 +43,8 @@ import { ProductionOrderCreateComponent } from './production-order/production-or
 import { ProductionOrderEditComponent } from './production-order/production-order-edit/production-order-edit.component';
 import { ProductionOrderListComponent } from './production-order/production-order-list/production-order-list.component';
 import { ProductionOrderViewComponent } from './production-order/production-order-view/production-order-view.component';
+import { MrpRunComponent } from './mrp/mrp-run/mrp-run.component';
+import { MrpListComponent } from './mrp/mrp-list/mrp-list.component';
 
 @NgModule({
   declarations: [
@@ -85,6 +87,8 @@ import { ProductionOrderViewComponent } from './production-order/production-orde
     ProductionOrderEditComponent,
     ProductionOrderListComponent,
     ProductionOrderViewComponent,
+    MrpRunComponent,
+    MrpListComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,3 @@
+****essential links****
+task sheet -> https://docs.google.com/spreadsheets/d/1Lr0WTmrx-uECDNhqRNbFgDgrTX-9IJvV5nHB8cKOHiM/edit?usp=sharing
+reactive forms -> https://angular.io/guide/reactive-forms
