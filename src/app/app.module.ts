@@ -60,6 +60,7 @@ import { ReturnToStoreCreateComponent } from './return-to-store/return-to-store-
 import { PurchaseRequisitionEditComponent } from './purchase-requisition/purchase-requisition-edit/purchase-requisition-edit.component';
 import { PurchaseRequisitionViewComponent } from './purchase-requisition/purchase-requisition-view/purchase-requisition-view.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
