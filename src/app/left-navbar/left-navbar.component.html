@@ -79,6 +79,8 @@
                 </ul>
             </li>
         </ul>
+
+      </ul>
         <ul class="metismenu mmm">
             <li>
                 <a href="#" aria-expanded="false">MRP<span class="fa arrow"></span></a>
@@ -179,4 +181,78 @@
             </li>
         </ul>                 
     </nav>
+
+                    <li>
+                        <a [routerLink]="['/purchase-requisition/list']">List</a>     
+                    </li>
+                    <li>
+                            <a [routerLink]="['/purchase-requisition/create']">Create</a>     
+                    </li>
+                    <li>
+                            <a [routerLink]="['/purchase-requisition/edit']">Edit</a>     
+                    </li>
+                    <li>
+                            <a [routerLink]="['/purchase-requisition/view']">View</a>     
+                    </li>
+                </ul>
+            </li>
+            </ul>
+        <ul class="metismenu mmm" >
+            <li>
+                <a href="#" aria-expanded="false">Store Request<span class="fa arrow"></span></a>
+                <ul aria-expanded="false">
+                    <li>
+                    <a [routerLink]="['/store-request/store-request-list']" >List</a>     
+                    </li>
+                    <li>
+                    <a [routerLink]="['/store-request/store-request-create']" >Create</a>        
+                    </li>
+                    <li>
+                    <a [routerLink]="['/store-request/store-request-edit']" >Edit</a>        
+                    </li>
+                    <li>
+                    <a [routerLink]="['/store-request/store-request-view']" > View</a>           
+                    </li>
+                </ul>
+                </li>
+        </ul>
+        <ul class="metismenu mmm" >
+            <li>
+                <a href="#" aria-expanded="false">Store Issue<span class="fa arrow"></span></a>
+                <ul aria-expanded="false">
+                <li>
+                    <a [routerLink]="['/store-issue/store-issue-list']" > List</a>  
+                </li>
+                <li>
+                    <a [routerLink]="['/store-issue/store-issue-create']" >Create</a>             
+                </li>
+                <li>
+                    <a [routerLink]="['/store-issue/store-issue-edit']" >Edit</a>         
+                </li>
+                <li>
+                    <a [routerLink]="['/store-issue/store-issue-view']" > View</a>               
+                </li>
+            </ul>
+            </li>
+        </ul>  
+        <ul class="metismenu mmm" >
+        <li>
+            <a href="#" aria-expanded="false">Return to Store<span class="fa arrow"></span></a>
+            <ul aria-expanded="false">
+                <li>
+                <a [routerLink]="['/return-to-store/return-to-store-list']" > List</a>  
+                </li>
+                <li>
+                <a [routerLink]="['/return-to-store/return-to-store-create']" >Create</a>             
+                </li>
+                <!-- <li>
+                <a [routerLink]="['/store-issue/store-issue-edit']" >Edit</a>         
+                </li>
+                <li>
+                <a [routerLink]="['/store-issue/store-issue-view']" > View</a>               
+                </li> -->
+            </ul>
+            </li>
+        </ul>
+  </nav>
 </div>
