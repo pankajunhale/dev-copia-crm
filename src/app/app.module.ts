@@ -53,6 +53,8 @@ import { StoreIssueEditComponent } from './store-issue/store-issue-edit/store-is
 import { StoreIssueViewComponent } from './store-issue/store-issue-view/store-issue-view.component';
 import { MrpRunComponent } from './mrp/mrp-run/mrp-run.component';
 import { MrpListComponent } from './mrp/mrp-list/mrp-list.component';
+import { PurchaseRequisitionListComponent } from './purchase-requisition/purchase-requisition-list/purchase-requisition-list.component';
+import { PurchaseRequisitionCreateComponent } from './purchase-requisition/purchase-requisition-create/purchase-requisition-create.component';
 
 
 @NgModule({
@@ -106,6 +108,8 @@ import { MrpListComponent } from './mrp/mrp-list/mrp-list.component';
     StoreIssueViewComponent,
     MrpRunComponent,
     MrpListComponent,
+    PurchaseRequisitionListComponent,
+    PurchaseRequisitionCreateComponent,
   ],
   imports: [
     BrowserModule,
