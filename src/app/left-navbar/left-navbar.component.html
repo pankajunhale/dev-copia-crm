@@ -1,16 +1,16 @@
 <div class="sidenav">
   <div class="list-group" id="list-tab" role="tablist">
-      <a [routerLink]="['/home']" class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Home</a>     
-      <a [routerLink]="['/about']" class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">About</a>     
+      <a [routerLink]="['/home']" class="list-group-item list-group-item-action active"  role="tab" aria-controls="home">Home</a>     
+      <a [routerLink]="['/about']" class="list-group-item list-group-item-action active"  role="tab" aria-controls="home">About</a>     
       <div class="dropdown">
         <button class="dropbtn">Demand Plan
           <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
-          <a [routerLink]="['/demandplan/list']" class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Demand Plan /List</a>     
-          <a [routerLink]="['/demandplan/create']" class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Demand Plan /Create</a>     
-          <a [routerLink]="['/demandplan/edit']" class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Demand Plan /Edit</a>     
-          <a [routerLink]="['/demandplan/view']" class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Demand Plan /View</a>     
+          <a [routerLink]="['/demandplan/list']" class="list-group-item list-group-item-action active"  role="tab" aria-controls="home">Demand Plan /List</a>     
+          <a [routerLink]="['/demandplan/create']" class="list-group-item list-group-item-action active"  role="tab" aria-controls="home">Demand Plan /Create</a>     
+          <a [routerLink]="['/demandplan/edit']" class="list-group-item list-group-item-action active"  role="tab" aria-controls="home">Demand Plan /Edit</a>     
+          <a [routerLink]="['/demandplan/view']" class="list-group-item list-group-item-action active"  role="tab" aria-controls="home">Demand Plan /View</a>     
         </div>
       </div> 
 
@@ -19,10 +19,10 @@
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-content">
-            <a [routerLink]="['/bill-of-material/list']" class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">BOM / List</a>     
-            <a [routerLink]="['/bill-of-material/create']" class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">BOM / Create</a>     
-            <a [routerLink]="['/bill-of-material/edit']" class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">BOM / Edit</a>     
-            <a [routerLink]="['/bill-of-material/view']" class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">BOM / View</a>     
+            <a [routerLink]="['/bill-of-material/list']" class="list-group-item list-group-item-action active"  role="tab" aria-controls="home">BOM / List</a>     
+            <a [routerLink]="['/bill-of-material/create']" class="list-group-item list-group-item-action active"  role="tab" aria-controls="home">BOM / Create</a>     
+            <a [routerLink]="['/bill-of-material/edit']" class="list-group-item list-group-item-action active"  role="tab" aria-controls="home">BOM / Edit</a>     
+            <a [routerLink]="['/bill-of-material/view']" class="list-group-item list-group-item-action active"  role="tab" aria-controls="home">BOM / View</a>     
           </div>
 
         </div>
@@ -31,25 +31,37 @@
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-content">
-            <a [routerLink]="['/routing/routing-list']" class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">List</a>     
-            <a [routerLink]="['/routing/routing-create']" class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Create</a> 
-            <a [routerLink]="['/routing/routing-edit']" class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Edit</a>     
-            <a [routerLink]="['/routing/routing-view']" class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">View</a>
+            <a [routerLink]="['/routing/routing-list']" class="list-group-item list-group-item-action active"  role="tab" aria-controls="home">List</a>     
+            <a [routerLink]="['/routing/routing-create']" class="list-group-item list-group-item-action active"  role="tab" aria-controls="home">Create</a> 
+            <a [routerLink]="['/routing/routing-edit']" class="list-group-item list-group-item-action active"  role="tab" aria-controls="home">Edit</a>     
+            <a [routerLink]="['/routing/routing-view']" class="list-group-item list-group-item-action active"  role="tab" aria-controls="home">View</a>
           </div>
         </div>  
 
         <div class="dropdown">
-            <button class="dropbtn">Production Order
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a [routerLink]="['/production-order/create']" class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">PO / Create</a>     
-                <a [routerLink]="['/production-order/edit']" class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">PO / Edit</a>     
-                <a [routerLink]="['/production-order/list']" class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">PO / List</a>     
-                <a [routerLink]="['/production-order/view']" class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">PO / View</a>     
-              </div>
+          <button class="dropbtn">Production Order
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+              <a [routerLink]="['/production-order/create']" class="list-group-item list-group-item-action active"  role="tab" aria-controls="home">PO / Create</a>     
+              <a [routerLink]="['/production-order/edit']" class="list-group-item list-group-item-action active"  role="tab" aria-controls="home">PO / Edit</a>     
+              <a [routerLink]="['/production-order/list']" class="list-group-item list-group-item-action active"  role="tab" aria-controls="home">PO / List</a>     
+              <a [routerLink]="['/production-order/view']" class="list-group-item list-group-item-action active"  role="tab" aria-controls="home">PO / View</a>     
+            </div>
 
-        </div> 
+      </div> 
+
+      
+      <div class="dropdown">
+        <button class="dropbtn">MRP
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a [routerLink]="['/mrp/list']" class="list-group-item list-group-item-action active"  role="tab" aria-controls="home">MRP / List</a>     
+            <a [routerLink]="['/mrp/run']" class="list-group-item list-group-item-action active"  role="tab" aria-controls="home">MRP / Run</a>     
+            </div>
+
+    </div> 
 </div>          
 
     
