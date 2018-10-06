@@ -17,6 +17,14 @@ import { ProductionOrderCreateComponent } from './production-order/production-or
 import { ProductionOrderEditComponent } from './production-order/production-order-edit/production-order-edit.component';
 import { ProductionOrderListComponent } from './production-order/production-order-list/production-order-list.component';
 import { ProductionOrderViewComponent } from './production-order/production-order-view/production-order-view.component';
+import { StoreRequestListComponent } from './store-request/store-request-list/store-request-list.component';
+import { StoreRequestCreateComponent } from './store-request/store-request-create/store-request-create.component';
+import { StoreRequestEditComponent } from './store-request/store-request-edit/store-request-edit.component';
+import { StoreRequestViewComponent } from './store-request/store-request-view/store-request-view.component';
+import { StoreIssueListComponent } from './store-issue/store-issue-list/store-issue-list.component';
+import { StoreIssueCreateComponent } from './store-issue/store-issue-create/store-issue-create.component';
+import { StoreIssueEditComponent } from './store-issue/store-issue-edit/store-issue-edit.component';
+import { StoreIssueViewComponent } from './store-issue/store-issue-view/store-issue-view.component';
 
 export const router: Routes = [
   {path: 'home',component:HomeComponent},
@@ -39,6 +47,14 @@ export const router: Routes = [
   {path: 'production-order/edit',component:ProductionOrderEditComponent},
   {path: 'production-order/list',component:ProductionOrderListComponent},
   {path: 'production-order/view',component:ProductionOrderViewComponent},
+  {path: 'store-request/store-request-list',component:StoreRequestListComponent},
+  {path: 'store-request/store-request-create',component:StoreRequestCreateComponent},
+  {path: 'store-request/store-request-edit',component:StoreRequestEditComponent},
+  {path: 'store-request/store-request-view',component:StoreRequestViewComponent},
+  {path: 'store-issue/store-issue-list',component:StoreIssueListComponent},
+  {path: 'store-issue/store-issue-create',component:StoreIssueCreateComponent},
+  {path: 'store-issue/store-issue-edit',component:StoreIssueEditComponent},
+  {path: 'store-issue/store-issue-view',component:StoreIssueViewComponent},
   {path: "",pathMatch:"full",redirectTo:'/home'},
   {path:"**",component:HomeComponent}
 ];
