@@ -25,6 +25,8 @@ import { StoreIssueListComponent } from './store-issue/store-issue-list/store-is
 import { StoreIssueCreateComponent } from './store-issue/store-issue-create/store-issue-create.component';
 import { StoreIssueEditComponent } from './store-issue/store-issue-edit/store-issue-edit.component';
 import { StoreIssueViewComponent } from './store-issue/store-issue-view/store-issue-view.component';
+import { MrpRunComponent } from './mrp/mrp-run/mrp-run.component';
+import { MrpListComponent } from './mrp/mrp-list/mrp-list.component';
 
 export const router: Routes = [
   {path: 'home',component:HomeComponent},
@@ -55,6 +57,8 @@ export const router: Routes = [
   {path: 'store-issue/store-issue-create',component:StoreIssueCreateComponent},
   {path: 'store-issue/store-issue-edit',component:StoreIssueEditComponent},
   {path: 'store-issue/store-issue-view',component:StoreIssueViewComponent},
+  {path: 'mrp/run',component:MrpRunComponent},
+  {path: 'mrp/list',component:MrpListComponent},
   {path: "",pathMatch:"full",redirectTo:'/home'},
   {path:"**",component:HomeComponent}
 ];

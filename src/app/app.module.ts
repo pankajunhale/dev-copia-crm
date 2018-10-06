@@ -51,6 +51,9 @@ import { StoreIssueListComponent } from './store-issue/store-issue-list/store-is
 import { StoreIssueCreateComponent } from './store-issue/store-issue-create/store-issue-create.component';
 import { StoreIssueEditComponent } from './store-issue/store-issue-edit/store-issue-edit.component';
 import { StoreIssueViewComponent } from './store-issue/store-issue-view/store-issue-view.component';
+import { MrpRunComponent } from './mrp/mrp-run/mrp-run.component';
+import { MrpListComponent } from './mrp/mrp-list/mrp-list.component';
+
 
 @NgModule({
   declarations: [
@@ -101,6 +104,8 @@ import { StoreIssueViewComponent } from './store-issue/store-issue-view/store-is
     StoreIssueCreateComponent,
     StoreIssueEditComponent,
     StoreIssueViewComponent,
+    MrpRunComponent,
+    MrpListComponent,
   ],
   imports: [
     BrowserModule,
