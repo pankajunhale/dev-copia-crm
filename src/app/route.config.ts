@@ -38,6 +38,7 @@ import { ReturnToStoreEditComponent } from './return-to-store/return-to-store-ed
 import { ReturnToStoreViewComponent } from './return-to-store/return-to-store-view/return-to-store-view.component';
 import { ConfirmationViewComponent } from './confirmation/confirmation-view/confirmation-view.component';
 import { ConfirmationListComponent } from './confirmation/confirmation-list/confirmation-list.component';
+import { ConfirmationEditComponent } from './confirmation/confirmation-edit/confirmation-edit.component';
 
 export const router: Routes = [
   {path: 'home',component:HomeComponent},
@@ -81,6 +82,7 @@ export const router: Routes = [
   {path: 'confirmation/production-order',component:ProductionOrderConfirmationComponent},
   {path: 'confirmation/confirmation-view',component:ConfirmationViewComponent},
   {path: 'confirmation/confirmation-list',component:ConfirmationListComponent},
+  {path: 'confirmation/confirmation-edit',component:ConfirmationEditComponent},
   {path: "",pathMatch:"full",redirectTo:'/home'},
   {path:"**",component:HomeComponent}
 ];

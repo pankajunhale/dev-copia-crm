@@ -64,6 +64,7 @@ import { ReturnToStoreEditComponent } from './return-to-store/return-to-store-ed
 import { ReturnToStoreViewComponent } from './return-to-store/return-to-store-view/return-to-store-view.component';
 import { ConfirmationViewComponent } from './confirmation/confirmation-view/confirmation-view.component';
 import { ConfirmationListComponent } from './confirmation/confirmation-list/confirmation-list.component';
+import { ConfirmationEditComponent } from './confirmation/confirmation-edit/confirmation-edit.component';
 
 
 @NgModule({
@@ -128,6 +129,7 @@ import { ConfirmationListComponent } from './confirmation/confirmation-list/conf
     ReturnToStoreViewComponent,
     ConfirmationViewComponent,
     ConfirmationListComponent,
+    ConfirmationEditComponent,
   ],
   imports: [
     BrowserModule,
