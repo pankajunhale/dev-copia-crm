@@ -10,5 +10,5 @@
 }
 .mast-container{
   max-height: 1000px;
-  overflow-x: hidden;
+  overflow: hidden;
 }
