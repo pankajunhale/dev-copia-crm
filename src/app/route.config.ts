@@ -37,6 +37,7 @@ import { ProductionOrderConfirmationComponent } from './confirmation/production-
 import { ReturnToStoreEditComponent } from './return-to-store/return-to-store-edit/return-to-store-edit.component';
 import { ReturnToStoreViewComponent } from './return-to-store/return-to-store-view/return-to-store-view.component';
 import { ConfirmationViewComponent } from './confirmation/confirmation-view/confirmation-view.component';
+import { ConfirmationListComponent } from './confirmation/confirmation-list/confirmation-list.component';
 
 export const router: Routes = [
   {path: 'home',component:HomeComponent},
@@ -79,6 +80,7 @@ export const router: Routes = [
   {path: 'purchase-requisition/view',component:PurchaseRequisitionViewComponent},
   {path: 'confirmation/production-order',component:ProductionOrderConfirmationComponent},
   {path: 'confirmation/confirmation-view',component:ConfirmationViewComponent},
+  {path: 'confirmation/confirmation-list',component:ConfirmationListComponent},
   {path: "",pathMatch:"full",redirectTo:'/home'},
   {path:"**",component:HomeComponent}
 ];
