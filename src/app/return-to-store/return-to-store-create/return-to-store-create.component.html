@@ -1,85 +1,105 @@
 <div class="dpCreate">
   <br>
-    
+
   <h2>Return to Store / Create</h2>
-  <button class="btn btn-primary upBtn" type="button" id="back" >Back</button>
-  <button class="btn btn-primary upBtn" type="button" id="cancel" >Cancel</button>
-  <button class="btn btn-primary upBtn" type="button" id="submit" >Submit</button> 
+  <button class="btn btn-primary upBtn" type="button" id="back">Back</button>
+  <button class="btn btn-primary upBtn" type="button" id="cancel">Cancel</button>
+  <button class="btn btn-primary upBtn" type="button" id="submit">Submit</button>
   <br><br>
-  <div class="form-inline">
-      <div class="col-md-3">
-        <label for="wh-name">WH Name:</label><br>
-        <input type="text" class="form-control" id="wh-name">
-      </div>
-      <div class="col-md-3">
-        <label for="rts-no">RTS No:</label><br>
-        <input type="text" class="form-control" id="rts-no">
-      </div>
-      <div class="col-md-3">
-        <label for="rts-status">RTS Status:</label><br>
-        <input type="text" class="form-control" id="rts-status">
-      </div>
-      <div class="col-md-3">
-        <label for="item-code">Item Code:</label><br>
-        <input type="text" class="form-control" id="item-code">
-      </div> 
-      <br> <br> <br> <br>
-       
-      <div class="col-md-3">
-        <label for="item-decription">Item Description:</label><br>
-        <input type="text" class="form-control" id="item-decription">
-      </div>
-      <div class="col-md-3">
-        <label for="returned-qty">Returned Qty:</label><br>
-        <input type="text" class="form-control" id="returned-qty">
-      </div>
-      <div class="col-md-3">
-        <label for="buom">BUOM:</label><br>
-        <input type="text" class="form-control" id="buom">
-      </div>
-      <div class="col-md-3">
-        <label for="reason-code">Reason Code:</label><br>
-        <select class="form-control chzn-select" style="width: 90%">
-          <option value=""> Select</option>
-          <option value=""> A</option>
-          <option value=""> B</option>
-
-      </select>
-      </div>      
-      <br> <br> <br> <br>
-      <div class="dropdown col-md-3">
-        <label for="work-centre">Work Centre</label><br>
-        <select class="form-control chzn-select" style="width: 90%">
-          <option value=""> Select</option>
-          <option value=""> A</option>
-          <option value=""> B</option>
-
-      </select>
-      </div>
-      <div class="dropdown col-md-3">
-        <label for="cost-centre">Cost Centre</label><br>
-        <select class="form-control chzn-select" style="width: 90%">
-          <option value=""> Select</option>
-          <option value=""> A</option>
-          <option value=""> B</option>
-
-      </select>
-      </div>
-      <div class="col-md-3">
-        <label for="created-by">Created By:</label><br>
-        <input type="text" class="form-control" id="created-by">
-      </div>
-      
-      <div class="col-md-3">
-        <label for="comments">Comments</label><br>
-        <textarea class="form-control" rows="2" cols="2" style="width: 96%;"></textarea>
-      </div>
-      <br> <br> <br> <br>
-      <div class="col-md-3">
-        <br>
-          <button class="btn btn-primary filter" type="button" id="submit" >Create</button>
-      </div>
-  </div>
-
   
+    <form novalidate [formGroup]="MyForm" (ngSubmit)="onSubmit()">
+        <fieldset>  
+                    
+            <div class="form-inline">
+            <div class="col-md-3">
+                <label for="wh-name">WH Name:</label><br>                           
+                <input type="text" class="form-control" formControlName="WhName">
+                <div class="form-control-feedback" 
+                    *ngIf="WhName.errors && (WhName.dirty || WhName.touched)">
+                    <span *ngIf="WhName.errors.required">WH Name is required</span>
+                </div>
+              </div>
+              <div formGroupName="rts"> 
+
+              <div class="col-md-3">
+
+                
+                <label for="rts-no">RTS No:</label><br>
+                <input type="text" class="form-control" formControlName="RtsNumber">
+                <div class="form-control-feedback"
+                  *ngIf="RtsNumber.errors && (RtsNumber.dirty || RtsNumber.touched)">
+                  <span *ngIf="RtsNumber.errors.required">RTS Number is required</span>
+                </div>
+              </div>
+                      
+              <div class="col-md-3">
+                <label for="rts-status">RTS Status:</label><br>
+                <input type="text" class="form-control" formControlName="RtsStatus">
+                <div class="form-control-feedback" 
+                    *ngIf="RtsStatus.errors && (RtsStatus.dirty || RtsStatus.touched)">
+                    <span *ngIf="RtsStatus.errors.required">RTS Status is required</span>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <label for="item-code">Item Code:</label><br>
+                <input type="text" class="form-control" id="item-code">
+              </div>
+            </div>
+              <div class="col-md-3">
+                <label for="item-decription">Item Description:</label><br>
+                <input type="text" class="form-control" id="item-decription">
+              </div>
+              <div class="col-md-3">
+                <label for="returned-qty">Returned Qty:</label><br>
+                <input type="text" class="form-control" id="returned-qty">
+              </div>
+              <div class="col-md-3">
+                <label for="buom">BUOM:</label><br>
+                <input type="text" class="form-control" id="buom">
+              </div>
+              <div class="col-md-3">
+                <label for="reason-code">Reason Code:</label><br>
+                <select class="form-control chzn-select" style="width: 90%">
+                  <option value=""> Select</option>
+                  <option value=""> A</option>
+                  <option value=""> B</option>
+        
+                </select>
+              </div>
+              <br> <br> <br> <br>
+              <div class="dropdown col-md-3">
+                <label for="work-centre">Work Centre</label><br>
+                <select class="form-control chzn-select" style="width: 90%">
+                  <option value=""> Select</option>
+                  <option value=""> A</option>
+                  <option value=""> B</option>
+        
+                </select>
+              </div>
+              <div class="dropdown col-md-3">
+                <label for="cost-centre">Cost Centre</label><br>
+                <select class="form-control chzn-select" style="width: 90%">
+                  <option value=""> Select</option>
+                  <option value=""> A</option>
+                  <option value=""> B</option>
+        
+                </select>
+              </div>
+              <div class="col-md-3">
+                <label for="created-by">Created By:</label><br>
+                <input type="text" class="form-control" id="created-by">
+              </div>
+        
+              <div class="col-md-3">
+                <label for="comments">Comments</label><br>
+                <textarea class="form-control" rows="2" cols="2" style="width: 96%;"></textarea>
+              </div>
+              <br> <br> <br> <br>
+              <div class="col-md-3">
+                <br>
+                <button class="btn btn-primary filter" type="submit" id="submit">Create</button>
+              </div>
+            </div>
+        </fieldset>      
+    </form>
 </div>
