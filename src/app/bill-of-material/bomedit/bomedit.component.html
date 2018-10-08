@@ -42,16 +42,11 @@
             
             <div class="dropdown col-md-3">
                 <label for="status">Status</label><br>
-                <button class="btn btn-default dropdown-toggle " type="button" id="status" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                  Select Status
-                  <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="status">
-                  <li><a href="#">Created</a></li>
-                  <li><a href="#">Valid</a></li>
-                  <li><a href="#">Invalid</a></li>
-                  <li><a href="#">Closed</a></li>
-                </ul>
+                <select class="form-control chzn-select" style="width: 90%" formControlName="status">
+                  <option value="Select"> Select</option>
+                  <option value="A"> A</option>
+                  <option value="B"> B</option>
+              </select>
               </div>
                 
            

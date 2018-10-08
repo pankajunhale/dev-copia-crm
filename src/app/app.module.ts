@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule,ReactiveFormsModule} from '@angular/forms';
+
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component'
@@ -62,7 +63,7 @@ import { ConfirmationViewComponent } from './confirmation/confirmation-view/conf
 import { ConfirmationListComponent } from './confirmation/confirmation-list/confirmation-list.component';
 import { ConfirmationEditComponent } from './confirmation/confirmation-edit/confirmation-edit.component';
 import { ConfirmationBulkComponent } from './confirmation/confirmation-bulk/confirmation-bulk.component';
-import { BOMModule } from './BOM.module';
+import { BOMModule } from './bill-of-material/BOM.module';
 
 
 @NgModule({
@@ -130,7 +131,9 @@ import { BOMModule } from './BOM.module';
     BrowserModule,
     FormsModule,
     RouterModule.forRoot(router),
-    BOMModule
+    BOMModule,
+    ReactiveFormsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
