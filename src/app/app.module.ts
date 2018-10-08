@@ -33,10 +33,6 @@ import { EditComponent } from './demand-plan/edit/edit.component';
 import { ViewComponent } from './demand-plan/view/view.component';
 import { RoutingListComponent } from './routing/routing-list/routing-list.component';
 import { RoutingCreateComponent } from './routing/routing-create/routing-create.component';
-import { BomlistComponent } from './bill-of-material/bomlist/bomlist.component';
-import { BomcreateComponent } from './bill-of-material/bomcreate/bomcreate.component';
-import { BomeditComponent } from './bill-of-material/bomedit/bomedit.component';
-import { BomviewComponent } from './bill-of-material/bomview/bomview.component';
 import { RoutingEditComponent } from './routing/routing-edit/routing-edit.component';
 import { RoutingViewComponent } from './routing/routing-view/routing-view.component';
 import { ProductionOrderCreateComponent } from './production-order/production-order-create/production-order-create.component';
@@ -66,6 +62,7 @@ import { ConfirmationViewComponent } from './confirmation/confirmation-view/conf
 import { ConfirmationListComponent } from './confirmation/confirmation-list/confirmation-list.component';
 import { ConfirmationEditComponent } from './confirmation/confirmation-edit/confirmation-edit.component';
 import { ConfirmationBulkComponent } from './confirmation/confirmation-bulk/confirmation-bulk.component';
+import { BOMModule } from './BOM.module';
 
 
 @NgModule({
@@ -99,10 +96,6 @@ import { ConfirmationBulkComponent } from './confirmation/confirmation-bulk/conf
     ViewComponent,
     RoutingListComponent,
     RoutingCreateComponent,
-    BomlistComponent,
-    BomcreateComponent,
-    BomeditComponent,
-    BomviewComponent,
     RoutingEditComponent,
     RoutingViewComponent,
     ProductionOrderCreateComponent,
@@ -136,7 +129,8 @@ import { ConfirmationBulkComponent } from './confirmation/confirmation-bulk/conf
   imports: [
     BrowserModule,
     FormsModule,
-    RouterModule.forRoot(router)
+    RouterModule.forRoot(router),
+    BOMModule
   ],
   providers: [],
   bootstrap: [AppComponent]
