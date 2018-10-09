@@ -33,9 +33,9 @@ export class CreateComponent implements OnInit {
 
 
 
-    aliases: this.fb.array([
-      this.fb.control('')
-    ])
+    // aliases: this.fb.array([
+    //   this.fb.control('')
+    // ])
   }
 
   addAlias() {
