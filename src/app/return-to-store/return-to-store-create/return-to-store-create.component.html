@@ -18,35 +18,33 @@
                     *ngIf="WhName.errors && (WhName.dirty || WhName.touched)">
                     <span *ngIf="WhName.errors.required">WH Name is required</span>
                 </div>
-              </div>
-              <div formGroupName="rts"> 
-
-      </select>
+              </div>          
       </div>
       <div class="col-md-3">
         <label for="created-by">Created By:</label><br>
         <input type="text" class="form-control" id="created-by">
       </div>
-      
+
       <div class="col-md-3">
         <label for="comments">Comments</label><br>
-        <textarea class="form-control" rows="2" cols="2" style="width: 96%;resize: none;" ></textarea>
+        <textarea class="form-control" rows="2" cols="2" style="width: 96%;resize: none;"></textarea>
       </div>
       <br> <br> <br> <br>
       <div class="col-md-3">
         <br>
-          <button class="btn btn-primary filter" type="button" id="submit" >Create</button>
+        <button class="btn btn-primary filter" type="button" id="submit">Create</button>
       </div>
-  </div>
+     
 
-                
-                <label for="rts-no">RTS No:</label><br>
-                <input type="text" class="form-control" formControlName="RtsNumber">
-                <div class="form-control-feedback"
-                  *ngIf="RtsNumber.errors && (RtsNumber.dirty || RtsNumber.touched)">
-                  <span *ngIf="RtsNumber.errors.required">RTS Number is required</span>
-                </div>
-              </div>
+          <div class="col-md-3">
+                    
+                    <label for="rts-no">RTS No:</label><br>
+                    <input type="text" class="form-control" formControlName="RtsNumber">
+                    <div class="form-control-feedback"
+                      *ngIf="RtsNumber.errors && (RtsNumber.dirty || RtsNumber.touched)">
+                      <span *ngIf="RtsNumber.errors.required">RTS Number is required</span>
+                    </div>
+          </div>
                       
               <div class="col-md-3">
                 <label for="rts-status">RTS Status:</label><br>
@@ -58,9 +56,8 @@
               </div>
               <div class="col-md-3">
                 <label for="item-code">Item Code:</label><br>
-                <input type="text" class="form-control" id="item-code">
-              </div>
-            </div>
+                <input type="text" class="form-control" id="item-code" />
+              </div>         
               <div class="col-md-3">
                 <label for="item-decription">Item Description:</label><br>
                 <input type="text" class="form-control" id="item-decription">
@@ -114,8 +111,7 @@
               <div class="col-md-3">
                 <br>
                 <button class="btn btn-primary filter" type="submit" id="submit">Create</button>
-              </div>
-            </div>
+              </div>           
         </fieldset>      
     </form>
 </div>

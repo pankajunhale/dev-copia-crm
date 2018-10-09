@@ -130,15 +130,11 @@ import { BOMModule } from './bill-of-material/BOM.module';
   imports: [
     BrowserModule,
     FormsModule,
-<<<<<<< HEAD
     ReactiveFormsModule,
-    RouterModule.forRoot(router)
-=======
-    RouterModule.forRoot(router),
+    RouterModule.forRoot(router),   
     BOMModule,
     ReactiveFormsModule,
 
->>>>>>> 77e58ee9d19b9f3ec748ba1adfa5c6937b4b602c
   ],
   providers: [],
   bootstrap: [AppComponent]
