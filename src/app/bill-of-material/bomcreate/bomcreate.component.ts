@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-bomcreate',
@@ -6,10 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./bomcreate.component.scss']
 })
 export class BomcreateComponent implements OnInit {
-
   constructor() { }
 
   ngOnInit() {
   }
-
 }
