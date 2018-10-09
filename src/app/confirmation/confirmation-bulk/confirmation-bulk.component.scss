@@ -3,28 +3,28 @@
     position: relative;
     text-align: left;
     vertical-align: left;
-}
-.filter{
+  }
+  .filter{
     width: 70%;
     position: relative;
-}
-label{
+  }
+  label{
     text-align: left;
     position: relative;
     float: left;
-
-}
-.create-new{
+  
+  }
+  .create-new{
     float: right;
-}
-.dpList{
+  }
+  .dpList{
     margin-right: 20px;
-}
-.table{
+  }
+  .table{
     margin-right: 20px;
     
-}
-::-webkit-scrollbar {
+  }
+  ::-webkit-scrollbar {
     width: 0.15em;
     height: 0.15em;
   }
@@ -218,7 +218,18 @@ label{
     text-align: left;
     position: relative;
     float: left;
-  
+  }
+  th{
+    display: table-cell; vertical-align: middle;
+    height: 100%;
+    line-height: 100%;
+    text-align: center;
+  }
+  td{
+    display: table-cell; vertical-align: middle;
+    height: 100%;
+    line-height: 100%;
+    text-align: center;
   }
   .upBtn{
     float: right;
@@ -235,17 +246,27 @@ label{
     min-width: 35px;
     min-height:40px;
   }
-.open{
+  
+  .form-control{
+   width: 100%
+  }
+  .open{
     position: relative;
-    right: -895px;
+    right: -890px;
     top: -30px;
 }
 
 .card-body{
     padding-right: 4.25rem;
 }
-.btn-danger
-{ width: 100%;}
-.fa-trash{
-  margin-right: 30px;
+.form-everytable{
+  background-color: lightgrey;
+}
+  .i{
+    position: relative;
+    right: -190px;
+
+}
+.clear{
+  clear: both;
 }

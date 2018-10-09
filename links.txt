@@ -1,3 +1,8 @@
 ****essential links****
 task sheet -> https://docs.google.com/spreadsheets/d/1Lr0WTmrx-uECDNhqRNbFgDgrTX-9IJvV5nHB8cKOHiM/edit?usp=sharing
 reactive forms -> https://angular.io/guide/reactive-forms
+
+
+***study material***
+https://codecraft.tv/courses/angular/forms/reactive-model-form/
+https://medium.com/@zeljkoradic/custom-form-validators-in-angular-6-using-regular-expressions-d421a5655adf

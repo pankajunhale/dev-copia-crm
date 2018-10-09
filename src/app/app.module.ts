@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule,ReactiveFormsModule} from '@angular/forms';
+
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component'
@@ -33,10 +34,6 @@ import { EditComponent } from './demand-plan/edit/edit.component';
 import { ViewComponent } from './demand-plan/view/view.component';
 import { RoutingListComponent } from './routing/routing-list/routing-list.component';
 import { RoutingCreateComponent } from './routing/routing-create/routing-create.component';
-import { BomlistComponent } from './bill-of-material/bomlist/bomlist.component';
-import { BomcreateComponent } from './bill-of-material/bomcreate/bomcreate.component';
-import { BomeditComponent } from './bill-of-material/bomedit/bomedit.component';
-import { BomviewComponent } from './bill-of-material/bomview/bomview.component';
 import { RoutingEditComponent } from './routing/routing-edit/routing-edit.component';
 import { RoutingViewComponent } from './routing/routing-view/routing-view.component';
 import { ProductionOrderCreateComponent } from './production-order/production-order-create/production-order-create.component';
@@ -59,8 +56,14 @@ import { ReturnToStoreListComponent } from './return-to-store/return-to-store-li
 import { ReturnToStoreCreateComponent } from './return-to-store/return-to-store-create/return-to-store-create.component';
 import { PurchaseRequisitionEditComponent } from './purchase-requisition/purchase-requisition-edit/purchase-requisition-edit.component';
 import { PurchaseRequisitionViewComponent } from './purchase-requisition/purchase-requisition-view/purchase-requisition-view.component';
+import { ProductionOrderConfirmationComponent } from './confirmation/production-order-confirmation/production-order-confirmation.component';
 import { ReturnToStoreEditComponent } from './return-to-store/return-to-store-edit/return-to-store-edit.component';
 import { ReturnToStoreViewComponent } from './return-to-store/return-to-store-view/return-to-store-view.component';
+import { ConfirmationViewComponent } from './confirmation/confirmation-view/confirmation-view.component';
+import { ConfirmationListComponent } from './confirmation/confirmation-list/confirmation-list.component';
+import { ConfirmationEditComponent } from './confirmation/confirmation-edit/confirmation-edit.component';
+import { ConfirmationBulkComponent } from './confirmation/confirmation-bulk/confirmation-bulk.component';
+import { BOMModule } from './bill-of-material/BOM.module';
 
 
 @NgModule({
@@ -94,10 +97,6 @@ import { ReturnToStoreViewComponent } from './return-to-store/return-to-store-vi
     ViewComponent,
     RoutingListComponent,
     RoutingCreateComponent,
-    BomlistComponent,
-    BomcreateComponent,
-    BomeditComponent,
-    BomviewComponent,
     RoutingEditComponent,
     RoutingViewComponent,
     ProductionOrderCreateComponent,
@@ -120,13 +119,21 @@ import { ReturnToStoreViewComponent } from './return-to-store/return-to-store-vi
     ReturnToStoreCreateComponent,
     PurchaseRequisitionEditComponent,
     PurchaseRequisitionViewComponent,
+    ProductionOrderConfirmationComponent,
     ReturnToStoreEditComponent,
     ReturnToStoreViewComponent,
+    ConfirmationViewComponent,
+    ConfirmationListComponent,
+    ConfirmationEditComponent,
+    ConfirmationBulkComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    RouterModule.forRoot(router)
+    RouterModule.forRoot(router),
+    BOMModule,
+    ReactiveFormsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

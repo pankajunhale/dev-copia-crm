@@ -33,8 +33,13 @@ import { ReturnToStoreCreateComponent } from './return-to-store/return-to-store-
 import { PurchaseRequisitionCreateComponent } from './purchase-requisition/purchase-requisition-create/purchase-requisition-create.component';
 import { PurchaseRequisitionEditComponent } from './purchase-requisition/purchase-requisition-edit/purchase-requisition-edit.component';
 import { PurchaseRequisitionViewComponent} from './purchase-requisition/purchase-requisition-view/purchase-requisition-view.component';
+import { ProductionOrderConfirmationComponent } from './confirmation/production-order-confirmation/production-order-confirmation.component';
 import { ReturnToStoreEditComponent } from './return-to-store/return-to-store-edit/return-to-store-edit.component';
 import { ReturnToStoreViewComponent } from './return-to-store/return-to-store-view/return-to-store-view.component';
+import { ConfirmationViewComponent } from './confirmation/confirmation-view/confirmation-view.component';
+import { ConfirmationListComponent } from './confirmation/confirmation-list/confirmation-list.component';
+import { ConfirmationEditComponent } from './confirmation/confirmation-edit/confirmation-edit.component';
+import { ConfirmationBulkComponent } from './confirmation/confirmation-bulk/confirmation-bulk.component';
 
 export const router: Routes = [
   {path: 'home',component:HomeComponent},
@@ -75,6 +80,11 @@ export const router: Routes = [
   {path: 'purchase-requisition/create',component:PurchaseRequisitionCreateComponent},
   {path: 'purchase-requisition/edit',component:PurchaseRequisitionEditComponent},
   {path: 'purchase-requisition/view',component:PurchaseRequisitionViewComponent},
+  {path: 'confirmation/production-order',component:ProductionOrderConfirmationComponent},
+  {path: 'confirmation/confirmation-view',component:ConfirmationViewComponent},
+  {path: 'confirmation/confirmation-list',component:ConfirmationListComponent},
+  {path: 'confirmation/confirmation-edit',component:ConfirmationEditComponent},
+  {path: 'confirmation/confirmation-bulk',component:ConfirmationBulkComponent},
   {path: "",pathMatch:"full",redirectTo:'/home'},
   {path:"**",component:HomeComponent}
 ];
