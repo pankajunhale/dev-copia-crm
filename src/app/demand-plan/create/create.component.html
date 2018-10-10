@@ -1,112 +1,179 @@
 <div class="dpCreate">
-  <br>
-
-  <h2>Detail Plan / Create</h2>
-  <button class="btn btn-primary upBtn" type="button" id="back" >Back</button>
-  <button class="btn btn-primary upBtn" type="button" id="cancel" >Cancel</button>
-  <button class="btn btn-primary upBtn" type="button" (click)="updateValue()" >Submit</button> 
-  <br><br>
-  <form class="form-inline" [formGroup]="demandPlanCreateForm"  (ngSubmit)="onSubmit()">
-      <div class="col-md-3">
-        <label for="plan-name">Plan Name:</label><br>
-        <input type="text" class="form-control" formControlName="planName"        >
+    <br>
+  
+    <div class="row">
+      <div class="col-md-5">
+          <h2>Demand Plan / Create</h2>
       </div>
-      
-      <div class="col-md-3">
-        <label for="plan-name">Plan No:</label><br>
-        <input type="text" class="form-control" formControlName="planNo">
-      </div>
-      
-      <div class="col-md-3">
-        <label for="plan-name">For Mrp:</label><br>
-        <input type="text" class="form-control" formControlName="forMrp">
-      </div>
-      
-      <div class="col-md-3">
-        <label for="plan-name">BE Name:</label><br>
-        <input type="text" class="form-control" formControlName="beName">
-      </div>
-      
-      <div class="dropdown col-md-3">
-        <label for="reason-code">Status:</label><br>
-        <select class="form-control chzn-select" style="width: 90%" formControlName="status">
-          <option value="Select"> Select</option>
-          <option value="A"> A</option>
-          <option value="B"> B</option>
-      </select>
-      </div>
+      <div class="col-md-7">
+          <a href="/demandplan/list" class="btn btn-primary upBtn"  id="back" >Back</a>
+          <a href="#" class="btn btn-primary upBtn"  id="cancel" >Cancel</a>
+          <a href="#" class="btn btn-primary upBtn"  id="back"(click)="updateValue()" >Submit</a>
         
-      <div class="col-md-3">
-        <br>
-          <button class="btn btn-primary filter" type="submit" [disabled]="!demandPlanCreateForm.valid" >Create</button>
       </div>
-  </form>
-  <p>
-    Form Status: {{ demandPlanCreateForm.status }}
-  </p>
-  <hr />
-  <table class="table table-hover">
-    <thead>
-      <tr>
-          <th>FG Item No.</th>
-          <th>FG Item Description</th>
-          <th>BUOM</th>
-          <th>JAN</th>
-          <th>FEB</th>
-          <th>MAR</th>
-          <th>APR</th>
-          <th>MAY</th>
-          <th>JUN</th>
-          <th>JUL</th>
-          <th>AUG</th>
-          <th>SEP</th>
-          <th>OCT</th>
-          <th>NOV</th>
-          <th>DEC</th>
-          <th>Delete</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>8004321</td>
-            <td>Bisleri Bottles</td>
-            <td>Litre</td>
-            <td><input type="text" class="form-control" ></td>
-            <td><input type="text" class="form-control" ></td>
-            <td><input type="text" class="form-control" ></td>
-            <td><input type="text" class="form-control" ></td>
-            <td><input type="text" class="form-control" ></td>
-            <td><input type="text" class="form-control" ></td>
-            <td><input type="text" class="form-control" ></td>
-            <td><input type="text" class="form-control" ></td>
-            <td><input type="text" class="form-control" ></td>
-            <td><input type="text" class="form-control" ></td>
-            <td><input type="text" class="form-control" ></td>
-            <td><input type="text" class="form-control" ></td>
-            <td><i class="fa fa-trash" aria-hidden="true"></i></td>
-        </tr>
+    </div>
+     <br>
+    <form class="form-inline" [formGroup]="demandPlanCreateForm"  (ngSubmit)="onSubmit()">
+      <div class="row">
+            <div class="col-md-3">
+              <label for="plan-name">Plan Name:</label><br>
+              <input type="text" class="form-control" formControlName="planName" style="width:100%">
+            </div>
+            <div class="col-md-3">
+              <label for="plan-name">Plan No:</label><br>
+              <input type="text" class="form-control" formControlName="planNo" style="width:100%">
+            </div>   
+            <div class="col-md-3">
+              <label for="plan-name">For Mrp:</label><br>
+              <select class="form-control chzn-select" style="width:100%" formControlName="status" style="width:100%">
+                  <option value=""> Select</option>
+                  <option value="">Yes</option>
+                  <option value="">No</option>
+              </select>
+            </div>
+            <div class="col-md-3">
+              <label for="plan-name">WH Name:</label><br>
+              <select class="form-control chzn-select" style="width: 100%" formControlName="status">
+                  <option value=""> Select</option>
+                  <option value=""> A</option>
+                  <option value=""> B</option>
+              </select>
+              
+            </div>
+            <br><br><br>
+            <div class="dropdown col-md-3">
+              <label for="reason-code">Status:</label><br>
+              <select class="form-control chzn-select" style="width: 100%" formControlName="status">
+                <option value=""> Select</option>
+                <option value=""> A</option>
+                <option value=""> B</option>
+            </select>
+            </div>
+            <div class="col-md-3">
+              
+              <label>Version No:</label>
+              <input type="text" class="form-control" formControlName="versionno" style="width:100%">
+            </div>
+            <div class="col-md-3">
+              <br>
+                <button class="btn btn-primary create" type="submit" [disabled]="!demandPlanCreateForm.valid" >Create</button>
+            </div>
+            <!-- <div class="col-md-3">
+              <br>
+                <p>
+                   Form Status: {{ demandPlanCreateForm.status }}
+                </p>
+             </div> -->
+            <div class="col-md-12">
+        <hr />
+            </div>
       
-        
-        
-      <tr>
-          <td>8004322</td>
-          <td>Kenley  Bottles</td>
-          <td>Litre</td>
-          <td><input type="text" class="form-control sqbox" ></td>
-          <td><input type="text" class="form-control sqbox" ></td>
-          <td><input type="text" class="form-control sqbox" ></td>
-          <td><input type="text" class="form-control sqbox" ></td>
-          <td><input type="text" class="form-control sqbox" ></td>
-          <td><input type="text" class="form-control sqbox" ></td>
-          <td><input type="text" class="form-control sqbox" ></td>
-          <td><input type="text" class="form-control sqbox" ></td>
-          <td><input type="text" class="form-control sqbox" ></td>
-          <td><input type="text" class="form-control sqbox" ></td>
-          <td><input type="text" class="form-control sqbox" ></td>
-          <td><input type="text" class="form-control sqbox" ></td>
-          <td><i class="fa fa-trash" aria-hidden="true"></i></td>
-      </tr>
-      
+    <br>
+  
+    <div class="col-md-12">
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <!-- <div class="col-md-6">
+                  <div class="form-inline md-form form-sm">
+                      <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search" aria-label="Search">
+                      <i class="fa fa-search" aria-hidden="true"></i>
+                  </div>
+              </div> -->
+            </div>
+            
+    <table class="table table-hover" style="margin-bottom: 0px;">
+      <tbody>
+      <div class="row">
+        <div class="col-md-4 col-sm-4">
+          <tr>
+              <th >FG Item No.</th>
+              <td style="border-bottom:1px solid #656566">5665456</td>
+          </tr>
+        </div>
+        <div class="col-md-4 col-sm-4">
+            <tr>
+                <th>FG Item Description</th>
+              <td style="border-bottom:1px solid #656566">Bisleri Bottles</td>
+            </tr>
+        </div>
+        <div class="col-md-4 col-sm-4">
+            <tr>
+                <th>BUOM</th>
+              <td style="border-bottom:1px solid #656566">Litre</td>
+            </tr>
+        </div>
+      </div>
     </tbody>
-  </table>
-</div>
+    </table>
+
+    <div formArrayName="aliases">
+        <div *ngFor="let address of aliases.controls; let i=index">
+        <div class="row" [formControlName]="i">
+                <div class="col-md-3">
+                    <h5 class="MQL">Month</h5>
+                    <select class="form-control chzn-select" style="width: 100%" formControlName="status" >
+                        <option >Select Month</option>
+                      <option>JAN</option>
+                      <option>FEB</option>
+                      <option>MAR</option>
+                      <option>APR</option>
+                      <option>MAY</option>
+                      <option>JUN</option>
+                      <option>JUL</option>
+                      <option>AUG</option>
+                      <option>SEP</option>
+                      <option>OCT</option>
+                      <option>NOV</option>
+                      <option>DEC</option>                  
+                    </select>
+                </div> 
+                <div class="col-md-3">
+                    <h5 class="MQL">Quantity</h5>
+                    <input type="text" class="form-control" style="width: 100%;">
+                </div> 
+                <div class="col-md-3">
+                    <br><br>
+                      <button class="btn btn-primary create" (click)="addAlias()" type="button" id="back" style="margin-top: 5px;">Add</button> 
+                  </div>
+                <!-- <div class="col-md-2">
+                    <h5 class="MQL" >Quantity</h5>
+                      <select class="form-control chzn-select" style="width: 90%" formControlName="status" >
+                          <option value="JAN">655</option>
+                          <option value="FEB">5</option>
+                          <option value="MAR">12</option>
+                          <option value="APR">12</option>
+                          <option value="MAY">12</option>
+                          <option value="JUN">35</option>
+                          <option value="JUL">89</option>
+                          <option value="JUL">21</option>
+                          <option value="JUL">65</option>
+                          <option value="OCT">32</option>
+                          <option value="OCT">12</option>
+                          <option value="OCT">65</option>
+                          <option value="Delete">98</option>    
+                        </select>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="MQL">Month</h5>
+                    <input type="text" class="form-control">
+                </div> -->
+               
+
+        </div>
+    </div>
+    </div>
+    </div>
+        
+    </div>
+    </div>
+  </div>
+    </form>
+  </div>
+  
+    
+  
+     
+   
+  
+   

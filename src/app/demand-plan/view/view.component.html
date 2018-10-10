@@ -1,48 +1,53 @@
 <div class="dpCreate">
     <br>
-      
-    <h2>Detail Plan / View</h2>
-    <button class="btn btn-primary upBtn" type="button" id="back" >Back</button>
-    <button class="btn btn-primary upBtn" type="button" id="cancel" >Cancel</button>
-    <br><br>
-    <div class="form-inline">
+    <div class="row">
+    <div class="col-md-4">
+    <h2>Demand Plan / View</h2>
+    </div>
+    <div class="col-md-8">
+    <a href="/demandplan/list"class="btn btn-primary upBtn" id="back" >Back</a>
+    </div>
+   </div>
+    
+    <div class="form-inline row">
         <div class="col-md-3">
           <label for="plan-name">Plan Name:</label><br>
-          <input type="text" class="form-control" id="plan-name" readonly>
+          <input type="text" class="form-control" style="width: 100%" id="plan-name" readonly>
         </div>
         
         <div class="col-md-3">
           <label for="plan-name">Plan No:</label><br>
-          <input type="text" class="form-control" id="plan-name" readonly>
+          <input type="text" class="form-control" style="width: 100%" id="plan-name" readonly>
         </div>
         
         <div class="col-md-3">
           <label for="plan-name">For Mrp:</label><br>
-          <input type="text" class="form-control" id="plan-name" readonly>
+          <input type="text" class="form-control" style="width: 100%" id="plan-name" readonly>
         </div>
         
         <div class="col-md-3">
-          <label for="plan-name">BE Name:</label><br>
-          <input type="text" class="form-control" id="plan-name" readonly>
+          <label for="plan-name">WH Name:</label><br>
+          <input type="text" class="form-control" style="width: 100%" id="plan-name" readonly>
         </div>
-        
-        <div class="dropdown col-md-3">
-          <label for="status">Status</label><br>
-          <select class="form-control chzn-select" style="width: 90%" formControlName="status">
-            <option value="Select"> Select</option>
-            <option value="A"> A</option>
-            <option value="B"> B</option>
-        </select>
-        </div>
-          
+        <br><br><br><br>
         <div class="col-md-3">
+            <label for="">Status:</label><br>
+            <input type="text" class="form-control" style="width: 100%" id="" readonly>
+          </div>
+        <div class="col-md-3">
+              
+            <label>Version No:</label>
+            <input type="text" class="form-control" style="width:100%" readonly>
+          </div>
+        <!-- <div class="col-md-3">
           <br>
-            <button class="btn btn-primary filter" type="button" id="submit" >Create</button>
-        </div>
+            <button class="btn btn-primary filter" type="button" id="submit" >Search</button>
+        </div> -->
     </div>
     <hr />
-  
-    <table class="table table-hover">
+  <div class="row">
+    <div class="col-md-12">
+    <table class="table table-hover table-responsive" style="width: 100%;">
       <thead>
         <tr>
             <th>FG Item No.</th>
@@ -60,7 +65,7 @@
             <th>OCT</th>
             <th>NOV</th>
             <th>DEC</th>
-            <th>Delete</th>
+            <!-- <th>Delete</th> -->
         </tr>
       </thead>
       <tbody>
@@ -68,40 +73,42 @@
               <td>8004321</td>
               <td>Bisleri Bottles</td>
               <td>Litre</td>
-              <td><input type="text" class="form-control" readonly></td>
-              <td><input type="text" class="form-control" readonly></td>
-              <td><input type="text" class="form-control" readonly></td>
-              <td><input type="text" class="form-control" readonly></td>
-              <td><input type="text" class="form-control" readonly></td>
-              <td><input type="text" class="form-control" readonly></td>
-              <td><input type="text" class="form-control" readonly></td>
-              <td><input type="text" class="form-control" readonly></td>
-              <td><input type="text" class="form-control" readonly></td>
-              <td><input type="text" class="form-control" readonly></td>
-              <td><input type="text" class="form-control" readonly></td>
-              <td><input type="text" class="form-control" readonly></td>
-              <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+              <td><input type="text" class="data" size="5" readonly></td>
+              <td><input type="text" class="data" size="5" readonly></td>
+              <td><input type="text" class="data" size="5" readonly></td>
+              <td><input type="text" class="data" size="5" readonly></td>
+              <td><input type="text" class="data" size="5" readonly></td>
+              <td><input type="text" class="data" size="5" readonly></td>
+              <td><input type="text" class="data" size="5" readonly></td>
+              <td><input type="text" class="data" size="5" readonly></td>
+              <td><input type="text" class="data" size="5" readonly></td>
+              <td><input type="text" class="data" size="5" readonly></td>
+              <td><input type="text" class="data" size="5" readonly></td>
+              <td><input type="text" class="data" size="5" readonly></td>
+              <!-- <td><i class="fa fa-trash del" aria-hidden="true"></i></td> -->
           </tr>
           
-        <tr>
+        <!-- <tr>
             <td>8004322</td>
             <td>Kenley  Bottles</td>
             <td>Litre</td>
-            <td><input type="text" class="form-control sqbox" readonly></td>
-            <td><input type="text" class="form-control sqbox" readonly></td>
-            <td><input type="text" class="form-control sqbox" readonly></td>
-            <td><input type="text" class="form-control sqbox" readonly></td>
-            <td><input type="text" class="form-control sqbox" readonly></td>
-            <td><input type="text" class="form-control sqbox" readonly></td>
-            <td><input type="text" class="form-control sqbox" readonly></td>
-            <td><input type="text" class="form-control sqbox" readonly></td>
-            <td><input type="text" class="form-control sqbox" readonly></td>
-            <td><input type="text" class="form-control sqbox" readonly></td>
-            <td><input type="text" class="form-control sqbox" readonly></td>
-            <td><input type="text" class="form-control sqbox" readonly></td>
+            <td><input type="text" class="data" size="5" readonly></td>
+            <td><input type="text" class="data" size="5" readonly></td>
+            <td><input type="text" class="data" size="5" readonly></td>
+            <td><input type="text" class="data" size="5" readonly></td>
+            <td><input type="text" class="data" size="5" readonly></td>
+            <td><input type="text" class="data" size="5" readonly></td>
+            <td><input type="text" class="data" size="5" readonly></td>
+            <td><input type="text" class="data" size="5" readonly></td>
+            <td><input type="text" class="data" size="5" readonly></td>
+            <td><input type="text" class="data" size="5" readonly></td>
+            <td><input type="text" class="data" size="5" readonly></td>
+            <td><input type="text" class="data" size="5" readonly></td>
             <td><i class="fa fa-trash" aria-hidden="true"></i></td>
-        </tr>
+        </tr> -->
         
       </tbody>
     </table>
+  </div>
+</div>
   </div>

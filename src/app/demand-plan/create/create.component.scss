@@ -209,3 +209,22 @@ label{
   min-width: 35px;
   min-height:40px;
 }
+
+ //table
+ .table td, .table th{
+   border-top: none;
+   white-space: nowrap;
+ }
+.MQL{
+  padding: .75rem;
+  font-size: 15px;
+  font-weight: bold;
+  padding-left: 0px;
+}
+.open{
+  cursor: pointer;
+}
+.create{
+  border-radius: 4px !important;
+  width: 70%;
+}
