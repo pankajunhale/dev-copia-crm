@@ -16,6 +16,7 @@ label{
 }
 .create-new{
   float: right;
+  border-radius: 4px !important;
 }
 .dpList{
   margin-right: 20px;
@@ -243,4 +244,11 @@ th{
 
 .form-control{
  width: 100%
+}
+.create{
+  border-radius: 4px !important;
+  width: 70%;
+}
+td,th{
+  white-space: nowrap;
 }

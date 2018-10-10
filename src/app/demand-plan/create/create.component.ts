@@ -29,6 +29,10 @@ export class CreateComponent implements OnInit {
       forMrp:[''],
       beName:[''],
       status:[''],
+      versionno:[''],
+      aliases: this.fb.array([
+        this.fb.control('')
+      ])
     })
 
 
@@ -49,11 +53,12 @@ export class CreateComponent implements OnInit {
 
   updateValue(){
     this.demandPlanCreateForm.setValue({
-      planName: 'Roshan Plan',
+      planName: 'ABC Plan',
       planNo: '26574102',
       forMrp: '20000',
       beName: 'Chinmay',
-      status: 'Select'
+      status: 'Select',
+      versionno: '15852'
     })
   }
 
