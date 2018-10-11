@@ -3,25 +3,28 @@
     position: relative;
     text-align: left;
     vertical-align: left;
-}
-.filter{
+  }
+  .filter{
     width: 70%;
     position: relative;
-}
-label{
+  }
+  label{
     text-align: left;
     position: relative;
     float: left;
-
-}
-.upBtn{
+  
+  }
+  .create-new{
     float: right;
-    margin: 2px;
-}
-.dpCreate{
+  }
+  .dpList{
     margin-right: 20px;
-}
-::-webkit-scrollbar {
+  }
+  .table{
+    margin-right: 20px;
+    
+  }
+  ::-webkit-scrollbar {
     width: 0.15em;
     height: 0.15em;
   }
@@ -215,7 +218,18 @@ label{
     text-align: left;
     position: relative;
     float: left;
-  
+  }
+  th{
+    display: table-cell; vertical-align: middle;
+    height: 100%;
+    line-height: 100%;
+    text-align: center;
+  }
+  td{
+    display: table-cell; vertical-align: middle;
+    height: 100%;
+    line-height: 100%;
+    text-align: center;
   }
   .upBtn{
     float: right;
@@ -224,26 +238,35 @@ label{
   .dpCreate{
     margin-right: 20px;
   }
-  .del{
-    color: red;
+  
+  
+  .sqbox{
+    max-width: 35px;
+    max-height:40px;
+    min-width: 35px;
+    min-height:40px;
   }
-  td,th{
-    white-space: nowrap;
+  
+  .form-control{
+   width: 100%
+  }
+  .open{
+    position: relative;
+    right: -890px;
+    top: -30px;
+}
 
-  }
-  td{
-    width: 25% ;
-  }
-  .data{
-    display: block;
-    height: calc(2.25rem + 2px);
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #495057;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid #ced4da;
-    border-radius: .25rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-  }
+.card-body{
+    padding-right: 4.25rem;
+}
+.form-everytable{
+  background-color: lightgrey;
+}
+  .i{
+    position: relative;
+    right: -190px;
+
+}
+.clear{
+  clear: both;
+}
