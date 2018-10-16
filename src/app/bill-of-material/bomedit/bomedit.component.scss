@@ -224,6 +224,7 @@ th{
   height: 100%;
   line-height: 100%;
   text-align: center;
+  white-space: nowrap;
 }
 td{
   display: table-cell; vertical-align: middle;
@@ -252,8 +253,17 @@ td{
 }
 
 td{
-  display: table-cell; vertical-align: middle;
+  display: table-cell; 
+  vertical-align: middle;
   height: 100%;
   line-height: 100%;
   text-align: center;
+  
+}
+i{
+  cursor: pointer;
+}
+.create{
+  border-radius: 4px !important;
+  width: 70%;
 }
