@@ -224,12 +224,14 @@
     height: 100%;
     line-height: 100%;
     text-align: center;
+    white-space: nowrap;
   }
   td{
     display: table-cell; vertical-align: middle;
     height: 100%;
     line-height: 100%;
     text-align: center;
+    white-space: nowrap;
   }
   .upBtn{
     float: right;
@@ -249,4 +251,8 @@
   
   .form-control{
    width: 100%
+  }
+
+  i{
+    cursor: pointer;
   }

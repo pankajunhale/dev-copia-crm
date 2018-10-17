@@ -224,6 +224,7 @@
     height: 100%;
     line-height: 100%;
     text-align: center;
+    white-space: nowrap;
   }
   td{
     display: table-cell; vertical-align: middle;
@@ -236,7 +237,7 @@
     margin: 2px;
   }
   .dBtn{
-    margin: 10px;
+    width: 70%;
   }
   .dpCreate{
     margin-right: 20px;
@@ -252,4 +253,16 @@
   
   .form-control{
    width: 100%
+  }
+  i{
+    cursor: pointer;
+  }
+  .edit{
+    color: blue;
+  }
+  .view{
+    color: black;
+  }
+  .del{
+    color: red;
   }

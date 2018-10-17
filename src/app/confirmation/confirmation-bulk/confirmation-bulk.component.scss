@@ -255,10 +255,6 @@
     right: -890px;
     top: -30px;
 }
-
-.card-body{
-    padding-right: 4.25rem;
-}
 .form-everytable{
   background-color: lightgrey;
 }
@@ -269,4 +265,11 @@
 }
 .clear{
   clear: both;
+}
+.chbx{
+  width: 60%;
+  height: calc(1.25rem + 2px)
+}
+i{
+  cursor: pointer;
 }

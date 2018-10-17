@@ -270,3 +270,13 @@ background-color: lightgrey;
 .clear{
 clear: both;
 }
+.chbx{
+  width: 60%;
+  height: calc(1.25rem + 2px)
+}
+i{
+  cursor: pointer;
+}
+.form-control{
+  width: 100%;
+}
