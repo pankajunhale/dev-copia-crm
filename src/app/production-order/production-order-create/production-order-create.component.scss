@@ -250,3 +250,12 @@ td{
 .form-control{
  width: 100%
 }
+th,td{
+  white-space: nowrap;
+}
+.del{
+  color: red;
+}
+i{
+  cursor: pointer;
+}

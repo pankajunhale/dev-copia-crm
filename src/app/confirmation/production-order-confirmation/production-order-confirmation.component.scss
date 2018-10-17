@@ -2,7 +2,6 @@
     align-content: flex-start;
     position: relative;
     text-align: left;
-    vertical-align: left;
   }
   .filter{
     width: 70%;
@@ -208,7 +207,6 @@
     align-content: flex-start;
     position: relative;
     text-align: left;
-    vertical-align: left;
   }
   .filter{
     width: 70%;
@@ -269,4 +267,23 @@
 }
 .clear{
   clear: both;
+}
+.chbx{
+  width: 60%;
+  height: calc(1.25rem + 2px)
+}
+i{
+  cursor: pointer;
+}
+.edit{
+  color: blue;
+}
+.view{
+  color: black;
+}
+.del{
+  color: red;
+}
+.form-control{
+  width: 100%;
 }

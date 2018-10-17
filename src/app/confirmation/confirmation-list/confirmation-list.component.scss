@@ -16,6 +16,7 @@ label{
 }
 .create-new{
   float: right;
+  border-radius: 4px;
 }
 .dpList{
   margin-right: 20px;
@@ -235,17 +236,23 @@ label{
   min-width: 35px;
   min-height:40px;
 }
-.open{
-  position: relative;
-  right: -895px;
-  top: -30px;
-}
-
-.card-body{
-  padding-right: 4.25rem;
-}
 
 .btn{
-  border-radius:0px;
+  border-radius:4px;
   margin-right: 5px;
+}
+i{
+  cursor: pointer;
+}
+.edit{
+  color: blue;
+}
+.view{
+  color: black;
+}
+.del{
+  color: red;
+}
+.form-control{
+width: 100%;
 }
