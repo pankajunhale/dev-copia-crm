@@ -224,6 +224,7 @@
     height: 100%;
     line-height: 100%;
     text-align: center;
+    white-space: nowrap;
   }
   .upBtn{
     float: right;
@@ -250,4 +251,7 @@
     height: 100%;
     line-height: 100%;
     text-align: center;
+  }
+  i{
+    cursor: pointer;
   }

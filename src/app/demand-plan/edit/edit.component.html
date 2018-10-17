@@ -54,22 +54,32 @@
             </div>
         <div class="col-md-3">
           <br>
-            <button class="btn btn-primary filter create" type="button" id="submit" >Create</button>
+            <button class="btn btn-primary filter create" type="button" id="submit" >Update</button>
         </div>
     </div>
     <hr />
     <div class="row">
    <div class="col-md-12">
-    <table class="table table-hover table-responsive" style="width: 100%;" >
+    <table class="table table-responsive table-hover">
       <thead>
-        <tr>
-            <th>FG Item No.</th>
-            <th>FG Item Description</th>
-            <th>BUOM</th>
-            <th>JAN</th>
-            <th>FEB</th>
-            <th>MAR</th>
-            <th>APR</th>
+          <tr><th></th><th>FG Item No.</th><th>FG Item Description</th><th>BUOM</th> <th>JAN</th>
+            <th>FEB</th><th>MAR</th><th>APR</th></tr>
+      </thead>
+      <tbody>
+          <tr class="clickable" >
+              <td><i class="fa fa-plus" aria-hidden="true"data-toggle="collapse" data-target="#group-of-rows-1" aria-expanded="false" aria-controls="group-of-rows-1"></i></td>
+              <td>8004321</td>
+              <td>Bisleri Bottles</td>  
+              <td>Litre</td>
+              <td><input type="text" class="data" size="5"></td>
+              <td><input type="text" class="data" size="5"></td>
+              <td><input type="text" class="data" size="5"></td>
+              <td><input type="text" class="data" size="5"></td>
+          
+          </tr>
+      </tbody>
+      <tbody id="group-of-rows-1" class="collapse">
+          <tr>
             <th>MAY</th>
             <th>JUN</th>
             <th>JUL</th>
@@ -78,33 +88,10 @@
             <th>OCT</th>
             <th>NOV</th>
             <th>DEC</th>
-            <th>Delete</th>
-        </tr>
-      </thead>
-      <tbody>
-          <tr>
-              <td>8004321</td>
-              <td>Bisleri Bottles</td>
-              <td>Litre</td>
-              <td><input type="text" class="data" size="5"></td>
-              <td><input type="text" class="data" size="5"></td>
-              <td><input type="text" class="data" size="5"></td>
-              <td><input type="text" class="data" size="5"></td>
-              <td><input type="text" class="data" size="5"></td>
-              <td><input type="text" class="data" size="5"></td>
-              <td><input type="text" class="data" size="5"></td>
-              <td><input type="text" class="data" size="5"></td>
-              <td><input type="text" class="data" size="5"></td>
-              <td><input type="text" class="data" size="5"></td>
-              <td><input type="text" class="data" size="5"></td>
-              <td><input type="text" class="data" size="5"></td>
-              <td><i class="fa fa-trash del" aria-hidden="true"></i></td>
+            <th></th>
+
           </tr>
-          
-        <!-- <tr>
-            <td>8004322</td>
-            <td>Kenley  Bottles</td>
-            <td>Litre</td>
+          <tr>
             <td><input type="text" class="data" size="5"></td>
             <td><input type="text" class="data" size="5"></td>
             <td><input type="text" class="data" size="5"></td>
@@ -112,17 +99,11 @@
             <td><input type="text" class="data" size="5"></td>
             <td><input type="text" class="data" size="5"></td>
             <td><input type="text" class="data" size="5"></td>
-            <td><input type="text" class="data" size="5"></td>
-            <td><input type="text" class="data" size="5"></td>
-            <td><input type="text" class="data" size="5"></td>
-            <td><input type="text" class="data" size="5"></td>
-            <td><input type="text" class="data" size="5"></td>
+            <td><input type="text" class="data" size="5"></td>   
             <td><i class="fa fa-trash del" aria-hidden="true"></i></td>
-        </tr> -->
-        
-        
+          </tr>
       </tbody>
-    </table>
+  </table>
   </div>
   </div>
   </div>

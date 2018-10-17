@@ -214,8 +214,9 @@
   }
   .del{
     color: red;
+    cursor:pointer;
   }
-  td,th{
+  th{
     white-space: nowrap;
 
   }
@@ -235,3 +236,9 @@
     border-radius: .25rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
   }
+  tbody.collapse.in {
+  display: table-row-group;
+}
+i{
+  cursor: pointer;
+}

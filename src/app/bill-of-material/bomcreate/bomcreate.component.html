@@ -1,11 +1,17 @@
 <div class="dpList">
   <br>
-  <h2>Bill of Material / Create</h2>
+  <div class="row">
+      <div class="col-md-4">
+  <h2>BOM / Create</h2>
+  </div>
+  <div class="col-md-8">
+  <a href="/bill-of-material/list" class="btn btn-primary upBtn"  id="back" >Back</a>
   <button class="btn btn-primary upBtn" type="button" >Cancel</button>
-
-  <button class="btn btn-primary upBtn" type="button" id="submit" >Submit</button> 
-    <br><br>
-    <div class="form-inline">
+  <button class="btn btn-primary upBtn" type="button" id="submit" >Submit</button>  
+</div>
+</div>
+<br>
+    <div class="form-inline row">
           <div class="col-md-2">
             <label for="plan-name">Item Code:</label><br>
             <input type="text" class="form-control" formControlName="itemCode">
@@ -25,7 +31,7 @@
             <label for="plan-name">BUOM:</label><br>
             <input type="text" class="form-control">
           </div>
-          
+          <br><br><br><br>
           <div class="col-md-2">
             <label for="plan-name">BOM Version:</label><br>
             <input type="text" class="form-control" readonly value="2">
@@ -41,56 +47,58 @@
           </div>
           <div class="col-md-4">
             <label for="plan-name">WH Name:</label><br>
-            <input type="text" class="form-control" >
+            <select class="form-control" style="width: 100%">
+              <option>Select</option>
+              <option>A</option>
+              <option>B</option>
+            </select>
           </div>
           
-          <!-- <div class="col-md-3"  style="align-content: left;position: relative; text-align: left; float: left;">
-            <br>
-            <button class="btn btn-primary filter" type="button" id="filter" >Submit</button>
-          </div> -->
       </div>
       <hr />
 
-      <table class="table table-hover">
-        <thead >
-          <tr>
-            <th></th>
-            <th>Sr No.</th>
-            <th>Component Description</th>
-            <th>Component Qty</th>
-            <th>UOM</th>
-            <th>Qty in BUOM</th>
-            <th>Base UOM</th>
-            <th>Item Type</th>
-            <th>Item Category</th>
-            <th>By Product</th>
-          </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><i class="fa fa-th-large" aria-hidden="true"></i></td>
-                <td>1</td>
-                <td>Milk Powder</td>
-                <td>70</td>
-                <td>gm</td>
-                <td>70</td>
-                <td>gm</td>
-                <td>Inv</td>
-                <td>Inv</td>
-                <td>Yes/No</td>
-            </tr>
-            <tr>
-                <td><i class="fa fa-th-large" aria-hidden="true"></i></td>
-                <td>2</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-        </tbody>
-      </table>
+
+      <div class="row">
+        <div class="col-md-12">      
+            <table class="table table-responsive table-hover">
+                <thead>
+                    <tr>
+                      <th></th>
+                      <th>Sr No.</th>
+                      <th>Component Description</th>
+                      <th>Component Qty</th>
+                      <th>UOM</th>
+                      <th>Qty in BUOM</th>
+                      <th>Base UOM</th>
+                      <th>Item Type</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="clickable" >
+                        <td><i class="fa fa-plus" aria-hidden="true"data-toggle="collapse" data-target="#group-of-rows-1" aria-expanded="false" aria-controls="group-of-rows-1"></i></td>
+                        <td>1</td>
+                        <td>Milk Powder</td>
+                        <td>70</td>
+                        <td>gm</td>
+                        <td>70</td>
+                        <td>gm</td>
+                        <td>Inv</td>
+                    </tr>
+                </tbody>
+                <tbody id="group-of-rows-1" class="collapse">
+                    <tr>
+                       
+                        <th>Item Category</th>
+                        <th>By Product</th>
+          
+                    </tr>
+                    <tr>
+                        
+                        <td>Procured</td>
+                        <td>Yes</td>
+                    </tr>
+                </tbody>
+            </table>
+         </div>
+      </div> 
   </div>

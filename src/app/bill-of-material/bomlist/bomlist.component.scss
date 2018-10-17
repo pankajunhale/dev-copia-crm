@@ -249,6 +249,18 @@ th{
   border-radius: 4px !important;
   width: 70%;
 }
-td,th{
+th{
   white-space: nowrap;
+}
+.edit{
+  color: blue;
+}
+.view{
+  color: black;
+}
+.del{
+  color: red;
+}
+i{
+  cursor: pointer;
 }

@@ -47,32 +47,38 @@
     <hr />
   <div class="row">
     <div class="col-md-12">
-    <table class="table table-hover table-responsive" style="width: 100%;">
-      <thead>
-        <tr>
-            <th>FG Item No.</th>
-            <th>FG Item Description</th>
-            <th>BUOM</th>
-            <th>JAN</th>
-            <th>FEB</th>
-            <th>MAR</th>
-            <th>APR</th>
-            <th>MAY</th>
-            <th>JUN</th>
-            <th>JUL</th>
-            <th>AUG</th>
-            <th>SEP</th>
-            <th>OCT</th>
-            <th>NOV</th>
-            <th>DEC</th>
-            <!-- <th>Delete</th> -->
-        </tr>
-      </thead>
-      <tbody>
-          <tr>
-              <td>8004321</td>
-              <td>Bisleri Bottles</td>
-              <td>Litre</td>
+      <table class="table table-responsive table-hover">
+        <thead>
+            <tr><th></th><th>FG Item No.</th><th>FG Item Description</th><th>BUOM</th> <th>JAN</th>
+              <th>FEB</th><th>MAR</th><th>APR</th></tr>
+        </thead>
+        <tbody>
+            <tr class="clickable" >
+                <td><i class="fa fa-plus" aria-hidden="true"data-toggle="collapse" data-target="#group-of-rows-1" aria-expanded="false" aria-controls="group-of-rows-1"></i></td>
+                <td>8004321</td>
+                <td>Bisleri Bottles</td>  
+                <td>Litre</td>
+                <td><input type="text" class="data" size="5" readonly></td>
+                <td><input type="text" class="data" size="5" readonly></td>
+                <td><input type="text" class="data" size="5" readonly></td>
+                <td><input type="text" class="data" size="5" readonly></td>
+            
+            </tr>
+        </tbody>
+        <tbody id="group-of-rows-1" class="collapse">
+            <tr>
+              <th>MAY</th>
+              <th>JUN</th>
+              <th>JUL</th>
+              <th>AUG</th>
+              <th>SEP</th>
+              <th>OCT</th>
+              <th>NOV</th>
+              <th>DEC</th>
+             
+  
+            </tr>
+            <tr>
               <td><input type="text" class="data" size="5" readonly></td>
               <td><input type="text" class="data" size="5" readonly></td>
               <td><input type="text" class="data" size="5" readonly></td>
@@ -80,34 +86,10 @@
               <td><input type="text" class="data" size="5" readonly></td>
               <td><input type="text" class="data" size="5" readonly></td>
               <td><input type="text" class="data" size="5" readonly></td>
-              <td><input type="text" class="data" size="5" readonly></td>
-              <td><input type="text" class="data" size="5" readonly></td>
-              <td><input type="text" class="data" size="5" readonly></td>
-              <td><input type="text" class="data" size="5" readonly></td>
-              <td><input type="text" class="data" size="5" readonly></td>
-              <!-- <td><i class="fa fa-trash del" aria-hidden="true"></i></td> -->
-          </tr>
-          
-        <!-- <tr>
-            <td>8004322</td>
-            <td>Kenley  Bottles</td>
-            <td>Litre</td>
-            <td><input type="text" class="data" size="5" readonly></td>
-            <td><input type="text" class="data" size="5" readonly></td>
-            <td><input type="text" class="data" size="5" readonly></td>
-            <td><input type="text" class="data" size="5" readonly></td>
-            <td><input type="text" class="data" size="5" readonly></td>
-            <td><input type="text" class="data" size="5" readonly></td>
-            <td><input type="text" class="data" size="5" readonly></td>
-            <td><input type="text" class="data" size="5" readonly></td>
-            <td><input type="text" class="data" size="5" readonly></td>
-            <td><input type="text" class="data" size="5" readonly></td>
-            <td><input type="text" class="data" size="5" readonly></td>
-            <td><input type="text" class="data" size="5" readonly></td>
-            <td><i class="fa fa-trash" aria-hidden="true"></i></td>
-        </tr> -->
-        
-      </tbody>
+              <td><input type="text" class="data" size="5" readonly></td>   
+              
+            </tr>
+        </tbody>
     </table>
   </div>
 </div>

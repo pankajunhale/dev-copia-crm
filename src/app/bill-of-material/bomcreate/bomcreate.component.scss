@@ -238,8 +238,6 @@
   .dpCreate{
     margin-right: 20px;
   }
-  
-  
   .sqbox{
     max-width: 35px;
     max-height:40px;
@@ -250,3 +248,9 @@
   .form-control{
    width: 100%
   }
+  i{
+    cursor: pointer;
+  }
+th{
+  white-space: nowrap;
+}
