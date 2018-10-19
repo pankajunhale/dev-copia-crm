@@ -1,12 +1,22 @@
 <div class="dpList">
     <br>
-    <h2>Purchase Requisition / List</h2>
-      <button class="btn btn-primary create-new" type="button" id="create-new" >Create New</button>
-      <br><br>
-      <div class="form-inline">
+    <div class="row">
+      <div class="col-md-6">
+         <h2>Purchase Requisition / List</h2>
+      </div>
+      <div class="col-md-6">
+       <a href="/purchase-requisition/create" class="btn btn-primary create-new" id="create-new" >Create New</a>
+      </div>
+    </div>
+      <br>
+      <div class="form-inline row">
             <div class="col-md-3">
               <label for="plan-name">WH Name:</label><br>
-              <input type="text" class="form-control" id="plan-name">
+              <select class="form-control">
+                <option>Select</option>
+                <option>A</option>
+                <option>B</option>
+              </select>
             </div>
             
             <div class="col-md-3">
@@ -23,7 +33,7 @@
               <label for="plan-name">Sales Order:</label><br>
               <input type="text" class="form-control" id="plan-name">
             </div>
-            
+            <br><br><br><br>
             <div class="col-md-3">
                 <label for="plan-name">Demand Plan No.:</label><br>
                 <input type="text" class="form-control" id="plan-name">
@@ -35,18 +45,17 @@
                 </div>
                   
            
-                <div class="col-md-3">
+                <div class="col-md-6">
                     <br>
-                    <button class="btn btn-primary filter" type="button" id="filter" >Create</button>
+                    <a href="#" class="btn btn-primary bttn" id="filter" >Create</a>
+                    <a href="#" class="btn btn-primary bttn"  id="filter" >Create PO</a>
                   </div>
-                  <div class="col-md-3">
-                    <br>
-                    <button class="btn btn-primary filter" type="button" id="filter" >Create PO</button>
-                  </div>
+                 
         </div>
         <hr />
-  
-        <table class="table table-hover">
+
+        
+        <table class="table table-hover table-responsive">
           <thead>
             <tr>
               <th>PR No</th>
@@ -74,12 +83,13 @@
                 <td>Units</td>
                 <td>Default Mode</td>
                 <td>Ellen DeGeneres</td>
-                <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
-                <td><i class="fa fa-folder" aria-hidden="true"></i></td>
-                <td>[]</td>
+                <td><a href="/purchase-requisition/edit"><i class="fa fa-pencil edit" aria-hidden="true"></i></a></td>
+                <td><a href="/purchase-requisition/view"><i class="fa fa-folder view" aria-hidden="true"></i></a></td>
+                <td class="text-center"><input type="checkbox" class="chbx"></td>
 
             </tr>
           </tbody>
         </table>
+    
     </div>
           

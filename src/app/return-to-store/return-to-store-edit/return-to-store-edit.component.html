@@ -1,15 +1,24 @@
 <div class="dpCreate">
   <br>
-    
-  <h2>Return to Store / Edit</h2>
-  <button class="btn btn-primary upBtn" type="button" id="back" >Back</button>
-  <button class="btn btn-primary upBtn" type="button" id="cancel" >Cancel</button>
-  <button class="btn btn-primary upBtn" type="button" id="submit" >Submit</button> 
-  <br><br>
-  <div class="form-inline">
+   <div class="row">
+     <div class="col-md-6">
+       <h2>Return to Store / Edit</h2>
+     </div>
+     <div class="col-md-6">
+        <a href="/return-to-store/return-to-store-list" class="btn btn-primary upBtn" id="back" >Back</a>
+        <a href="#" class="btn btn-primary upBtn"  id="cancel" >Cancel</a>
+        <a href="#" class="btn btn-primary upBtn"  id="submit" >Submit</a> 
+    </div>   
+</div> 
+  <br>
+  <div class="form-inline row">
       <div class="col-md-3">
         <label for="wh-name">WH Name:</label><br>
-        <input type="text" class="form-control" id="wh-name">
+        <select class="form-control">
+          <option>Select</option>
+          <option>A</option>
+          <option>B</option>
+        </select>
       </div>
       <div class="col-md-3">
         <label for="rts-no">RTS No:</label><br>
@@ -46,7 +55,7 @@
       
       <div class="col-md-3">
         <label for="reason-code">Reason Code:</label><br>
-        <select class="form-control chzn-select" style="width: 90%">
+        <select class="form-control chzn-select">
           <option value=""> Select</option>
           <option value=""> A</option>
           <option value=""> B</option>
@@ -55,7 +64,7 @@
       </div>
       <div class="dropdown col-md-3">
         <label for="work-centre">Work Centre</label><br>
-        <select class="form-control chzn-select" style="width: 90%">
+        <select class="form-control chzn-select">
           <option value=""> Select</option>
           <option value=""> A</option>
           <option value=""> B</option>
@@ -64,7 +73,7 @@
       </div>
       <div class="dropdown col-md-3">
         <label for="cost-centre">Cost Centre</label><br>
-        <select class="form-control chzn-select" style="width: 90%"> 
+        <select class="form-control chzn-select"> 
           <option value=""> Select</option>
           <option value=""> A</option>
           <option value=""> B</option>
@@ -82,12 +91,12 @@
       </div>
       <div class="col-md-6">
         <label for="comments">Comments</label><br>
-        <textarea class="form-control" rows="2" cols="2" style="width: 96%;resize: none;"></textarea>
+        <textarea class="form-control" rows="2" cols="2" style="resize: none;"></textarea>
       </div>
         
       <div class="col-md-3">
         <br>
-          <button class="btn btn-primary filter" type="button" id="submit" >Create</button>
+          <a href="#" class="btn btn-primary filter" id="submit" >Update</a>
       </div>
   </div>
 
