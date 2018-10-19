@@ -1,16 +1,27 @@
 <div class="dpList">
     <br>
-    <h2>Purchase Requisition / Edit</h2>
-      <br><br>
-      <div class="form-inline">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Purchase Requisition / Edit</h2>
+      </div>
+      <div class="col-md-6">
+          <a href="/purchase-requisition/list" class="btn btn-primary upBtn" id="cancel" >Back</a>
+      </div>
+    </div>
+      <br>
+      <div class="form-inline row">
         
           <div class="col-md-3">
               <label for="plan-name">WH Name:</label><br>
-              <input type="text" class="form-control" >
+              <select class="form-control">
+                <option>Select</option>
+                <option>A</option>
+                <option>B</option>
+              </select>
             </div>
 
             <div class="col-md-3">
-              <label for="plan-name">PR No.:</label><br>
+              <label for="plan-name">PR No:</label><br>
               <input type="text" class="form-control">
             </div>
             
@@ -23,53 +34,57 @@
               <label for="plan-name">Creation Mode:</label><br>
               <input type="text" class="form-control">
             </div>
-            
+            <br><br><br><br>
             <div class="col-md-3">
               <label for="plan-name">PR Status:</label><br>
               <input type="text" class="form-control">
+              <!-- <select class="form-control">
+                <option>Select</option>
+                <option>Delete</option>
+              </select> -->
             </div>
             
            
-            <div class="col-md-3"  style="align-content: left;position: relative; text-align: left; float: left;">
+            <div class="col-md-6">
               <br>
-              <button class="btn btn-primary filter" type="button" id="filter" >Submit</button>
+              <a href="#" class="btn btn-primary btnn" id="filter" >Update</a>
+              <!-- <a href="#" class="btn btn-primary btnn" id="filter" >Clear</a> -->
             </div>
         </div>
         <hr />
   
-        <table>
-            <tr>
-                <td>
-                    <div class="card">
+
+         <div class="card">
                         <div class="card-body">
                           <div class="row">
                             <div class="col-md-3">
                               <label for="">Seq No.:</label><br>
                               <input type="text" class="form-control" id="">
                             </div>
-                            <div class="col-md-2">
+                            <div class="col-md-3">
                               <label for="">Item Code:</label><br>
                               <input type="text" class="form-control" id="">
                             </div>
-                            <div class="col-md-2">
+                            <div class="col-md-3">
                               <label for="">Description:</label><br>
                               <input type="text" class="form-control" id="">
                             </div>
-                            <div class="col-md-2">
+                            <div class="col-md-3">
                               <label for="">Qty:</label><br>
                               <input type="text" class="form-control" id="">
                             </div>
-                            <div class="col-md-2">
-                              <label for="">BUOM:</label><br>
-                              <input type="text" class="form-control" id="">
-                            </div>
-                            <div class="col-md-1">
-                            <br><br>
-                              <i id="grandparentIcon" class="fa fa-chevron-circle-down fa-2x" aria-hidden="true" data-target="#grandparentContent" data-toggle="collapse"></i>
+                           
+                            <div class="col-md-12">
+                            <br>
+                              <i id="grandparentIcon" class="fa fa-chevron-circle-down fa-2x pull-right" aria-hidden="true" data-target="#grandparentContent" data-toggle="collapse"></i>
                             </div>
                             </div>
-                                  <br>
+                              
                           <div class="row collapse in" id="grandparentContent">
+                              <div class="col-md-3">
+                                  <label for="">BUOM:</label><br>
+                                  <input type="text" class="form-control" id="">
+                                </div>
                             <div class="col-md-3">
                               <label for="">Creation Mode:</label><br>
                               <input type="text" class="form-control" id="">
@@ -79,41 +94,35 @@
                               <input type="text" class="form-control" id="">
                             </div>
                             <div class="col-md-3">
-                              <label for="">SO /DP No.:</label><br>
+                              <label for="">SO /DP No:</label><br>
                               <input type="text" class="form-control" id="">
                             </div>
-                            <div class="col-md-3">
-                                <label for="">SO /DP Line Item No.:</label><br>
-                                <input type="text" class="form-control" id="">
-                            </div>
+                           
                             
                             <br><br><br><br>
-                            
+                            <div class="col-md-3">
+                                <label for="">SO /DP Line Item No:</label><br>
+                                <input type="text" class="form-control" id="">
+                            </div>
                               <div class="col-md-3">
                               <label for="">PR Line Item Status:</label><br>
                               <input type="text" class="form-control" id="">
                             </div>
+                           
                             <div class="col-md-3">
-                              <label for="">Delete:</label><br>
+                              <label for="">PO No:</label><br>
                               <input type="text" class="form-control" id="">
                             </div>
                             <div class="col-md-3">
-                              <label for="">PO No.:</label><br>
+                              <label for="">PO Line Item No:</label><br>
                               <input type="text" class="form-control" id="">
                             </div>
-                            <div class="col-md-3">
-                              <label for="">PO Line Item No.:</label><br>
-                              <input type="text" class="form-control" id="">
-                            </div>
-                            <div class="col-md-12"><br>
-                                <button class="btn btn-danger " type="button" >Delete</button>
+                            <div class="col-md-12">
+                              <br>
+                              <i class="fa fa-trash fa-2x del pull-right" aria-hidden="true"></i>
                               </div>
                             </div>							
                           </div>
-                      </div>
-                    
-                </td>
-            </tr>
-            
-        </table>
+         </div>
+  
     </div>

@@ -1,15 +1,24 @@
 <div class="dpList">
   <br>
-  <h2>MRP / Run</h2>
-  
-  <button class="btn btn-primary upBtn" type="button" id="cancel" >Cancel</button>
-  <button class="btn btn-primary upBtn" type="button" id="submit" >Submit</button> 
-    <br><br>
-    <div class="form-inline">
+  <div class="row">
+    <div class="col-md-4">
+       <h2>MRP / Run</h2>
+      </div>
+      <div class="col-md-8">
+          <a href="#" class="btn btn-primary upBtn" id="cancel" >Cancel</a>
+            <a href="#" class="btn btn-primary upBtn"  id="submit" >Submit</a>
+       </div> 
+  </div>
+    <br>
+    <div class="form-inline row">
 
-        <div class="col-md-2">
+        <div class="col-md-3">
             <label for="plan-name">WH Name:</label><br>
-            <input type="text" class="form-control">
+            <select class="form-control">
+              <option>Select</option>
+              <option>A</option>
+              <option>B</option>
+            </select>
           </div>
 
           <div class="col-md-3">
@@ -18,124 +27,125 @@
           </div>
           <div class="col-md-3"  style="align-content: left;position: relative; text-align: left; float: left;">
             <br>
-            <button class="btn btn-primary filter" type="button" id="execute" >Execute</button>
+            <a href="#" class="btn btn-primary filter"  id="execute" >Execute</a>
           </div>
       </div>
       <hr />
-
-      <table>
-          <tr>
-              <td>
-                  <div class="card">
-                      <div class="card-body">
-                        <div class="row">
-                          <div class="col-md-3">
-                            <label for="">FG Item:</label><br>
-                            <input type="text" class="form-control" id="">
-                          </div>
-                          <div class="col-md-4">
-                            <label for="">FG Item Description:</label><br>
-                            <input type="text" class="form-control" id="">
-                          </div>
-                          <div class="col-md-2">
-                            <label for="">FG SO Open Qty:</label><br>
-                            <input type="text" class="form-control" id="">
-                          </div>
-                          <div class="col-md-2">
-                            <label for="">FG DP Qty:</label><br>
-                            <input type="text" class="form-control" id="">
-                          </div>
-                          <div class="col-md-1">
-                          <br><br>
-                            <i id="grandparentIcon" class="fa fa-chevron-circle-down fa-2x" aria-hidden="true" data-target="#grandparentContent" data-toggle="collapse"></i>
-                          </div>
-                          </div>
-                             <br>
-                        <div class="row collapse" id="grandparentContent">
-                        
-                            <div class="col-md-3">
-                                <label for="">Total FG Required Labour Time:</label><br>
-                                <input type="text" class="form-control" id="">
-                              </div>
+     
+      <div class="row">
+        <div class="col-md-12">
+            <table>
+                <tr>
+                    <td>
+                        <div class="card">
+                            <div class="card-body">
+                              <div class="row">
+                                <div class="col-md-3">
+                                  <label for="">FG Item:</label><br>
+                                  <input type="text" class="form-control" id="">
+                                </div>
+                                <div class="col-md-4">
+                                  <label for="">FG Item Description:</label><br>
+                                  <input type="text" class="form-control" id="">
+                                </div>
+                                <div class="col-md-2">
+                                  <label for="">FG SO Open Qty:</label><br>
+                                  <input type="text" class="form-control" id="">
+                                </div>
+                                <div class="col-md-2">
+                                  <label for="">FG DP Qty:</label><br>
+                                  <input type="text" class="form-control" id="">
+                                </div>
+                                <div class="col-md-12 pull-right">
+                                <br>
+                                  <i id="grandparentIcon" class="fa fa-chevron-circle-down fa-2x pull-right" aria-hidden="true" data-target="#grandparentContent" data-toggle="collapse"></i>
+                                </div>
+                                </div>
+                                  
+                              <div class="row collapse" id="grandparentContent">
                               
-                            <div class="col-md-3">
-                            <label for="">FG WH Stock:</label><br><br>
-                            <input type="text" class="form-control" id="">
-                          </div>
-                          <div class="col-md-3">
-                            <label for="">Net FG Requirement:</label><br><br>
-                            <input type="text" class="form-control" id="">
-                          </div>
-                          <div class="col-md-3">
-                            <label for="">Adjusted Net FG Requirement:</label><br>
-                            <input type="text" class="form-control" id="">
-                          </div>
-                          <div class="col-md-3">
-                            <label for="">Component Qty/Unit:</label><br>
-                            <input type="text" class="form-control" id="">
-                          </div>
-                          
-                          <br><br><br><br>
-                          
-                            <div class="col-md-3">
-                            <label for="">Total Component Qty:</label><br>
-                            <input type="text" class="form-control" id="">
-                          </div>
-                          <div class="col-md-3">
-                            <label for="">Component WH Stock:</label><br>
-                            <input type="text" class="form-control" id="">
-                          </div>
-                          <div class="col-md-3">
-                            <label for="">Open PO Qty:</label><br>
-                            <input type="text" class="form-control" id="">
-                          </div>
-                          <div class="col-md-3">
-                            <label for="">Inprocess PO Qty:</label><br>
-                            <input type="text" class="form-control" id="">
-                          </div>
-                          
-                            <br><br><br><br>
-                          
-                            <div class="col-md-3">
-                            <label for="">Net Req Qty.:</label><br>
-                            <input type="text" class="form-control" id="">
-                          </div>
-                          <div class="col-md-3">
-                            <label for="">Adjusted Net Req Qty.:</label><br>
-                            <input type="text" class="form-control" id="">
-                          </div>
-                          <div class="col-md-3">
-                            <label for="">BUOM:</label><br>
-                            <input type="text" class="form-control" id="">
-                          </div>
-                          <div class="col-md-3">
-                            <label for="">Item Type:</label><br>
-                            <input type="text" class="form-control" id="">
-                          </div>
-                          <div class="col-md-3">
-                            <label for="">Item Category:</label><br>
-                            <input type="text" class="form-control" id="">
-                          </div>
-                          
-                          <div class="col-md-4">
-                              <label for="">Output No:</label><br>
-                              <input type="text" class="form-control" id="">
-                            </div>
-                            <div class="col-md-3"><br>
-                              <a href="#"><i class="fa fa-folder fa-2x pr" aria-hidden="true"></i> Purchase Request<br></a>
-                            </div>
-                            <div class="col-md-3"><br>
-                                <a href="#"><i class="fa fa-folder fa-2x po" aria-hidden="true"></i> Production Order<br></a>
+                                  <div class="col-md-3">
+                                      <label for="">Total FG Required Labour Time:</label><br>
+                                      <input type="text" class="form-control" id="">
+                                    </div>
+                                    
+                                  <div class="col-md-3">
+                                  <label for="">FG WH Stock:</label><br><br>
+                                  <input type="text" class="form-control" id="">
+                                </div>
+                                <div class="col-md-3">
+                                  <label for="">Net FG Requirement:</label><br><br>
+                                  <input type="text" class="form-control" id="">
+                                </div>
+                                <div class="col-md-3">
+                                  <label for="">Adjusted Net FG Requirement:</label><br>
+                                  <input type="text" class="form-control" id="">
+                                </div>
+                                <br><br><br><br><br>
+                                <div class="col-md-3">
+                                  <label for="">Component Qty/Unit:</label><br>
+                                  <input type="text" class="form-control" id="">
+                                </div>
+                                  <div class="col-md-3">
+                                  <label for="">Total Component Qty:</label><br>
+                                  <input type="text" class="form-control" id="">
+                                </div>
+                                <div class="col-md-3">
+                                  <label for="">Component WH Stock:</label><br>
+                                  <input type="text" class="form-control" id="">
+                                </div>
+                                <div class="col-md-3">
+                                  <label for="">Open PO Qty:</label><br>
+                                  <input type="text" class="form-control" id="">
+                                </div>
+                                <br><br><br><br><br>
+                                <div class="col-md-3">
+                                  <label for="">Inprocess PO Qty:</label><br>
+                                  <input type="text" class="form-control" id="">
+                                </div>
+                                  <div class="col-md-3">
+                                  <label for="">Net Req Qty.:</label><br>
+                                  <input type="text" class="form-control" id="">
+                                </div>
+                                <div class="col-md-3">
+                                  <label for="">Adjusted Net Req Qty.:</label><br>
+                                  <input type="text" class="form-control" id="">
+                                </div>
+                                <div class="col-md-3">
+                                  <label for="">BUOM:</label><br>
+                                  <input type="text" class="form-control" id="">
+                                </div>
+                                <br><br><br><br><br>
+                                <div class="col-md-3">
+                                  <label for="">Item Type:</label><br>
+                                  <input type="text" class="form-control" id="">
+                                </div>
+                                <div class="col-md-3">
+                                  <label for="">Item Category:</label><br>
+                                  <input type="text" class="form-control" id="">
+                                </div>
+                              
+                                <div class="col-md-4">
+                                    <label for="">Output No:</label><br>
+                                    <input type="text" class="form-control" id="">
+                                  </div>
+                                  <div class="col-md-3"><br>
+                                    <a href="#"><i class="fa fa-folder fa-2x pr" aria-hidden="true"></i> Purchase Request<br></a>
+                                  </div>
+                                  <div class="col-md-3"><br>
+                                      <a href="#"><i class="fa fa-folder fa-2x po" aria-hidden="true"></i> Production Order<br></a>
+                                    </div>
+                                  <div class="col-md-3"><br>
+                                      <a href="#"><i class="fa fa-folder fa-2x sr" aria-hidden="true"></i> Store Request   <br></a>
+                                    </div>
+                                </div>							
                               </div>
-                            <div class="col-md-3"><br>
-                                <a href="#"><i class="fa fa-folder fa-2x sr" aria-hidden="true"></i> Store Request   <br></a>
-                              </div>
-                          </div>							
-                        </div>
-                    </div>
-                  
-              </td>
-          </tr>
-          
-      </table>
+                          </div>
+                        
+                    </td>
+                </tr>
+                
+            </table>
+        </div>
+      </div>
   </div>
