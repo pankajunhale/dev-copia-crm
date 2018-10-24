@@ -12,20 +12,20 @@
         
       </div>
     </div>
-     <br>
+    
     <form class="form-inline" [formGroup]="demandPlanCreateForm"  (ngSubmit)="onSubmit()">
       <div class="row">
             <div class="col-md-3">
               <label for="plan-name">Plan Name:</label><br>
-              <input type="text" class="form-control" formControlName="planName" style="width:100%">
+              <input type="text" class="form-control" formControlName="planName" >
             </div>
             <div class="col-md-3">
               <label for="plan-name">Plan No:</label><br>
-              <input type="text" class="form-control" formControlName="planNo" style="width:100%">
+              <input type="text" class="form-control" formControlName="planNo" >
             </div>   
             <div class="col-md-3">
               <label for="plan-name">For Mrp:</label><br>
-              <select class="form-control chzn-select" style="width:100%" formControlName="status" style="width:100%">
+              <select class="form-control chzn-select"  formControlName="status" >
                   <option value=""> Select</option>
                   <option value="">Yes</option>
                   <option value="">No</option>
@@ -52,12 +52,12 @@
             <div class="col-md-3">
               
               <label>Version No:</label>
-              <input type="text" class="form-control" formControlName="versionno" style="width:100%">
+              <input type="text" class="form-control" formControlName="versionno" >
             </div>
-            <div class="col-md-3">
+            <!-- <div class="col-md-3">
               <br>
                 <button class="btn btn-primary create" type="submit" [disabled]="!demandPlanCreateForm.valid" >Create</button>
-            </div>
+            </div> -->
             <!-- <div class="col-md-3">
               <br>
                 <p>
@@ -82,25 +82,25 @@
               </div> -->
             </div>
             
-    <table class="table table-hover" style="margin-bottom: 0px;">
+    <table class="table" style="margin-bottom: 0px;">
       <tbody>
       <div class="row">
         <div class="col-md-4 col-sm-4">
           <tr>
               <th >FG Item No.</th>
-              <td style="border-bottom:1px solid #656566">5665456</td>
+              <td><input type="text" class="form-control"  readonly value="	5665456"></td>
           </tr>
         </div>
-        <div class="col-md-4 col-sm-4">
+        <div class="col-md-5 col-sm-4">
             <tr>
                 <th>FG Item Description</th>
-              <td style="border-bottom:1px solid #656566">Bisleri Bottles</td>
+              <td><input type="text" class="form-control"  readonly value="Bisleri Bottles"></td>
             </tr>
         </div>
-        <div class="col-md-4 col-sm-4">
+        <div class="col-md-3 col-sm-4">
             <tr>
                 <th>BUOM</th>
-              <td style="border-bottom:1px solid #656566">Litre</td>
+              <td><input type="text" class="form-control" ></td>
             </tr>
         </div>
       </div>
@@ -136,30 +136,6 @@
                     <br><br>
                       <button class="btn btn-primary create" (click)="addAlias()" type="button" id="back" style="margin-top: 5px;">Add</button> 
                   </div>
-                <!-- <div class="col-md-2">
-                    <h5 class="MQL" >Quantity</h5>
-                      <select class="form-control chzn-select" style="width: 90%" formControlName="status" >
-                          <option value="JAN">655</option>
-                          <option value="FEB">5</option>
-                          <option value="MAR">12</option>
-                          <option value="APR">12</option>
-                          <option value="MAY">12</option>
-                          <option value="JUN">35</option>
-                          <option value="JUL">89</option>
-                          <option value="JUL">21</option>
-                          <option value="JUL">65</option>
-                          <option value="OCT">32</option>
-                          <option value="OCT">12</option>
-                          <option value="OCT">65</option>
-                          <option value="Delete">98</option>    
-                        </select>
-                </div>
-                <div class="col-md-3">
-                    <h5 class="MQL">Month</h5>
-                    <input type="text" class="form-control">
-                </div> -->
-               
-
         </div>
     </div>
     </div>

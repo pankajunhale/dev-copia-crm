@@ -1,35 +1,35 @@
 
 <div class="dpCreate">
     <br>
-      <div class="row"> 
-          <div class="col-md-4">
-              <h2>Routing / Create</h2>
-          </div>
-          <div class="col-md-8">
-                <a href="/routing/routing-list" class="btn btn-primary upBtn" id="back" >Back</a>
-                <a href="#" class="btn btn-primary upBtn"  id="cancel" >Cancel</a>
-                  <a href="#" class="btn btn-primary upBtn" id="submit" >Submit</a> 
-          </div>
-      </div>
-    <br>
+      <div class="row">
+        <div class="col-md-6">
+    <h2>Routing / Create</h2>
+  </div>
+  <div class="col-md-6">
+      <a href="" class="btn btn-primary upBtn" id="back" >Back</a>
+      <a href="" class="btn btn-primary upBtn" id="cancel" >Cancel</a>
+      <a href="" class="btn btn-primary upBtn" id="submit" >Submit</a> 
+    </div>
+  </div>
+  
     <form class="form-inline row" [formGroup]="routingCreateForm" >
         <div class="col-md-3">
           <label for="">Item Code:</label><br>
-          <input type="text" class="form-control" formControlName="itemcode"  style="width:100%">
+          <input type="text" class="form-control" formControlName="itemcode">
         </div>
         
         <div class="col-md-3">
           <label for="">Item Description:</label><br>
-          <input type="text" class="form-control" formControlName="itemdescription"  style="width:100%">
+          <input type="text" class="form-control" formControlName="itemdescription">
         </div>
         
         <div class="col-md-3">
           <label for="">Version No:</label><br>
-          <input type="text" class="form-control" formControlName="versionno"  style="width:100%">
+          <input type="text" class="form-control" formControlName="versionno">
         </div>
         <div class="col-md-3">
           <label for="">WH Name:</label><br>
-          <select class="form-control" style="width:100%" formControlName="whname">
+          <select class="form-control" formControlName="whname">
               <option value=""> Select</option>
               <option value="">Mumbai</option>
               <option value="">Pune</option>
@@ -38,7 +38,7 @@
         </div>
         <div class="col-md-3">
           <br>
-            <a href="#" class="btn btn-primary filter" id="submit" >Create</a>
+            <a href="" class="btn btn-primary filter" id="submit" >Search</a>
         </div>
         <div class="col-md-12">
           <hr/>
@@ -48,7 +48,7 @@
       
    <div formArrayName="aliases">
     <div *ngFor="let address of aliases.controls; let i=index">
-    <div class="col-md-12 list-group-item" id="grandparent"  [formControlName]="i">
+    <div class="list-group-item" id="grandparent"  [formControlName]="i">
           <tr>
               <td>
                   <div class="card">
@@ -117,7 +117,7 @@
                               </div>
                             <div class="col-md-3">
                             <label for="">Step Status:</label><br>
-                            <select class="form-control" style="width:100%">
+                            <select class="form-control">
                                 <option value=""> Select</option>
                                 <option value="">Created</option>
                                 <option value="">Inprocess</option>
@@ -153,11 +153,10 @@
   </div>
 
     </form>
-
     <div class="row">
-        <div class="col-md-12">
-          <a href="#" class="btn btn-primary pull-right" (click)="addAlias()" id="add">Add</a>
-        </div>
+    <div class="col-md-12">
+    <button class="btn btn-primary pull-right" (click)="addAlias()" type="button" id="back">Add</button>
     </div>
-
+  </div>
+  <br><br>
 </div>

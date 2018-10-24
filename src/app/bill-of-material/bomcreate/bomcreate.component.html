@@ -10,19 +10,19 @@
     <a href="#" class="btn btn-primary upBtn" id="submit" >Submit</a>  
   </div>
   </div>
-  <br>
+  
       <div class="form-inline row">
-            <div class="col-md-2">
+            <div class="col-md-3">
               <label for="plan-name">Item Code:</label><br>
               <input type="text" class="form-control" formControlName="itemCode">
             </div>
             
-            <div class="col-md-5">
+            <div class="col-md-3">
               <label for="plan-name">Item Description:</label><br>
               <input type="text" class="form-control">
             </div>
             
-            <div class="col-md-2">
+            <div class="col-md-3">
               <label for="plan-name">Quantity:</label><br>
               <input type="text" class="form-control">
             </div>
@@ -32,11 +32,11 @@
               <input type="text" class="form-control">
             </div>
             <br><br><br><br>
-            <div class="col-md-2">
+            <div class="col-md-3">
               <label for="plan-name">BOM Version:</label><br>
               <input type="text" class="form-control" readonly value="2">
             </div>
-            <div class="col-md-2">
+            <div class="col-md-3">
               <label for="plan-name">BOM No:</label><br>
               <input type="text" class="form-control" readonly value="399">
             </div>
@@ -45,9 +45,9 @@
               <label for="plan-name">BOM Status:</label><br>
               <input type="text" class="form-control" readonly value="Draft">
             </div>
-            <div class="col-md-4">
+            <div class="col-md-3">
               <label for="plan-name">WH Name:</label><br>
-              <select class="form-control" style="width: 100%">
+              <select class="form-control">
                 <option>Select</option>
                 <option>A</option>
                 <option>B</option>
@@ -58,9 +58,10 @@
         <hr />
   
   
-        <div class="row">
-          <div class="col-md-12 table-responsive">      
-              <table class="table  table-hover">
+        <div class="row bg">
+          <div class="col-md-12 table-responsive">
+            <br>      
+              <table class="table table-hover table-fixed">
                   <thead>
                       <tr>
                         <th></th>
@@ -73,7 +74,9 @@
                         <th>Item Type</th>
                       </tr>
                   </thead>
-                  <tbody>
+
+                  <div class="contenta">
+                  <tbody class="contentb">
                       <tr class="clickable" >
                           <td><i class="fa fa-plus" aria-hidden="true"data-toggle="collapse" data-target="#group-of-rows-1" aria-expanded="false" aria-controls="group-of-rows-1"></i></td>
                           <td>1</td>
@@ -98,7 +101,10 @@
                           <td>Yes</td>
                       </tr>
                   </tbody>
+                 
+                </div>
               </table>
            </div>
         </div> 
+        <br><br>
     </div>
