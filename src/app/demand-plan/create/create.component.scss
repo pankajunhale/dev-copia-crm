@@ -199,7 +199,11 @@ label{
   margin: 2px;
 }
 .dpCreate{
-  margin-right: 20px;
+  overflow-y: auto;
+    overflow-x: hidden;
+    margin-right: 10px;
+    height: 600px;
+    padding-right: 20px;
 }
 
 
@@ -227,4 +231,7 @@ label{
 .create{
   border-radius: 4px !important;
   width: 70%;
+}
+.form-control{
+  width: 100%;
 }

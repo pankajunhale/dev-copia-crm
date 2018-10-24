@@ -1,4 +1,4 @@
-<div class="dpCreate">
+<div class="dpList">
     <br>
   <div class="row">
     <div class="col-md-4">
@@ -7,29 +7,29 @@
     <div class="col-md-8">
       <a href="/routing/routing-list" class="btn btn-primary upBtn" id="back" >Back</a>
       <a href="#" class="btn btn-primary upBtn"  id="cancel" >Cancel</a>
-      <a href="#"  class="btn btn-primary upBtn"  id="submit" >Submit</a>
+      <a href="#"  class="btn btn-primary upBtn"  id="submit" >Update</a>
     </div> 
   </div>
-    <br>
+    
     <div class="form-inline row">
         <div class="col-md-3">
           <label for="item-code">Item Code:</label><br>
-          <input type="text" class="form-control"  style="width:100%" id="item-code" disabled>
+          <input type="text" class="form-control"   id="item-code" disabled>
         </div>
         
         <div class="col-md-3">
           <label for="item-description">Item-Description:</label><br>
-          <input type="text" class="form-control"  style="width:100%" id="item-description">
+          <input type="text" class="form-control"   id="item-description">
         </div>
         
         <div class="col-md-3">
           <label for="version-no">Version No:</label><br>
-          <input type="text" class="form-control"  style="width:100%" id="version-no">
+          <input type="text" class="form-control"   id="version-no">
         </div>
         
         <div class="col-md-3">
           <label for="wh-name">WH Name:</label><br>
-          <select class="form-control" style="width:100%" formControlName="whname">
+          <select class="form-control"  formControlName="whname">
               <option value=""> Select</option>
               <option value="">Mumbai</option>
               <option value="">Pune</option>
@@ -39,7 +39,7 @@
           
         <div class="col-md-3">
           <br>
-            <a href="#" class="btn btn-primary filter" id="submit" >Update</a>
+            <a href="#" class="btn btn-primary filter" id="submit" >Search</a>
         </div>
     </div>
     <hr />
@@ -118,7 +118,7 @@
                               </div>
                             <div class="col-md-3">
                             <label for="">Step Status:</label><br>
-                            <select class="form-control" style="width:100%">
+                            <select class="form-control" >
                                 <option value=""> Select</option>
                                 <option value="">Created</option>
                                 <option value="">Inprocess</option>

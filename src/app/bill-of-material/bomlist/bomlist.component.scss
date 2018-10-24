@@ -19,7 +19,11 @@ label{
   border-radius: 4px !important;
 }
 .dpList{
-  margin-right: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-right: 10px;
+    height: 600px;
+    padding-right: 20px;
 }
 .table{
   margin-right: 20px;
@@ -243,7 +247,7 @@ th{
 }
 
 .form-control{
- width: 100%
+ width: 100%;
 }
 .create{
   border-radius: 4px !important;

@@ -18,8 +18,12 @@ label{
     float: right;
     margin: 2px;
 }
-.dpCreate{
-    margin-right: 20px;
+.dpList{
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-right: 10px;
+  height: 600px;
+  padding-right: 20px;
 }
 ::-webkit-scrollbar {
     width: 0.15em;
@@ -221,9 +225,7 @@ label{
     float: right;
     margin: 2px;
   }
-  .dpCreate{
-    margin-right: 20px;
-  }
+
   .del{
     color: red;
     cursor:pointer;
@@ -250,4 +252,7 @@ label{
   }
   i{
     cursor:pointer;
+  }
+  .form-control{
+    width: 100%;
   }
