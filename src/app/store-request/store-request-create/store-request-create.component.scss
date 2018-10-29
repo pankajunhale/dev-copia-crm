@@ -18,7 +18,11 @@ label{
     float: right;
 }
 .dpList{
-    margin-right: 20px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-right: 10px;
+  height: 600px;
+  padding-right: 20px;
 }
 .table{
     margin-right: 20px;
@@ -226,21 +230,13 @@ label{
   }
   .dpCreate{
     margin-right: 20px;
-  }
-  
-  
+  } 
   .sqbox{
     max-width: 35px;
     max-height:40px;
     min-width: 35px;
     min-height:40px;
   }
-.open{
-    position: relative;
-    right: -895px;
-    top: -30px;
-}
-
-.card-body{
-    padding-right: 4.25rem;
+.form-control{
+  width: 100%;
 }

@@ -18,8 +18,12 @@ label{
     float: right;
     margin: 2px;
 }
-.dpCreate{
-    margin-right: 20px;
+.dpList{
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-right: 10px;
+  height: 600px;
+  padding-right: 20px;
 }
 ::-webkit-scrollbar {
     width: 0.15em;
@@ -221,14 +225,34 @@ label{
     float: right;
     margin: 2px;
   }
-  .dpCreate{
-    margin-right: 20px;
+
+  .del{
+    color: red;
+    cursor:pointer;
   }
-  
-  
-  .sqbox{
-    max-width: 35px;
-    max-height:40px;
-    min-width: 35px;
-    min-height:40px;
+  th{
+    white-space: nowrap;
+
+  }
+  td{
+    width: 25% ;
+  }
+  .data{
+    display: block;
+    height: calc(2.25rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+  i{
+    cursor:pointer;
+  }
+  .form-control{
+    width: 100%;
   }

@@ -2,7 +2,6 @@
     align-content: flex-start;
     position: relative;
     text-align: left;
-    vertical-align: left;
   }
   .filter{
     width: 70%;
@@ -18,7 +17,11 @@
     float: right;
   }
   .dpList{
-    margin-right: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-right: 10px;
+    height: 600px;
+    padding-right: 20px;
   }
   .table{
     margin-right: 20px;
@@ -208,7 +211,6 @@
     align-content: flex-start;
     position: relative;
     text-align: left;
-    vertical-align: left;
   }
   .filter{
     width: 70%;
@@ -248,17 +250,8 @@
   }
   
   .form-control{
-   width: 100%
+   width: 100%;
   }
-  .open{
-    position: relative;
-    right: -890px;
-    top: -30px;
-}
-
-.card-body{
-    padding-right: 4.25rem;
-}
 .form-everytable{
   background-color: lightgrey;
 }
@@ -269,4 +262,26 @@
 }
 .clear{
   clear: both;
+}
+.chbx{
+  width: 60%;
+  height: calc(1.25rem + 2px)
+}
+i{
+  cursor: pointer;
+}
+.edit{
+  color: blue;
+}
+.view{
+  color: black;
+}
+.del{
+  color: red;
+}
+.form-control{
+  width: 100%;
+}
+.btnn{
+  margin-right: 5px;
 }

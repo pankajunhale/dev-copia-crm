@@ -18,7 +18,11 @@ label{
     float: right;
 }
 .dpList{
-    margin-right: 20px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-right: 10px;
+  height: 600px;
+  padding-right: 20px;
 }
 .table{
     margin-right: 20px;
@@ -243,4 +247,25 @@ label{
 
 .card-body{
     padding-right: 4.25rem;
+}
+th{
+  white-space: nowrap;
+}
+i{
+  cursor: pointer;
+}
+.edit{
+  color: blue;
+}
+.view{
+  color: black;
+}
+.del{
+  color: red;
+}
+i{
+  cursor: pointer;
+}
+.form-control{
+  width:100%;
 }

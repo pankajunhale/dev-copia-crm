@@ -18,7 +18,11 @@
     float: right;
   }
   .dpList{
-    margin-right: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-right: 10px;
+    height: 600px;
+    padding-right: 20px;
   }
   .table{
     margin-right: 20px;
@@ -224,6 +228,7 @@
     height: 100%;
     line-height: 100%;
     text-align: center;
+    white-space: nowrap;
   }
   .upBtn{
     float: right;
@@ -242,7 +247,7 @@
   }
   
   .form-control{
-   width: 100%
+   width: 100%;
   }
   
   td{
@@ -250,4 +255,7 @@
     height: 100%;
     line-height: 100%;
     text-align: center;
+  }
+  i{
+    cursor: pointer;
   }

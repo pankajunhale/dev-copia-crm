@@ -1,67 +1,102 @@
 <div class="dpList">
   <br>
-  <h2>Bill of Material / List</h2>
-    <button class="btn btn-primary create-new" type="button" id="create-new" >Create New</button>
-    <br><br>
-    <div class="form-inline">
-          <div class="col-md-2">
+  <div class="row">
+     <div class="col-md-4">
+     <h2>BOM / List</h2>
+     </div>
+    <div class="col-md-8">
+
+    <a href="/bill-of-material/create" class="btn btn-primary create-new" id="create-new" >Create New</a>
+  </div>
+</div>
+    <div class="form-inline row">
+          <div class="col-md-3">
             <label for="plan-name">Item Code:</label><br>
-            <input type="text" class="form-control">
-          </div>
-          
-          <div class="col-md-4">
-            <label for="plan-name">Item Description:</label><br>
-            <input type="text" class="form-control">
+            <input type="text" class="form-control" >
           </div>
           
           <div class="col-md-3">
-            <label for="plan-name">BOM NO:</label><br>
-            <input type="text" class="form-control">
+            <label for="plan-name">Item Description:</label><br>
+            <input type="text" class="form-control" >
+          </div>
+          
+          <div class="col-md-3">
+            <label for="plan-name">BOM No:</label><br>
+            <input type="text" class="form-control" >
           </div>
           
           <div class="col-md-3">
             <label for="plan-name">Status:</label><br>
-            <input type="text" class="form-control" readonly value="Draft">
+            <select class="form-control" >
+              <option>Select</option>
+              <option>A</option>
+              <option>B</option>
+              </select>
+          </div>
+          <br><br><br>
+          <div class="col-md-3">
+            <label for="plan-name">WH Name:</label><br>
+            <select class="form-control" >
+            <option>Select</option>
+            <option>A</option>
+            <option>B</option>
+            </select>
           </div>
           
           <div class="col-md-3">
-            <label for="plan-name">WH Name:</label><br>
-            <input type="text" class="form-control">
-          </div>
-          
-          <div class="col-md-3"  style="align-content: left;position: relative; text-align: left; float: left;">
             <br>
-            <button class="btn btn-primary filter" type="button" id="filter" >Search</button>
+            <button class="btn btn-primary create" type="button">Search</button>
           </div>
       </div>
       <hr />
+      <div class="row">
+          <div class="col-md-12 table-responsive">
+            <table class="table table-hover">
+              <thead>
+                  <tr>
+                    <th></th>
+                    <th>WH Name</th>
+                    <th>Item Code</th>
+                    <th>Item Description</th>
+                    <th>BOM No</th>
+                    <th>BOM Status</th>
+                    <th>Last Changed</th> 
+                  
+                    
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr class="clickable" >
+                      <td><i class="fa fa-plus" aria-hidden="true"data-toggle="collapse" data-target="#group-of-rows-1" aria-expanded="false" aria-controls="group-of-rows-1"></i></td>
+                      <td>Chaitanya Mali , Vashi</td>
+                      <td>D004-S4-N1-5454</td>
+                      <td>Swades Inc.'s PMSN Goods</td>
+                      <td>800652</td>
+                      <td>Draft</td>
+                      <td>02/10/2018 <br>16:25:36</td>
+                      
+                  
+                  </tr>
+              </tbody>
+              <tbody id="group-of-rows-1" class="collapse">
+                  <tr>
+                      
+                      <th>Last Changed By</th> 
+                      <th>Edit</th> 
+                      <th>View</th> 
+                      <th>Delete</th>       
+                  </tr>
+                  <tr>
+                      
+                      <td>Jai Surya</td>
+                      <td style="text-align:center"> <a href="/bill-of-material/edit"><i class="fa fa-pencil edit" aria-hidden="true"></i></a></td>
+                      <td style="text-align:center"> <a href="/bill-of-material/view"> <i class="fa fa-folder-open view" aria-hidden="true"></i></a></td>  
+                      <td style="text-align:center"><i class="fa fa-trash del" aria-hidden="true"></i></td>
+                  </tr> 
+              </tbody>
+          </table>
+    </div>
+    </div>
 
-      <table class="table table-hover">
-        <thead >
-          <tr>
-            <th></th>
-            <th>WH Name</th>
-            <th>Item Code</th>
-            <th>Item Description</th>
-            <th>BOM No</th>
-            <th>BOM Status</th>
-            <th>Last Changed</th>
-            <th>Last Changed By</th>
-            <th>Edit</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-              <td><i class="fa fa-industry" aria-hidden="true"></i></td>
-              <td>Chaitanya Mali , Vashi</td>
-              <td>D004-S4-N1-5454</td>
-              <td>Swades Inc.'s PMSN Goods</td>
-              <td>800652</td>
-              <td>Draft</td>
-              <td>02/10/2018 16:25:36</td>
-              <td>Jai Surya</td>
-              <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
-          </tr>
-        </tbody>
-      </table>
+
   </div>

@@ -1,12 +1,22 @@
 <div class="dpList">
   <br>
-  <h2>Store Issue / List</h2>
-    <button class="btn btn-primary create-new" type="button" id="create-new" >Create New</button>
-    <br><br>
-    <div class="form-inline">
+  <div class="row">
+    <div class="col-md-6">
+       <h2>Store Issue / List</h2>
+    </div>
+    <div class="col-md-6">
+    <a href="/store-issue/store-issue-create" class="btn btn-primary create-new" id="create-new" >Create New</a>
+  </div>
+  </div>
+    
+    <div class="form-inline row">
           <div class="col-md-3">
             <label for="wh-name">WH Name:</label><br>
-            <input type="text" class="form-control" id="wh-name">
+            <select class="form-control">
+              <option>Select</option>
+              <option>A</option>
+              <option>B</option>
+            </select>
           </div>
           
           <div class="col-md-3">
@@ -35,11 +45,12 @@
             
           <div class="col-md-3">
             <br>
-            <button class="btn btn-primary filter" type="button" id="filter" >Filter</button>
+            <a href="#" class="btn btn-primary filter" id="filter" >Search</a>
           </div>
       </div>
       <hr />
-
+     <div class="row">
+       <div class="col-md-12">
       <div class="list-group-item" id="grandparent">
         <table>
             <!-- <tr>
@@ -72,8 +83,9 @@
                               <label for="">Item Code:</label><br>
                               <input type="text" class="form-control" id="">
                             </div>
-                            <div class="open">                           
-                              <i id="grandparentIcon" class="fa fa-chevron-circle-down fa-2x" aria-hidden="true" data-target="#grandparentContenta" data-toggle="collapse"></i>
+                            <div class="col-md-12 pull-right">   
+                               <br>                       
+                              <i id="grandparentIcon" class="fa fa-chevron-circle-down fa-2x pull-right" aria-hidden="true" data-target="#grandparentContenta" data-toggle="collapse"></i>
                             </div>
                         </div>
                
@@ -118,9 +130,9 @@
                             <br><br><br><br>
                             <div class="col-md-3">
                               <br>
-                                <span style="margin-right:25px;"><i class="fa fa-pencil fa-2x" aria-hidden="true"></i></span>
-                                <span style="margin-right:25px;"><i class="fa fa-folder-open fa-2x" aria-hidden="true"></i></span>
-                                <span><i class="fa fa-trash fa-2x" aria-hidden="true"></i></span>           
+                                <span style="margin-right:25px;"><a href="/store-issue/store-issue-edit"><i class="fa fa-pencil fa-2x edit" aria-hidden="true"></i></a></span>
+                                <span style="margin-right:25px;"><a href="/store-issue/store-issue-view"><i class="fa fa-folder-open fa-2x view" aria-hidden="true"></i></a></span>
+                                <span><i class="fa fa-trash fa-2x del" aria-hidden="true"></i></span>           
                             </div>
                         </div>							
                       </div>
@@ -225,5 +237,6 @@
           
         </table>   
     </div>
-
+  </div>
+  </div>
   </div>

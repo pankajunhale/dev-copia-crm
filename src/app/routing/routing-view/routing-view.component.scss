@@ -18,7 +18,11 @@ label{
     float: right;
 }
 .dpList{
-    margin-right: 20px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-right: 10px;
+  height: 600px;
+  padding-right: 20px;
 }
 .table{
     margin-right: 20px;
@@ -235,17 +239,16 @@ label{
     min-width: 35px;
     min-height:40px;
   }
-.open{
-    position: relative;
-    right: -895px;
-    top: -30px;
-}
 
-.card-body{
-    padding-right: 4.25rem;
-}
+
 .btn-danger
 { width: 100%;}
 .fa-trash{
   margin-right: 30px;
+}
+i{
+  cursor:pointer;
+}
+.form-control{
+  width: 100%;
 }

@@ -1,45 +1,54 @@
-<div class="dpCreate">
+<div class="dpList">
   <br>
-    
-  <h2>Confirmations / View</h2>
-    <button class="btn btn-primary upBtn" type="button" id="back" >Back</button>
-    <!-- <button class="btn btn-primary upBtn" type="button" id="cancel" >Cancel</button>
-    <button class="btn btn-primary upBtn" type="button" id="submit" >Submit</button>  -->
- 
-  <br><br>
+   <div class="row">
+     <div class="col-md-4">
+        <h2>Confirmations / View</h2>
+     </div>
+     <div class="col-md-8">
+           <a href="#" class="btn btn-primary upBtn" id="back" >Back</a>
+           <!-- <button class="btn btn-primary upBtn" type="button" id="cancel" >Cancel</button>
+            <button class="btn btn-primary upBtn" type="button" id="submit" >Submit</button>  -->
+     </div>
+  </div> 
   
-  <div class="card">
-     <div class="card-body">
-        <div class="form-inline">
-          <div class="row">
-      <div class="col-md-3">
-        <label for="">Prod Order No:</label><br>
-        <input type="text" class="form-control" id="" disabled>
-      </div>
-      <div class="col-md-3">
-          <label for="">Step No:</label><br>
-          <input type="text" class="form-control" id="" disabled>
+  <div class="row">
+   <div class="col-md-12">
+        <div class="card">
+          <div class="card-body">
+              <div class="form-inline">
+                <div class="row">
+            <div class="col-md-3">
+              <label for="">Prod Order No:</label><br>
+              <input type="text" class="form-control" id="" disabled>
+            </div>
+            <div class="col-md-3">
+                <label for="">Step No:</label><br>
+                <input type="text" class="form-control" id="" disabled>
+              </div>
+            <div class="col-md-3">
+              <label for="">Step Description:</label><br>
+              <input type="text" class="form-control" id="" disabled>
+            </div>
+        
+            <div class="col-md-3">
+              <label for="">Confirmation No:</label><br>
+              <input type="text" class="form-control" id="" disabled>
+            </div>
+            <br><br><br>
+            <div class="col-md-3">
+              <label for="wh-name">WH Name:</label><br>
+              <input type="text" class="form-control" id="wh-name" disabled>
+            </div>
+          </div>
+          </div>   
         </div>
-      <div class="col-md-3">
-        <label for="">Step Description:</label><br>
-        <input type="text" class="form-control" id="" disabled>
-      </div>
-   
-      <div class="col-md-3">
-        <label for="">Confirmation No:</label><br>
-        <input type="text" class="form-control" id="" disabled>
-      </div>
-      <br><br>   <br><br>
-      <div class="col-md-3">
-        <label for="wh-name">WH Name:</label><br>
-        <input type="text" class="form-control" id="wh-name" disabled>
-      </div>
-    </div>
-    </div>   
-  </div>
-</div>
+        </div>
+   </div>
+  </div> 
   <hr />
 
+  <div class="row">
+    <div class="col-md-12">
   <div class="list-group-item" id="grandparent">
       <table>
           <!-- <tr>
@@ -73,8 +82,9 @@
                             <input type="text" class="form-control" id="" disabled>
                           </div>
                           
-                          <div class="open">                           
-                            <i id="grandparentIcon" class="fa fa-chevron-circle-down fa-2x" aria-hidden="true" data-target="#grandparentContenta" data-toggle="collapse"></i>
+                          <div class="col-md-12 pull-right">
+                            <br>                           
+                            <i id="grandparentIcon" class="fa fa-chevron-circle-down fa-2x pull-right" aria-hidden="true" data-target="#grandparentContenta" data-toggle="collapse"></i>
                           </div>
                       </div>
              
@@ -255,4 +265,6 @@
         
       </table>   
   </div>
+</div>
+</div>
 </div>

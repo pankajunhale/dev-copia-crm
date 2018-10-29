@@ -199,7 +199,11 @@ label{
   margin: 2px;
 }
 .dpCreate{
-  margin-right: 20px;
+  overflow-y: auto;
+    overflow-x: hidden;
+    margin-right: 10px;
+    height: 600px;
+    padding-right: 20px;
 }
 
 
@@ -208,4 +212,26 @@ label{
   max-height:40px;
   min-width: 35px;
   min-height:40px;
+}
+
+ //table
+ .table td, .table th{
+   border-top: none;
+   white-space: nowrap;
+ }
+.MQL{
+  padding: .75rem;
+  font-size: 15px;
+  font-weight: bold;
+  padding-left: 0px;
+}
+.open{
+  cursor: pointer;
+}
+.create{
+  border-radius: 4px !important;
+  width: 70%;
+}
+.form-control{
+  width: 100%;
 }

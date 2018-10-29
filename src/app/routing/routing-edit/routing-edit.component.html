@@ -1,56 +1,67 @@
-<div class="dpCreate">
+<div class="dpList">
     <br>
-      
-    <h2>Routing / Edit</h2>
-      <button class="btn btn-primary upBtn" type="button" id="back" >Back</button>
-      <button class="btn btn-primary upBtn" type="button" id="cancel" >Cancel</button>
-      <button class="btn btn-primary upBtn" type="button" id="submit" >Submit</button> 
-   
-    <br><br>
-    <div class="form-inline">
+  <div class="row">
+    <div class="col-md-4">
+      <h2>Routing / Edit</h2>
+    </div>
+    <div class="col-md-8">
+      <a href="/routing/routing-list" class="btn btn-primary upBtn" id="back" >Back</a>
+      <a href="#" class="btn btn-primary upBtn"  id="cancel" >Cancel</a>
+      <a href="#"  class="btn btn-primary upBtn"  id="submit" >Update</a>
+    </div> 
+  </div>
+    
+    <div class="form-inline row">
         <div class="col-md-3">
           <label for="item-code">Item Code:</label><br>
-          <input type="text" class="form-control" id="item-code" disabled>
+          <input type="text" class="form-control"   id="item-code" disabled>
         </div>
         
         <div class="col-md-3">
           <label for="item-description">Item-Description:</label><br>
-          <input type="text" class="form-control" id="item-description">
+          <input type="text" class="form-control"   id="item-description">
         </div>
         
         <div class="col-md-3">
           <label for="version-no">Version No:</label><br>
-          <input type="text" class="form-control" id="version-no">
+          <input type="text" class="form-control"   id="version-no">
         </div>
         
         <div class="col-md-3">
           <label for="wh-name">WH Name:</label><br>
-          <input type="text" class="form-control" id="wh-name">
+          <select class="form-control"  formControlName="whname">
+              <option value=""> Select</option>
+              <option value="">Mumbai</option>
+              <option value="">Pune</option>
+              <option value="">Delhi</option>
+          </select>
         </div>
           
         <div class="col-md-3">
           <br>
-            <button class="btn btn-primary filter" type="button" id="submit" >Create</button>
+            <a href="#" class="btn btn-primary filter" id="submit" >Search</a>
         </div>
     </div>
     <hr />
-
-    <div class="list-group-item" id="grandparent">
+    
+    <div class="row">
+        <div class="col-md-12">
+            <div class="list-group-item" id="grandparent">
         <table>
-            <!-- <tr>
-                <td>
-                  <div class="card">
-                      <div class="card-body">
-                         srno							
-                      </div>
-                   </div>
-                </td>
-            </tr>    -->
+          
           <tr>
               <td>
                   <div class="card">
                       <div class="card-body">
                         <div class="row">
+                            <div class="col-md-3">
+                                <label for="">Step No:</label><br>
+                                <input type="text" class="form-control" id="">
+                            </div>
+                            <div class="col-md-3">
+                                <label for="">Step Name:</label><br>
+                                <input type="text" class="form-control" id="">
+                            </div>
                             <div class="col-md-3">
                               <label for="">Procedure:</label><br>
                               <input type="text" class="form-control" id="">
@@ -59,33 +70,30 @@
                               <label for="">Work Centre:</label><br>
                               <input type="text" class="form-control" id="">
                             </div>
-                            <div class="col-md-3">
-                              <label for="">Time UOM:</label><br>
-                              <input type="text" class="form-control" id="">
-                            </div>
-                            <div class="col-md-3">
-                              <label for="">Planned Labour Time:</label><br>
-                              <input type="text" class="form-control" id="">
-                            </div>
-                            <div class="open">                           
-                              <i id="grandparentIcon" class="fa fa-chevron-circle-down fa-2x" aria-hidden="true" data-target="#grandparentContenta" data-toggle="collapse"></i>
+                            <br><br><br>
+                            
+                            <div class="col-md-12 pull-right"> 
+                                    <br>                   
+                              <i id="grandparentIcon" class="fa fa-chevron-circle-down fa-2x  pull-right" aria-hidden="true" data-target="#grandparentContent" data-toggle="collapse"></i>
                             </div>
                         </div>
                
                             
-                        <div class="row collapse" id="grandparentContenta">
+                        <div class="row collapse" id="grandparentContent">
                             <div class="col-md-3">
-                                <label for="">Actual Labour Time:</label><br>
+                                <label for="">Time UOM:</label><br>
                                 <input type="text" class="form-control" id="">
                               </div>
+                              <div class="col-md-3">
+                                <label for="">Planned Labour Time:</label><br>
+                                <input type="text" class="form-control" id="">
+                              </div>
+                           
                             <div class="col-md-3">
                               <label for="">Planned M/C Time:</label><br>
                               <input type="text" class="form-control" id="">
                             </div>
-                            <div class="col-md-3">
-                              <label for="">Actual M/C Time:</label><br>
-                              <input type="text" class="form-control" id="">
-                            </div>
+                            
                             <div class="col-md-3">
                               <label for="">Planned Setup Time:</label><br>
                               <input type="text" class="form-control" id="">
@@ -93,33 +101,31 @@
                           
                         
                                <br><br><br><br>
-                             <div class="col-md-3">
-                              <label for="">Actual Setup Time:</label><br>
-                              <input type="text" class="form-control" id="">
-                            </div>
+                             
                             <div class="col-md-3">
                               <label for="">Total Planned Time:</label><br>
                               <input type="text" class="form-control" id="">
                             </div>
-                            <div class="col-md-3">
-                              <label for="">Total Actual Time:</label><br>
-                              <input type="text" class="form-control" id="">
-                            </div>
+                           
                             <div class="col-md-3">
                               <label for="">Step Type:</label><br>
                               <input type="text" class="form-control" id="">
                             </div>
                            
-                            
-                             <br><br><br><br>
                             <div class="col-md-3">
                                 <label for="">Step Category:</label><br>
                                 <input type="text" class="form-control" id="">
                               </div>
                             <div class="col-md-3">
                             <label for="">Step Status:</label><br>
-                            <input type="text" class="form-control" id="">
+                            <select class="form-control" >
+                                <option value=""> Select</option>
+                                <option value="">Created</option>
+                                <option value="">Inprocess</option>
+                            </select>
                             </div>
+                             <br><br><br><br>
+                          
                             <div class="col-md-3">
                             <label for="">User Name:</label><br>
                             <input type="text" class="form-control" id="">
@@ -128,114 +134,24 @@
                             <label for="">Supervisor Name:</label><br>
                             <input type="text" class="form-control" id="">
                             </div>
-                            <br><br><br><br>
                             <div class="col-md-3">
-                              <br>
-                                <!-- <span style="margin-right:25px;"><i class="fa fa-pencil fa-2x" aria-hidden="true"></i></span>
-                                <span style="margin-right:25px;"><i class="fa fa-folder-open fa-2x" aria-hidden="true"></i></span> -->
-                                <span><i class="fa fa-trash fa-2x" aria-hidden="true"></i></span>           
+                              <br><br>
+                                <i class="fa fa-trash del" aria-hidden="true"></i>
                             </div>
-                        </div>							
+                        </div>
+
                       </div>
                   </div>
                   
                
               </td>
           </tr>
-<!--             
-            <tr>
-              <td>
-                <div class="card">
-                    <div class="card-body">
-                      <div class="row">
-                        <div class="col-md-3">
-                          <label for="">Description:</label><br>
-                          <input type="text" class="form-control" id="">
-                        </div>
-                        <div class="col-md-3">
-                          <label for="">Time UOM:</label><br>
-                          <input type="text" class="form-control" id="">
-                        </div>
-                        <div class="col-md-3">
-                          <label for="">Planned Labour Time:</label><br>
-                          <input type="text" class="form-control" id="">
-                        </div>
-                        <div class="col-md-3">
-                          <label for="">Actual Labour Time:</label><br>
-                          <input type="text" class="form-control" id="">
-                        </div>
-                        <div class="col-md-1">
-                        <br><br>
-                          <i id="grandparentIcon" class="fa fa-chevron-circle-down" aria-hidden="true" data-target="#grandparentContentb" data-toggle="collapse"></i>
-                        </div>
-                        </div>
-               
-                              <br>
-                              <div class="row collapse" id="grandparentContentb">
-                        <div class="col-md-3">
-                          <label for="">Planned M/C Time:</label><br>
-                          <input type="text" class="form-control" id="">
-                        </div>
-                        <div class="col-md-3">
-                          <label for="">Actual M/C Time:</label><br>
-                          <input type="text" class="form-control" id="">
-                        </div>
-                        <div class="col-md-3">
-                          <label for="">Planned Setup Time:</label><br>
-                          <input type="text" class="form-control" id="">
-                        </div>
-                        <div class="col-md-3">
-                          <label for="">Actual Setup Time:</label><br>
-                          <input type="text" class="form-control" id="">
-                        </div>
-                        
-                        <br><br><br><br>
-                        
-                          <div class="col-md-3">
-                          <label for="">Total Planned Time:</label><br>
-                          <input type="text" class="form-control" id="">
-                        </div>
-                        <div class="col-md-3">
-                          <label for="">Total Actual Time:</label><br>
-                          <input type="text" class="form-control" id="">
-                        </div>
-                        <div class="col-md-3">
-                          <label for="">Step Type:</label><br>
-                          <input type="text" class="form-control" id="">
-                        </div>
-                        <div class="col-md-3">
-                          <label for="">Step Category:</label><br>
-                          <input type="text" class="form-control" id="">
-                        </div>
-                        
-                          <br><br><br><br>
-                        
-                          <div class="col-md-3">
-                          <label for="">Step Status:</label><br>
-                          <input type="text" class="form-control" id="">
-                        </div>
-                        <div class="col-md-3">
-                          <label for="">User Name:</label><br>
-                          <input type="text" class="form-control" id="">
-                        </div>
-                        <div class="col-md-3">
-                          <label for="">Supervisor Name:</label><br>
-                          <input type="text" class="form-control" id="">
-                        </div>
-                        <div class="col-md-3">
-                        <br><br>
-                            <span style="margin-right:15px;"><i class="fa fa-pencil" aria-hidden="true"></i></span>
-                              <span style="margin-right:15px;"><i class="fa fa-folder-open" aria-hidden="true"></i></span>
-                              <span><i class="fa fa-trash" aria-hidden="true"></i></span>           
-                        </div>
-                        </div>							
-                      </div>
-                  </div>
-                  
-               
-            </td>
-          </tr> -->
+
           
         </table>   
+            </div>
+        </div>
     </div>
+
+
   </div>
