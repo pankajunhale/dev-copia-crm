@@ -62,15 +62,15 @@
    <div class="col-md-12">
     <table class="table table-responsive table-hover">
       <thead>
-          <tr><th></th><th>FG Item No.</th><th>FG Item Description</th><th>BUOM</th> <th>JAN</th>
+          <tr><th></th><th>FG Item No.</th><th>FG Item Desc.</th><th>BUOM</th> <th>JAN</th>
             <th>FEB</th><th>MAR</th><th>APR</th></tr>
       </thead>
       <tbody>
-          <tr class="clickable" >
-              <td><i class="fa fa-plus" aria-hidden="true"data-toggle="collapse" data-target="#group-of-rows-1" aria-expanded="false" aria-controls="group-of-rows-1"></i></td>
+        <tr class="clickable" >
+              <td><i class="fa fa-plus btn" aria-hidden="true" data-toggle="collapse" data-target="#group-of-rows-1" aria-expanded="false"></i></td>
               <td>8004321</td>
               <td>Bisleri Bottles</td>  
-              <td>Litre</td>
+              <td><input type="text" class="data" size="5" value="Litre" readonly style="border : 0"></td>
               <td><input type="text" class="data" size="5"></td>
               <td><input type="text" class="data" size="5"></td>
               <td><input type="text" class="data" size="5"></td>
@@ -79,29 +79,45 @@
           </tr>
       </tbody>
       <tbody id="group-of-rows-1" class="collapse">
-          <tr>
-            <th>MAY</th>
-            <th>JUN</th>
-            <th>JUL</th>
-            <th>AUG</th>
-            <th>SEP</th>
-            <th>OCT</th>
-            <th>NOV</th>
-            <th>DEC</th>
-            <th></th>
-
-          </tr>
-          <tr>
-            <td><input type="text" class="data" size="5"></td>
-            <td><input type="text" class="data" size="5"></td>
-            <td><input type="text" class="data" size="5"></td>
-            <td><input type="text" class="data" size="5"></td>
-            <td><input type="text" class="data" size="5"></td>
-            <td><input type="text" class="data" size="5"></td>
-            <td><input type="text" class="data" size="5"></td>
-            <td><input type="text" class="data" size="5"></td>   
-            <td><i class="fa fa-trash del" aria-hidden="true"></i></td>
-          </tr>
+        <tr>
+          <th></th>
+          <th>MAY</th>
+          <th>JUN</th>
+          <th>JUL</th>
+          <th>AUG</th>
+          <th>SEP</th>
+          <th>OCT</th>
+          <th>NOV</th>
+        </tr>
+        <tr>
+          <td><i class="fainvi" aria-hidden="true" ></i></td>
+          <td><input type="text" class="data" size="5"></td>
+          <td><input type="text" class="data" size="5"></td>
+          <td><input type="text" class="data" size="5"></td>
+          <td><input type="text" class="data" size="5"></td>
+          <td><input type="text" class="data" size="5"></td>
+          <td><input type="text" class="data" size="5"></td>
+          <td><input type="text" class="data" size="5"></td>
+        </tr>
+        <tr>
+          <th><i class="fainvi" aria-hidden="true" ></i></th>
+          <th>DEC</th>
+          <th colspan="2">Delete</th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+        <tr>
+          <td><i class="fainvi" aria-hidden="true" ></i></td>
+          <td><input type="text" class="data" size="5"></td>
+          <td colspan="2"><button type="button" class="btn btn-danger">
+              <i class="fa fa-trash"></i>Delete</button></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
       </tbody>
   </table>
   </div>
