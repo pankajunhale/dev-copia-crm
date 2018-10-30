@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-routing-edit',
@@ -7,8 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RoutingEditComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private router:Router) { }
+ goroutinglist(){
+   this.router.navigate(['/routing/routing-list'])
+ }
   ngOnInit() {
   }
 

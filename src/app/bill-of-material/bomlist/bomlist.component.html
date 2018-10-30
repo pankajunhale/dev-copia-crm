@@ -6,7 +6,7 @@
      </div>
     <div class="col-md-8">
 
-    <a href="/bill-of-material/create" class="btn btn-primary create-new" id="create-new" >Create New</a>
+    <a (click)="gobomcreate()" class="btn btn-primary create-new" id="create-new" >Create New</a>
   </div>
 </div>
     <div class="form-inline row">
@@ -68,19 +68,13 @@
               <div class="col-md-2 col-sm-4 col-xs-2">
                 <label for="plan-name">Last Edited:</label><br><input class="form-control" type="text" readonly value="14/10/2018">
               </div>
-          <div class="col-md-2 col-sm-2">
+           <div class="col-md-2 col-sm-2">
                   <label for="plan-name">Edited By :</label><br><input class="form-control" type="text" readonly value="Rohit">
               </div>
             </div>
-            <a href="/bill-of-material/edit" class="card-link">
-                <i class="fa fa-edit edit"></i> Edit
-              </a>
-            <a href="/bill-of-material/view" class="card-link">
-                <i class="fa fa-folder-open view"></i> View
-              </a>
-            <a href="" class="card-link">
-                <i class="fa fa-trash del"></i> Delete
-              </a>
+            <a (click)="gobomedit()" class="card-link"><i class="fa fa-edit edit"></i>Edit</a>
+            <a (click)="gobomview()" class="card-link"><i class="fa fa-folder-open view"></i> View</a>
+            <a class="card-link"><i class="fa fa-trash del"></i> Delete</a>
           </div>
         </div>
         
@@ -105,15 +99,9 @@
                   <label for="plan-name">Edited By :</label><br><input class="form-control" type="text" readonly value="Rohit">
               </div>
             </div>
-            <a href="/bill-of-material/edit" class="card-link">
-                <i class="fa fa-edit edit"></i> Edit
-              </a>
-            <a href="/bill-of-material/view" class="card-link">
-                <i class="fa fa-folder-open view"></i> View
-              </a>
-            <a href="" class="card-link">
-                <i class="fa fa-trash del"></i> Delete
-              </a>
+            <a (click)="gobomedit()" class="card-link"><i class="fa fa-edit edit"></i>Edit</a>
+            <a (click)="gobomview()" class="card-link"><i class="fa fa-folder-open view"></i> View</a>
+            <a class="card-link"><i class="fa fa-trash del"></i> Delete</a>
           </div>
         </div>
     
@@ -138,15 +126,9 @@
                   <label for="plan-name">Edited By :</label><br><input class="form-control" type="text" readonly value="Rohit">
               </div>
             </div>
-            <a class="card-link">
-                <i class="fa fa-edit edit"></i> Edit
-              </a>
-            <a class="card-link">
-                <i class="fa fa-folder-open view"></i> View
-              </a>
-            <a  class="card-link">
-                <i class="fa fa-trash del"></i> Delete
-              </a>
+            <a (click)="gobomedit()" class="card-link"><i class="fa fa-edit edit"></i>Edit</a>
+            <a (click)="gobomview()" class="card-link"><i class="fa fa-folder-open view"></i> View</a>
+            <a class="card-link"><i class="fa fa-trash del"></i> Delete</a>
           </div>
         </div>
     </div>

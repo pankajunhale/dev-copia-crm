@@ -16,6 +16,7 @@ label{
 }
 .create-new{
     float: right;
+    color: #fff !important;
 }
 .dpList{
   overflow-y: auto;
@@ -227,6 +228,7 @@ label{
   .upBtn{
     float: right;
     margin: 2px;
+    color: #fff !important;
   }
   .dpCreate{
     margin-right: 20px;
@@ -263,7 +265,7 @@ i{
 .del{
   color: red;
 }
-i{
+i,a{
   cursor: pointer;
 }
 .form-control{
