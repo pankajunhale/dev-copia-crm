@@ -17,6 +17,7 @@ label{
 .create-new{
   float: right;
   border-radius: 4px !important;
+  color: #fff !important;
 }
 .dpList{
     overflow-y: auto;
@@ -266,6 +267,9 @@ th{
   color: red;
 }
 i{
+  cursor: pointer;
+}
+a{
   cursor: pointer;
 }
 .val{

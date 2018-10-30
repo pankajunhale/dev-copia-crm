@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder,Validators, FormArray } from '@angular/forms';
+import { Router } from '@angular/router';
+
 
 
 @Component({
@@ -9,11 +11,11 @@ import { FormGroup, FormBuilder,Validators, FormArray } from '@angular/forms';
 })
 export class RoutingCreateComponent implements OnInit {
   routingCreateForm: FormGroup;
-  constructor(private fb: FormBuilder) { }
-
+  constructor(private fb: FormBuilder,private router:Router) { }
+  goroutinglist(){
+    this.router.navigate(['/routing/routing-list'])
+  }
   ngOnInit() {
-
-    
     this.routingCreateForm = this.fb.group({
       itemcode:['',Validators.required],
       itemdescription:[''],

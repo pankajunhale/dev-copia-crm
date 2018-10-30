@@ -1,5 +1,3 @@
-
-
 <div class="dpList">
     <br>
    <div class="row">
@@ -7,7 +5,7 @@
     <h2>Routing / List</h2>
   </div>
     <div class="col-md-8">
-     <a href="/routing/routing-create" class="btn btn-primary create-new"  id="create-new" >Create New</a>
+     <a (click)="goroutingcreate()" class="btn btn-primary create-new"  id="create-new" >Create New</a>
     </div>
     </div>
  
@@ -46,83 +44,54 @@
       <div class="row">
         <div class="col-md-12 list-group-item table-responsive">
          
-              <table class="table  table-hover">
+              <table class="table table-hover">
                   <thead>
                       <tr>
-                        <th></th>
-                        <th>Step No.</th>
-                        <th>Description</th>
-                        <th>Time UOM</th> 
-                        <th>Planned Labour Time</th>
-                        <th>Actual Labour Time</th>
+                        
+                        <th>Sr. No.</th>
+                        <th colspan="3">Description</th>
+                        <th>Version</th> 
+                        <th>Edit</th>
+                        <th>View</th>
+                        <th>Delete</th>
                       </tr>
                   </thead>
                   <tbody>
-                      <tr class="clickable" >
-                          <td><i class="fa fa-plus" aria-hidden="true"data-toggle="collapse" data-target="#group-of-rows-1" aria-expanded="false" aria-controls="group-of-rows-1"></i></td>
-                          <td>01</td>
-                          <td>Mix all ingrediants together</td>  
-                          <td>Hrs</td>
-                          <td>10</td>
-                          <td>9</td>
-                      </tr>
-                  </tbody>
-                  <tbody id="group-of-rows-1" class="collapse">
-                      <tr>
-                          <th></th>
-                          <th>Planned M/C Time</th>
-                          <th>Actual M/C Time</th>
-                          <th>Planned Setup Time</th>
-                          <th>Actual Setup Time</th>
-                          <th>Total Planned Time</th>
-                        
-                        
-                      </tr>
-                      <tr>
-                          <td></td>
-                          <td>5</td>
-                          <td>5</td>
-                          <td>1</td> 
-                          <td>1</td>
-                          <td>16</td>
-                        
-                        
-                      </tr>
-                      <tr>
-                          <th></th>
-                          <th>Supervisor Name</th>
-                          <th>Total Actual Time</th>
-                          <th>Step Type</th>
-                          <th>Step Category</th>
-                          <th>Step Status</th>
-                        
-                      </tr>
-                      <tr>
-                          <td></td>
-                          <td>abc</td>
-                          <td>xyz</td>
-                          <td>5</td>
-                          <td>2</td>
-                          <td>Completed</td>
-                       
                         <tr>
-                            <th></th>
-                            <th>User Name</th>
-                            <th>Edit</th>
-                            <th>View</th>
-                            <th>Delete</th>
-                            <th></th>
-
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>Chaitanya Mali</td>
-                            <td><a href="/routing/routing-edit" ><i class="fa fa-pencil edit" aria-hidden="true"></i></a></td>
-                            <td><a href="/routing/routing-view" ><i class="fa fa-folder-open view" aria-hidden="true"></i></a></td>
-                            <td><i class="fa fa-trash del" aria-hidden="true"></i></td>
-                            <td></td>
-                        </tr>
+                                <td>01</td>
+                                <td colspan="3">Bottle</td>  
+                                <td>1</td>
+                                <td><a (click)="goroutingedit()" ><i class="fa fa-pencil fa-1x edit" aria-hidden="true"></i></a></td>
+                                <td><a (click)="goroutingview()"  ><i class="fa fa-folder-open fa-1x view" aria-hidden="true"></i></a></td>
+                                <td><i class="fa fa-trash fa-1x del" aria-hidden="true"></i></td>
+                            </tr>
+                            <tr>
+                                  <td>02</td>
+                                  <td colspan="3">Bottle</td>  
+                                  <td>2</td>
+                                  <td><a (click)="goroutingedit()" ><i class="fa fa-pencil fa-1x edit" aria-hidden="true"></i></a></td>
+                                  <td><a (click)="goroutingview()"  ><i class="fa fa-folder-open fa-1x view" aria-hidden="true"></i></a></td>
+                                  <td><i class="fa fa-trash fa-1x del" aria-hidden="true"></i></td>
+                              </tr>
+                              <tr>
+                                    <td>03</td>
+                                    <td colspan="3">Tiffin</td>  
+                                    <td>1</td>
+                                    <td><a (click)="goroutingedit()" ><i class="fa fa-pencil fa-1x edit" aria-hidden="true"></i></a></td>
+                                    <td><a (click)="goroutingview()"  ><i class="fa fa-folder-open fa-1x view" aria-hidden="true"></i></a></td>
+                                    <td><i class="fa fa-trash fa-1x del" aria-hidden="true"></i></td>
+                                </tr>
+                                <tr>
+                                      <td>04</td>
+                                      <td colspan="3">Tiffin</td>  
+                                      <td>2</td>
+                                      <td><a (click)="goroutingedit()" ><i class="fa fa-pencil fa-1x edit" aria-hidden="true"></i></a></td>
+                                      <td><a (click)="goroutingview()"  ><i class="fa fa-folder-open fa-1x view" aria-hidden="true"></i></a></td>
+                                      <td><i class="fa fa-trash fa-1x del" aria-hidden="true"></i></td>
+                                  </tr>
+                                        
                   </tbody>
+                  
               </table>               
       
         </div>
