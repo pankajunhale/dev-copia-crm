@@ -5,7 +5,7 @@
           <h2>BOM / View</h2>
       </div>
       <div class="col-md-8">
-          <a href="/bill-of-material/list" class="btn btn-primary upBtn" id="back" >Back</a>
+          <a  class="btn btn-primary upBtn" id="back" >Back</a>
             <!-- <button class="btn btn-primary upBtn" type="button" id="submit" >Submit</button>  -->
           <!-- <button class="btn btn-primary upBtn" type="button" id="submit" >Submit</button>  -->
       </div>
@@ -59,46 +59,218 @@
         <hr />
         <div class="row">
             <div class="col-md-12 table-responsive">
-                <table class="table table-hover">
-                    <thead>
-                        <tr>
-                          <th></th>
-                          <th>Sr No.</th>
-                          
-                          <th>Component Description</th>
-                          <th>Component Qty</th>
-                          <th>UOM</th>
-                          <th>Qty in BUOM</th>
-                          <th>Base UOM</th>
-                          <th>Item Type</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="clickable" >
-                            <td><i class="fa fa-plus" aria-hidden="true"data-toggle="collapse" data-target="#group-of-rows-1" aria-expanded="false" aria-controls="group-of-rows-1"></i></td>
-                            <td>1</td>
-                            <td>Milk Powder</td>
-                            <td>70</td>
-                            <td>gm</td>
-                            <td>70</td>
-                            <td>gm</td>
-                            <td>Inv</td>
-                        </tr>
-                    </tbody>
-                    <tbody id="group-of-rows-1" class="collapse">
-                        <tr>
-                            
-                            <th>Item Category</th>
-                            <th>By Product</th>
-              
-                        </tr>
-                        <tr>
-                            
-                            <td>Procured</td>
-                            <td>Yes</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <ul class="list-group">
+                    <li class="list-group-item searchItem ">
+                        <div class="card container-fluid bg-white ">
+                            <div class="card-body">
+                                <h5 class="card-title">Item Code: <span id="spanish">#400862</span></h5>
+                                <h6 class="card-subtitle ">Item Category : <span id="status">Medium Level Raw Material</span></h6><br>
+                                <div class="row" style="margin-bottom: 30px;"> 
+                                    <div class="col-md-4 col-sm-4 col-xs-4">
+                                        <label for="qty">Quantity :</label><br>
+                                        <div class="input-group" id="qty">
+                                        <button type="button" class="btn btn-default btn-number"  data-type="minus" data-field="quant[1]">
+                                                <i class="fa fa-minus"></i>
+                                                </button>
+                                            <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="100">
+                                            <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                                                <i class="fa fa-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-4">
+                                        <label for="uom">UOM :</label><br>
+                                        <div class="input-group" id="uom">
+                                            <input type="text" name="quant[2]" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-4">
+                                        <label for="qty">By Product :</label><br>
+                                        <div class="onoffswitch4">
+                                        <input type="checkbox" name="onoffswitch4" class="onoffswitch4-checkbox" id="myonoffswitch4" checked>
+                                        <label class="onoffswitch4-label" for="myonoffswitch4">
+                                            <span class="onoffswitch4-inner"></span>
+                                            <span class="onoffswitch4-switch"></span>
+                                        </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                    </li>
+                    <li class="list-group-item searchItem ">
+                        <div class="card container-fluid bg-white ">
+                            <div class="card-body">
+                                <h5 class="card-title">Item Code: <span id="spanish">#400862</span></h5>
+                                <h6 class="card-subtitle ">Item Category : <span id="status">Medium Level Raw Material</span></h6><br>
+                                <div class="row" style="margin-bottom: 30px;"> 
+                                <div class="row col-md-10" >
+                                    <div class="col-md-4 col-sm-4 col-xs-4">
+                                        <label for="qty">Quantity :</label><br>
+                                        <div class="input-group" id="qty">
+                                        <button type="button" class="btn btn-default btn-number"  data-type="minus" data-field="quant[1]">
+                                                <i class="fa fa-minus"></i>
+                                                </button>
+                                            <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="100">
+                                            <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                                                <i class="fa fa-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-4">
+                                        <label for="uom">UOM :</label><br>
+                                        <div class="input-group" id="uom">
+                                            <input type="text" name="quant[2]" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-4">
+                                        <label for="qty">By Product :</label><br>
+                                        <div class="onoffswitch4">
+                                        <input type="checkbox" name="onoffswitch4" class="onoffswitch4-checkbox" id="myonoffswitch4" checked>
+                                        <label class="onoffswitch4-label" for="myonoffswitch4">
+                                            <span class="onoffswitch4-inner"></span>
+                                            <span class="onoffswitch4-switch"></span>
+                                        </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 btn btn-danger dc">
+                                    <a>Delete</a>
+                                </div>
+                            </div>
+                            </div>
+                            </div>
+                    </li>
+                    <li class="list-group-item searchItem ">
+                        <div class="card container-fluid bg-white ">
+                            <div class="card-body">
+                                <h5 class="card-title">Item Code: <span id="spanish">#400862</span></h5>
+                                <h6 class="card-subtitle ">Item Category : <span id="status">Medium Level Raw Material</span></h6><br>
+                                <div class="row" style="margin-bottom: 30px;"> 
+                                <div class="row col-md-10" >
+                                    <div class="col-md-4 col-sm-4 col-xs-4">
+                                        <label for="qty">Quantity :</label><br>
+                                        <div class="input-group" id="qty">
+                                        <button type="button" class="btn btn-default btn-number"  data-type="minus" data-field="quant[1]">
+                                                <i class="fa fa-minus"></i>
+                                                </button>
+                                            <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="100">
+                                            <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                                                <i class="fa fa-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-4">
+                                        <label for="uom">UOM :</label><br>
+                                        <div class="input-group" id="uom">
+                                            <input type="text" name="quant[2]" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-4">
+                                        <label for="qty">By Product :</label><br>
+                                        <div class="onoffswitch4">
+                                        <input type="checkbox" name="onoffswitch4" class="onoffswitch4-checkbox" id="myonoffswitch4" checked>
+                                        <label class="onoffswitch4-label" for="myonoffswitch4">
+                                            <span class="onoffswitch4-inner"></span>
+                                            <span class="onoffswitch4-switch"></span>
+                                        </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 btn btn-danger dc">
+                                    <a>Delete</a>
+                                </div>
+                            </div>
+                            </div>
+                            </div>
+                    </li>
+                    <li class="list-group-item searchItem ">
+                        <div class="card container-fluid bg-white ">
+                            <div class="card-body">
+                                <h5 class="card-title">Item Code: <span id="spanish">#400862</span></h5>
+                                <h6 class="card-subtitle ">Item Category : <span id="status">Medium Level Raw Material</span></h6><br>
+                                <div class="row" style="margin-bottom: 30px;"> 
+                                <div class="row col-md-10" >
+                                    <div class="col-md-4 col-sm-4 col-xs-4">
+                                        <label for="qty">Quantity :</label><br>
+                                        <div class="input-group" id="qty">
+                                        <button type="button" class="btn btn-default btn-number"  data-type="minus" data-field="quant[1]">
+                                                <i class="fa fa-minus"></i>
+                                                </button>
+                                            <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="100">
+                                            <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                                                <i class="fa fa-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-4">
+                                        <label for="uom">UOM :</label><br>
+                                        <div class="input-group" id="uom">
+                                            <input type="text" name="quant[2]" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-4">
+                                        <label for="qty">By Product :</label><br>
+                                        <div class="onoffswitch4">
+                                        <input type="checkbox" name="onoffswitch4" class="onoffswitch4-checkbox" id="myonoffswitch4" checked>
+                                        <label class="onoffswitch4-label" for="myonoffswitch4">
+                                            <span class="onoffswitch4-inner"></span>
+                                            <span class="onoffswitch4-switch"></span>
+                                        </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 btn btn-danger dc">
+                                    <a>Delete</a>
+                                </div>
+                            </div>
+                            </div>
+                            </div>
+                    </li>
+                    <li class="list-group-item searchItem ">
+                        <div class="card container-fluid bg-white ">
+                            <div class="card-body">
+                                <h5 class="card-title">Item Code: <span id="spanish">#400862</span></h5>
+                                <h6 class="card-subtitle ">Item Category : <span id="status">Medium Level Raw Material</span></h6><br>
+                                <div class="row" style="margin-bottom: 30px;"> 
+                                <div class="row col-md-10" >
+                                    <div class="col-md-4 col-sm-4 col-xs-4">
+                                        <label for="qty">Quantity :</label><br>
+                                        <div class="input-group" id="qty">
+                                        <button type="button" class="btn btn-default btn-number"  data-type="minus" data-field="quant[1]">
+                                                <i class="fa fa-minus"></i>
+                                                </button>
+                                            <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="100">
+                                            <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                                                <i class="fa fa-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-4">
+                                        <label for="uom">UOM :</label><br>
+                                        <div class="input-group" id="uom">
+                                            <input type="text" name="quant[2]" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-4">
+                                        <label for="qty">By Product :</label><br>
+                                        <div class="onoffswitch4">
+                                        <input type="checkbox" name="onoffswitch4" class="onoffswitch4-checkbox" id="myonoffswitch4" checked>
+                                        <label class="onoffswitch4-label" for="myonoffswitch4">
+                                            <span class="onoffswitch4-inner"></span>
+                                            <span class="onoffswitch4-switch"></span>
+                                        </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 btn btn-danger dc">
+                                    <a>Delete</a>
+                                </div>
+                            </div>
+                            </div>
+                            </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>

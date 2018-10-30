@@ -10,5 +10,6 @@ export class BomcreateComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    
   }
 }
