@@ -14,5 +14,6 @@ export class BomcreateComponent implements OnInit {
     this.router.navigate(['/bill-of-material/list'])
   }
   ngOnInit() {
+    
   }
 }
