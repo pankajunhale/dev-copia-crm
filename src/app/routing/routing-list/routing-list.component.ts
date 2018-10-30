@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-routing-list',
@@ -7,8 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RoutingListComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private router: Router) { }
+ goroutingcreate(){
+   this.router.navigate(['/routing/routing-create'])
+ }
+ goroutingedit(){
+  this.router.navigate(['/routing/routing-edit'])
+}
+ goroutingview(){
+  this.router.navigate(['/routing/routing-view'])
+}
   ngOnInit() {
   }
 

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-bomlist',
@@ -7,8 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BomlistComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private router:Router) { }
+  
+  gobomcreate(){
+    this.router.navigate(['/bill-of-material/create'])
+    }
+  gobomedit(){
+  this.router.navigate(['/bill-of-material/edit'])
+  }
+  gobomview(){
+    this.router.navigate(['/bill-of-material/view'])
+    }
   ngOnInit() {
   }
 
