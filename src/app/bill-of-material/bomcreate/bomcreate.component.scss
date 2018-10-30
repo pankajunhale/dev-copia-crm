@@ -23,6 +23,7 @@
     margin-right: 10px;
     height: 600px;
     padding-right: 20px;
+    position: relative;
   }
   .table{
     margin-right: 20px;
@@ -375,5 +376,37 @@ thead{
   background-color: #e8e8e8;
   background-size: 100%;
   transition: background 0s;
+}
+
+
+
+.sunflower
+{
+    position: absolute;
+    bottom: 0;
+    left: 1;
+    right: 0;
+    z-index: 1;
+}
+.col-md-12{
+    margin: 4px;
+}
+.cart{
+    margin: 5px;
+}
+.btnsf
+{
+    width: 100%;
+    text-align: left;
+}
+.del
+{
+  display: inline-block;
+  justify-content: center;
+  align-items: right;
+}
+.delete
+{
+  width: 100%;
 }
 
