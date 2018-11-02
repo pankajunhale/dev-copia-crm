@@ -18,6 +18,5 @@ export class RoutingEditComponent implements OnInit {
   }
   toastsubmit()
   {
-    
   }
 }

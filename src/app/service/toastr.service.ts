@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-declare var toastr:any;
+declare var toastr:any
 @Injectable({
   providedIn: 'root'
 })
@@ -11,5 +11,5 @@ export class ToastrService {
   {
     toastr.success(title,message);
   }
-  
+
 }
