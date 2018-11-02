@@ -27,7 +27,8 @@
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/assets/css/sb-admin-2.min.css",
               "src/assets/css/metisMenu.min.css",
-              "src/assets/css/font-awesome.min.css"
+              "src/assets/css/font-awesome.min.css",
+              "node_modules/ngx-toastr/toastr.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",

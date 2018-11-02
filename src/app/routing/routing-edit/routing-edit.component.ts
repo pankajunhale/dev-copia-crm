@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ToastrModule, ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-routing-edit',
@@ -8,7 +9,8 @@ import { Router } from '@angular/router';
 })
 export class RoutingEditComponent implements OnInit {
 
-  constructor(private router:Router) { 
+  constructor(private router:Router,private toastr:ToastrService) { 
+
   }
  
  goroutinglist(){
@@ -16,7 +18,8 @@ export class RoutingEditComponent implements OnInit {
  }
   ngOnInit() {
   }
-  toastsubmit()
-  {
+   
+  showSuccess() {
+    this.toastr.success('Hello world!', 'Toastr fun!');
   }
 }

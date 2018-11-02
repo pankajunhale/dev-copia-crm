@@ -65,7 +65,9 @@ import { ConfirmationEditComponent } from './confirmation/confirmation-edit/conf
 import { ConfirmationBulkComponent } from './confirmation/confirmation-bulk/confirmation-bulk.component';
 import { BOMModule } from './bill-of-material/BOM.module';
 import { ToastrService } from './service/toastr.service';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+ 
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -134,7 +136,8 @@ import { ToastrService } from './service/toastr.service';
     RouterModule.forRoot(router),
     BOMModule,
     ReactiveFormsModule,
-    
+    BrowserAnimationsModule,
+    ToastrModule.forRoot() 
 
   ],
   providers: [ToastrService],
