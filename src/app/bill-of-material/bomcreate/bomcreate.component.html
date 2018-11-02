@@ -55,17 +55,34 @@
               </div>
               <div class="col-md-3">
                   <br>
-                  <button (click)="showSuccessHeader()" class="btn btn-primary"> Insert Header</button>
+                  <label for="plan-name">BOM Level:</label>   
+                  <input type="number" class="form-control" value="1" min="1" max="99999">
                 </div>
+                <div class="col-md-3">
+                    <br><br>
+                    <button (click)="showSuccessHeader()" class="btn btn-primary"> Insert Header</button>
+                  </div>
+                  <div class="col-md-3">
+                    </div>
+                    <div class="col-md-3">
+                      </div>
+              <div class="col-md-12"><hr/></div>
+                
+              <div class="col-md-6 offset-md-3">
+                    <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="fa fa-search"></i></div>
+                            </div>
+                            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Search Materials...">
+                          </div>
+                  </div>
             
         </div>
         
       <div  class="row list " id="myDIV" style="padding-top: 10px">
-        <div class="card" style="margin: 10px; vertical-align: middle">
           <div class="row">
-              <div class="col-md-4">
-                <div class="container">
-                  <input type="text" id="myInput" placeholder="Search for materials..">
+              <div class="col-md-4 heightish">
+                <div class="container ">
                   <ul class="list-group">
                         <li class="list-group-item searchItem ripple">
                                 <div class="row">
@@ -163,7 +180,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-md-8">
+              <div class="col-md-8 heightish">
                 <div class="card container-fluid bg-white ">
                     <div class="card-body">
                         <h5 class="card-title">Item Code: <span id="spanish">#400862</span></h5>
@@ -193,7 +210,7 @@
                         </div>
                         <div class="col-md-4 col-sm-4 col-xs-4 offset-8">
                             <br>
-                                <button type="button" class="btn btn-warning" (click)="showAdded()">Add</button>
+                                <button type="button" class="btn btn-info" (click)="showAdded()">Add</button>
                         </div>
                     </div>
                     </div>
@@ -201,10 +218,9 @@
              </div>
         
           </div>
-      </div>
     </div>
 
-    <div class="sunflower">
+    <!-- <div class="sunflower">
         <div class="col-md-12">
             <button class="btn btnsf btn-success" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
               Total items in cart : <span class="badge badge-light">5</span>
@@ -332,5 +348,7 @@
                 </ul>
           </div>
         </div>
-    </div>
+    </div> -->
+    <br>
+    <br>
 </div>
