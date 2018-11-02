@@ -64,7 +64,6 @@ import { ConfirmationListComponent } from './confirmation/confirmation-list/conf
 import { ConfirmationEditComponent } from './confirmation/confirmation-edit/confirmation-edit.component';
 import { ConfirmationBulkComponent } from './confirmation/confirmation-bulk/confirmation-bulk.component';
 import { BOMModule } from './bill-of-material/BOM.module';
-import { ToastrService } from './service/toastr.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
  
 import { ToastrModule } from 'ngx-toastr';
@@ -140,7 +139,7 @@ import { ToastrModule } from 'ngx-toastr';
     ToastrModule.forRoot() 
 
   ],
-  providers: [ToastrService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

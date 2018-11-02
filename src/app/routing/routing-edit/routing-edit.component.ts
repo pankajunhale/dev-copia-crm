@@ -20,6 +20,12 @@ export class RoutingEditComponent implements OnInit {
   }
    
   showSuccess() {
-    this.toastr.success('Hello world!', 'Toastr fun!');
+    this.toastr.success('Item Updated', 'Item #22');
+  }
+  showSubmit() {
+    this.toastr.success('Routing Updated', 'Routing #22');
+  }
+  showDelete() {
+    this.toastr.error('Step Deleted', 'Step #22');
   }
 }

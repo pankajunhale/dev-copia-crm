@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder,Validators, FormArray } from '@angular/forms';
 import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 
 
 
@@ -11,7 +12,7 @@ import { Router } from '@angular/router';
 })
 export class RoutingCreateComponent implements OnInit {
   routingCreateForm: FormGroup;
-  constructor(private fb: FormBuilder,private router:Router) { }
+  constructor(private fb: FormBuilder,private router:Router,private toastr:ToastrService) { }
   goroutinglist(){
     this.router.navigate(['/routing/routing-list'])
   }
@@ -34,5 +35,16 @@ export class RoutingCreateComponent implements OnInit {
   }
   deleteRow() {
     this.aliases.removeAt(this.aliases.length-1);
+}
+
+showSuccess(i) {
+  this.toastr.success('Routing created', 'Routing #22');
+}
+showStepAdded(i) {
+  this.toastr.success('Step added', 'Step #'+i);
+}
+
+showSuccessHeader() {
+  this.toastr.info( 'Header Created','');
 }
 }
