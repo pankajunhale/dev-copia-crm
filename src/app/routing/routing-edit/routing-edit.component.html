@@ -6,7 +6,7 @@
         </div>
         <div class="col-md-8">
           <a (click)="goroutinglist()" class="btn btn-primary upBtn"  id="back" >Back</a>
-          <a  class="btn btn-primary upBtn"  id="back" >Submit</a>
+          <a  class="btn btn-primary upBtn" (click)="showSubmit()" id="back" >Submit</a>
         </div>
       </div>
    
@@ -133,11 +133,14 @@
                       <label for="">Supervisor Name:</label><br>
                       <input type="text"  class="form-control" id="">
                       </div>
-                      <div class="col-md-4">
+                      <div class="col-md-6">
                           <br>
                           <div class="btn btn-success " (click)="showSuccess()">Update</div>
                       </div>
-                  
+                      <div class="col-md-6">
+                          <br>
+                          <div class="btn btn-danger " (click)="showDelete()">Delete</div>
+                      </div>
                   </div>
 
                 </div>
