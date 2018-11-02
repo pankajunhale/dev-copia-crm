@@ -167,13 +167,7 @@
                             <div class="col-md-4 col-sm-4 col-xs-4">
                                 <label for="qty">Quantity :</label><br>
                                 <div class="input-group" id="qty">
-                                    <button type="button" class="btn btn-default btn-number"  data-type="minus" data-field="quant[1]">
-                                            <i class="fa fa-minus"></i>
-                                        </button>
-                                    <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="100">
-                                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
-                                            <i class="fa fa-plus"></i>
-                                        </button>
+                                    <input type="number" class="form-control input-number" value="1" min="1" max="100">
                                 </div>
                             </div>
                             <div class="col-md-4 col-sm-4 col-xs-4">
@@ -192,9 +186,14 @@
                                     </label>
                                     </div>
                             </div>
-                            <div class="col-md-12  col-sm-12 col-xs-12 dc">
+                            <div class="col-md-12  col-sm-12 col-xs-12 dc row">
                                 <br>
-                                <button class="btn btn-danger dc">Delete</button> 
+                                <div class="col-md-6  col-sm-6 col-xs-6 dc">
+                                    <button class="btn btn-success dc">Update</button> 
+                                </div> 
+                                <div class="col-md-6  col-sm-6 col-xs-6 dc">
+                                    <button class="btn btn-danger dc">Delete</button> 
+                                </div>
                             </div>
                         </div>
                         </div>
