@@ -19,6 +19,9 @@ export class BomeditComponent implements OnInit {
   showSuccess() {
     this.toastr.success('Material Updated', 'Material: Medium level raw material');
   }
+  showupdate() {
+    this.toastr.success('BOM Updated', 'Material: Medium level raw material');
+  }
   showDelete() {
     this.toastr.error('Material Deleted', 'Material: Medium level raw material');
   }
