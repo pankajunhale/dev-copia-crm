@@ -258,3 +258,14 @@ i{
 .form-control{
   width:100%;
 }
+
+.list-group{
+  max-height: 300px;;
+  margin-bottom: 10px;
+  overflow:scroll;
+  -webkit-overflow-scrolling: touch;
+  }
+  .btn-success{
+    width: 100%;
+    margin-top:5px;
+  }

@@ -12,22 +12,20 @@
     </div>
   </div>
   
-    <form class="form-inline row" [formGroup]="routingCreateForm" >
-        <div class="col-md-3">
+  <form class="form-inline row" [formGroup]="routingCreateForm" >
+      <div class="col-md-4">
           <label for="">Item Code:</label><br>
           <input type="text" class="form-control" formControlName="itemcode">
         </div>
-        
-        <div class="col-md-3">
+        <div class="col-md-4">
           <label for="">Item Description:</label><br>
           <input type="text" class="form-control" formControlName="itemdescription">
-        </div>
-        
-        <div class="col-md-3">
+        </div>        
+        <div class="col-md-4">
           <label for="">Version No:</label><br>
           <input type="text" class="form-control" formControlName="versionno">
         </div>
-        <div class="col-md-3">
+        <div class="col-md-4">
           <label for="">WH Name:</label><br>
           <select class="form-control" formControlName="whname">
               <option value=""> Select</option>
@@ -36,127 +34,116 @@
               <option value="">Delhi</option>
           </select>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-4">
           <br>
             <a  class="btn btn-primary filter" id="submit" >Insert Header</a>
         </div>
         <div class="col-md-12">
-          <hr/>
-        </div>
-        <br>
-        <br>
-      
-   <div formArrayName="aliases" class="col-md-12">
-    <div *ngFor="let address of aliases.controls; let i=index">
-    <div class="list-group-item" id="grandparent"  [formControlName]="i">
-          <tr>
-              <td>
-                  <div class="card">
-                      <div class="card-body">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <label for="">Step No:</label><br>
-                                <input type="text" class="form-control" id="">
-                            </div>
-                            <div class="col-md-3">
-                                <label for="">Step Name:</label><br>
-                                <input type="text" class="form-control" id="">
-                            </div>
-                            <div class="col-md-3">
-                              <label for="">Procedure:</label><br>
-                              <input type="text" class="form-control" id="">
-                            </div>
-                            <div class="col-md-3">
-                              <label for="">Work Centre:</label><br>
-                              <input type="text" class="form-control" id="">
-                            </div>
-                            <br><br><br>
-                            
-                            <div class="col-md-12 open pull-right">                           
-                              <i id="grandparentIcon" class="fa fa-chevron-circle-down fa-2x pull-right" aria-hidden="true" data-target="#grandparentContent" data-toggle="collapse"></i>
-                            </div>
+            <hr />
+          </div>
+        <div class="row">
+          <div class="col-md-4 lig">
+              <h5>Steps:</h5>
+              <button class="btn btn-warning" (click)="addAlias()">Add Step</button>
+              <hr/>
+            <div class="list-group1">
+              <div formArrayName="aliases" >
+                    <div class="list-group-item-action btn-default ddc"  *ngFor="let address of aliases.controls; let i=index">
+                        <div [formControlName]="i" ><b>Step No. #{{ i + 1}} </b>
+                          <span  (click)="deleteRow()" class="btn btn-danger" style="margin-left:20px"><i class="fa fa-minus-circle" aria-hidden="true"></i>
+                          </span>
                         </div>
-               
-                            
-                        <div class="row collapse" id="grandparentContent">
-                            <div class="col-md-3">
-                                <label for="">Time UOM:</label><br>
-                                <input type="text" class="form-control" id="">
-                              </div>
-                              <div class="col-md-3">
-                                <label for="">Planned Labour Time:</label><br>
-                                <input type="text" class="form-control" id="">
-                              </div>
-                           
-                            <div class="col-md-3">
-                              <label for="">Planned M/C Time:</label><br>
-                              <input type="text" class="form-control" id="">
-                            </div>
-                            
-                            <div class="col-md-3">
-                              <label for="">Planned Setup Time:</label><br>
-                              <input type="text" class="form-control" id="">
-                            </div>
-                          
-                        
-                               <br><br><br><br>
-                             
-                            <div class="col-md-3">
-                              <label for="">Total Planned Time:</label><br>
-                              <input type="text" class="form-control" id="">
-                            </div>
-                           
-                            <div class="col-md-3">
-                              <label for="">Step Type:</label><br>
-                              <input type="text" class="form-control" id="">
-                            </div>
-                           
-                            <div class="col-md-3">
-                                <label for="">Step Category:</label><br>
-                                <input type="text" class="form-control" id="">
-                              </div>
-                            <div class="col-md-3">
-                            <label for="">Step Status:</label><br>
-                            <select class="form-control">
-                                <option value=""> Select</option>
-                                <option value="">Created</option>
-                                <option value="">Inprocess</option>
-                            </select>
-                            </div>
-                             <br><br><br><br>
-                          
-                            <div class="col-md-3">
-                            <label for="">User Name:</label><br>
+                    </div>
+                </div>
+              </div>
+          </div>
+            <div class="col-md-8">
+              <div class="card">
+                  <div class="card-body">
+                    <h3>Step Details :</h3>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label for="">Step No:</label><br>
                             <input type="text" class="form-control" id="">
-                            </div>
-                            <div class="col-md-3">
-                            <label for="">Supervisor Name:</label><br>
-                            <input type="text" class="form-control" id="">
-                            </div>
-                        
                         </div>
+                        <div class="col-md-4">
+                            <label for="">Step Name:</label><br>
+                            <input type="text" class="form-control" id="">
+                        </div>
+                        <div class="col-md-4">
+                          <label for="">Procedure:</label><br>
+                          <input type="text" class="form-control" id="">
+                        </div>
+                        <div class="col-md-4">
+                          <label for="">Work Centre:</label><br>
+                          <input type="text" class="form-control" id="">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="">Time UOM:</label><br>
+                            <input type="text" class="form-control" id="">
+                          </div>
+                          <div class="col-md-4">
+                            <label for="">Planned Labour Time:</label><br>
+                            <input type="text" class="form-control" id="">
+                          </div>
+                        
+                        <div class="col-md-4">
+                          <label for="">Planned M/C Time:</label><br>
+                          <input type="text" class="form-control" id="">
+                        </div>
+                        
+                        <div class="col-md-4">
+                          <label for="">Planned Setup Time:</label><br>
+                          <input type="text" class="form-control" id="">
+                        </div>
+                      
+                    
+                            <br><br><br><br>
+                          
+                        <div class="col-md-4">
+                          <label for="">Total Planned Time:</label><br>
+                          <input type="text" class="form-control" id="">
+                        </div>
+                        
+                        <div class="col-md-4">
+                          <label for="">Step Type:</label><br>
+                          <input type="text" class="form-control" id="">
+                        </div>
+                        
+                        <div class="col-md-4">
+                            <label for="">Step Category:</label><br>
+                            <input type="text" class="form-control" id="">
+                          </div>
+                        <div class="col-md-4">
+                        <label for="">Step Status:</label><br>
+                        <select class="form-control">
+                            <option value=""> Select</option>
+                            <option value="">Created</option>
+                            <option value="">Inprocess</option>
+                        </select>
+                        </div>
+                          <br><br><br><br>
+                      
+                        <div class="col-md-4">
+                        <label for="">User Name:</label><br>
+                        <input type="text" class="form-control" id="">
+                        </div>
+                        <div class="col-md-4">
+                        <label for="">Supervisor Name:</label><br>
+                        <input type="text" class="form-control" id="">
+                        </div>
+                        <div class="col-md-4">
+                       <br>
+                        <div class="btn btn-success" >ADD</div>
+                        </div>
+                    
+                    </div>
 
-                      </div>
                   </div>
-                  
-               
-              </td>
-          </tr>
-
-          
-       
-    </div>
-    <br>
-   
-    
-  </div>
-  </div>
-
-    </form>
-    <div class="row">
-    <div class="col-md-12">
-    <button class="btn btn-primary pull-right" (click)="addAlias()" type="button" id="back">Add</button>
-    </div>
-  </div>
-  <br><br>
+              </div>
+          </div>
+      </div>
+</form>
+<br>
+<br>
 </div>

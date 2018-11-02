@@ -1,4 +1,4 @@
-<script type="text/javascript">
+<script>
   function showHide() {
       var x = document.getElementById("myDIV");
       if (x.style.display === "none") {
@@ -9,7 +9,6 @@
   }
     $('.btn-number').click(function(e){
       e.preventDefault();
-  
       fieldName = $(this).attr('data-field');
       type      = $(this).attr('data-type');
       var input = $("input[name='"+fieldName+"']");
@@ -38,9 +37,11 @@
           input.val(0);
       }
   });
+
   $('.input-number').focusin(function(){
      $(this).data('oldValue', $(this).val());
   });
+
   $('.input-number').change(function() {
   
       minValue =  parseInt($(this).attr('min'));
@@ -148,126 +149,99 @@
                 <div class="container">
                   <input type="text" id="myInput" placeholder="Search for materials..">
                   <ul class="list-group">
-                      <li class="list-group-item searchItem ripple">
-                          <div class="row">
-                              <div class="col-md-11">
-                                  Stainless Steel Sheet Roles(12 SET)
-                              </div>
-                              <div class="badge col-md-1 badge-dark">
-                                  12
-                              </div>
-                          </div>
-                      </li>
-                      <li class="list-group-item searchItem ripple">
-                          <div class="row">
-                              <div class="col-md-11">
-                                  3D Printing .85 mm filament 10 M 
-                              </div>
-                              <div class="badge col-md-1 badge-dark">
-                                  5
-                              </div>
-                          </div>
-                      </li>
-                      <li class="list-group-item searchItem ripple">
-                          <div class="row">
-                              <div class="col-md-11">
-                                  Brass Sheet Roles (25 SET)
-                              </div>
-                              <div class="badge col-md-1 badge-dark">
-                                  3
-                              </div>
-                          </div>
-                      </li>
-                      <li class="list-group-item searchItem ripple">
-                          <div class="row">
-                              <div class="col-md-11">
-                                  Stainless Steel Sheet Roles(12 SET)
-                              </div>
-                              <div class="badge col-md-1 badge-dark">
-                                  12
-                              </div>
-                          </div>
-                      </li>
-                      <li class="list-group-item searchItem ripple">
-                          <div class="row">
-                              <div class="col-md-11">
-                                  3D Printing .85 mm filament 10 M 
-                              </div>
-                              <div class="badge col-md-1 badge-dark">
-                                  5
-                              </div>
-                          </div>
-                      </li>
-                      <li class="list-group-item searchItem ripple">
-                          <div class="row">
-                              <div class="col-md-11">
-                                  Brass Sheet Roles (25 SET)
-                              </div>
-                              <div class="badge col-md-1 badge-dark">
-                                  3
-                              </div>
-                          </div>
-                      </li>
-                      <li class="list-group-item searchItem ripple">
-                          <div class="row">
-                              <div class="col-md-11">
-                                  Stainless Steel Sheet Roles(12 SET)
-                              </div>
-                              <div class="badge col-md-1 badge-dark">
-                                  12
-                              </div>
-                          </div>
-                      </li>
-                      <li class="list-group-item searchItem ripple">
-                          <div class="row">
-                              <div class="col-md-11">
-                                  3D Printing .85 mm filament 10 M 
-                              </div>
-                              <div class="badge col-md-1 badge-dark">
-                                  5
-                              </div>
-                          </div>
-                      </li>
-                      <li class="list-group-item searchItem ripple">
-                          <div class="row">
-                              <div class="col-md-11">
-                                  Brass Sheet Roles (25 SET)
-                              </div>
-                              <div class="badge col-md-1 badge-dark">
-                                  3
-                              </div>
-                          </div>
-                      </li>
-                      <li class="list-group-item searchItem ripple">
-                          <div class="row">
-                              <div class="col-md-11">
-                                  Stainless Steel Sheet Roles(12 SET)
-                              </div>
-                              <div class="badge col-md-1 badge-dark">
-                                  12
-                              </div>
-                          </div>
-                      </li>
-                      <li class="list-group-item searchItem ripple">
-                          <div class="row">
-                              <div class="col-md-11">
-                                  3D Printing .85 mm filament 10 M 
-                              </div>
-                              <div class="badge col-md-1 badge-dark">
-                                  5
-                              </div>
-                          </div>
-                      </li>
-                      <li class="list-group-item searchItem ripple">
-                          <div class="row">
-                              <div class="col-md-11">
-                                  Brass Sheet Roles (25 SET)
-                              </div>
-                              <div class="badge col-md-1 badge-dark">
-                                  3
-                              </div>
-                          </div>
-                      </li>
+                        <li class="list-group-item searchItem ripple">
+                                <div class="row">
+                                    <div class="col-md-11">
+                                        Stainless Steel Sheet Roles(12 SET)
+                                    </div>
+                                 
+                                </div>
+                            </li>
+                            <li class="list-group-item searchItem ripple">
+                                <div class="row">
+                                    <div class="col-md-11">
+                                        3D Printing .85 mm filament 10 M 
+                                    </div>
+                                    
+                                </div>
+                            </li>
+                            <li class="list-group-item searchItem ripple">
+                                <div class="row">
+                                    <div class="col-md-11">
+                                        Brass Sheet Roles (25 SET)
+                                    </div>
+                                   
+                                </div>
+                            </li>     <li class="list-group-item searchItem ripple">
+                                    <div class="row">
+                                        <div class="col-md-11">
+                                            Stainless Steel Sheet Roles(12 SET)
+                                        </div>
+                                     
+                                    </div>
+                                </li>
+                                <li class="list-group-item searchItem ripple">
+                                    <div class="row">
+                                        <div class="col-md-11">
+                                            3D Printing .85 mm filament 10 M 
+                                        </div>
+                                        
+                                    </div>
+                                </li>
+                                <li class="list-group-item searchItem ripple">
+                                    <div class="row">
+                                        <div class="col-md-11">
+                                            Brass Sheet Roles (25 SET)
+                                        </div>
+                                       
+                                    </div>
+                                </li>     <li class="list-group-item searchItem ripple">
+                                        <div class="row">
+                                            <div class="col-md-11">
+                                                Stainless Steel Sheet Roles(12 SET)
+                                            </div>
+                                         
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item searchItem ripple">
+                                        <div class="row">
+                                            <div class="col-md-11">
+                                                3D Printing .85 mm filament 10 M 
+                                            </div>
+                                            
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item searchItem ripple">
+                                        <div class="row">
+                                            <div class="col-md-11">
+                                                Brass Sheet Roles (25 SET)
+                                            </div>
+                                           
+                                        </div>
+                                    </li>     <li class="list-group-item searchItem ripple">
+                                            <div class="row">
+                                                <div class="col-md-11">
+                                                    Stainless Steel Sheet Roles(12 SET)
+                                                </div>
+                                             
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item searchItem ripple">
+                                            <div class="row">
+                                                <div class="col-md-11">
+                                                    3D Printing .85 mm filament 10 M 
+                                                </div>
+                                                
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item searchItem ripple">
+                                            <div class="row">
+                                                <div class="col-md-11">
+                                                    Brass Sheet Roles (25 SET)
+                                                </div>
+                                               
+                                            </div>
+                                        </li>
                   </ul>
                 </div>
               </div>
@@ -280,13 +254,7 @@
                         <div class="col-md-4 col-sm-4 col-xs-4">
                             <label for="qty">Quantity :</label><br>
                             <div class="input-group" id="qty">
-                                <button type="button" class="btn btn-default btn-number"  data-type="minus" data-field="quant[1]">
-                                        <i class="fa fa-minus"></i>
-                                    </button>
-                                <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="100">
-                                    <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
-                                        <i class="fa fa-plus"></i>
-                                    </button>
+                                <input type="number"  class="form-control" min="0" max="5" id="number_quantity" value="1" min="1" max="9999999999">
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-4 col-xs-4">
@@ -305,6 +273,10 @@
                                 </label>
                                 </div>
                         </div>
+                        <div class="col-md-4 col-sm-4 col-xs-4 offset-8">
+                            <br>
+                                <button type="button" class="btn btn-warning" onclick="myFunction()">Add</button>
+                        </div>
                     </div>
                     </div>
                     </div>
@@ -317,7 +289,7 @@
     <div class="sunflower">
         <div class="col-md-12">
             <button class="btn btnsf btn-success" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-              Total Items in Cart : 5
+              Total items in cart : <span class="badge badge-light">5</span>
             </button></div>
           <div class="collapse col-md-12" id="collapseExample">
             <div class="cart">
@@ -330,7 +302,7 @@
                                <div class="col-md-4 col-sm-4 col-xs-4">
                                     <label for="qty">Quantity :</label><br>
                                     <div class="input-group" id="qty">
-                                        <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="100" readonly>
+                                        <input type="text" class="form-control input-number" value="1"readonly>
                                     </div>
                                 </div>
                                 <div class="col-md-3 col-sm-4 col-xs-4">
@@ -447,3 +419,13 @@
 
 
 
+
+<div id="snackbar">Item Added</div>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("snackbar");
+    x.className = "show";
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+</script>
