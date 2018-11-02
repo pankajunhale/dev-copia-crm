@@ -32,4 +32,7 @@ export class RoutingCreateComponent implements OnInit {
   get aliases() {
     return this.routingCreateForm.get('aliases') as FormArray;
   }
+  deleteRow() {
+    this.aliases.removeAt(this.aliases.length-1);
+}
 }

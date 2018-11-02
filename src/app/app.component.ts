@@ -31,6 +31,8 @@ export class AppComponent {
       obj.IsChecked = false;
       this.MySubData.push(obj);      
     }
+
+    
 }
  
 public SelectCheckValue(data:CheckBoxDataSource)

@@ -253,3 +253,48 @@ i{
 .form-control{
   width: 100%;
 }
+.steps{
+  width: 100%;
+}
+
+.list-group{
+  max-height: 500px;;
+  margin-bottom: 10px;
+  overflow:scroll;
+  -webkit-overflow-scrolling: touch;
+  }
+  .list-group1{
+    max-height: 300px;;
+    margin-bottom: 10px;
+    overflow-y:scroll;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    }
+.lig{
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+}
+.ddc
+{
+  vertical-align: middle;
+  cursor: pointer;
+  padding: 10px;
+}
+.ddc:hover
+{
+  background: dodgerblue;
+  color: #fff;
+
+}
+.ddc:active
+{
+  background: dodgerblue;
+  color: #fff;
+
+}
+.ddc:focus
+{
+  background: dodgerblue;
+  color: #fff;
+}

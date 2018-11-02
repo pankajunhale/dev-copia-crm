@@ -64,6 +64,7 @@ import { ConfirmationListComponent } from './confirmation/confirmation-list/conf
 import { ConfirmationEditComponent } from './confirmation/confirmation-edit/confirmation-edit.component';
 import { ConfirmationBulkComponent } from './confirmation/confirmation-bulk/confirmation-bulk.component';
 import { BOMModule } from './bill-of-material/BOM.module';
+import { ToastrService } from './service/toastr.service';
 
 
 @NgModule({
@@ -133,9 +134,10 @@ import { BOMModule } from './bill-of-material/BOM.module';
     RouterModule.forRoot(router),
     BOMModule,
     ReactiveFormsModule,
+    
 
   ],
-  providers: [],
+  providers: [ToastrService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

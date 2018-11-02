@@ -8,11 +8,16 @@ import { Router } from '@angular/router';
 })
 export class RoutingEditComponent implements OnInit {
 
-  constructor(private router:Router) { }
+  constructor(private router:Router) { 
+  }
+ 
  goroutinglist(){
    this.router.navigate(['/routing/routing-list'])
  }
   ngOnInit() {
   }
-
+  toastsubmit()
+  {
+    
+  }
 }

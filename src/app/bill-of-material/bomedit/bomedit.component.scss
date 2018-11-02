@@ -363,6 +363,7 @@ i{
 }
 .ripple {
   background-position: center;
+  cursor: pointer;
   transition: background 0.8s;
 }
 .ripple:hover {
@@ -377,4 +378,9 @@ i{
 
 .btn-danger{
   width: 100%;
+}
+
+.searchItem
+{
+    width: 100%;
 }
