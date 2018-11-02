@@ -41,7 +41,7 @@ showSuccess(i) {
   this.toastr.success('Routing created', 'Routing #22');
 }
 showStepAdded(i) {
-  this.toastr.success('Step added', 'Step #'+i);
+  this.toastr.success('Step added', 'Step #22');
 }
 
 showSuccessHeader() {
