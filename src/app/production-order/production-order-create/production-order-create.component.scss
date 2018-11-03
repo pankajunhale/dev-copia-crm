@@ -263,3 +263,62 @@ th,td{
 i{
   cursor: pointer;
 }
+.pocTableInput{
+    
+  border-radius: 0;
+}
+[aria-expanded="false"] > .expanded,
+[aria-expanded="true"] > .collapsed {
+display: none;
+}
+
+
+.lig{
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.list-group{
+  max-height: 500px;;
+  margin-bottom: 10px;
+  overflow:scroll;
+  -webkit-overflow-scrolling: touch;
+  }
+  .list-group1{
+    max-height: 300px;;
+    margin-bottom: 10px;
+    overflow-y:scroll;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    } 
+.gil{
+  min-height: 500px;
+}
+.ddc
+{
+  vertical-align: middle;
+  cursor: pointer;
+  padding: 10px;
+  margin: 5px;
+}
+.ddc:hover
+{
+  background: dodgerblue;
+  color: #fff;
+
+}
+.ddc:active
+{
+  background: dodgerblue;
+  color: #fff;
+
+}
+.ddc:focus
+{
+  background: dodgerblue;
+  color: #fff;
+}
+.btn-success{
+  width: 100%;
+}

@@ -5,12 +5,12 @@
             <h2>PO / Create</h2>
           </div>
           <div class="col-md-8">
-              <a href="/production-order/list" class="btn btn-primary upBtn" id="back" >Back</a>
-              <a href="#" class="btn btn-primary upBtn" id="cancel" >Cancel</a>
-              <a href="#" class="btn btn-primary upBtn" id="submit" >Submit</a> 
+              <div  class="btn btn-primary upBtn" id="back" >Back</div>
+              <div  class="btn btn-primary upBtn" id="cancel" >Cancel</div>
+              <div (click)="showSuccess()" class="btn btn-primary upBtn" id="submit" >Submit</div> 
             </div>
      </div>
-   
+    <h4>Production Order Header</h4>
       <div class="form-inline row">
             <div class="col-md-3">
               <label for="plan-name">Item Code:</label><br>
@@ -78,112 +78,128 @@
                   <label for="plan-name">Demand Plan:</label><br>
                   <input type="text" class="form-control">
                 </div>
-            <!-- <div class="col-md-3">
+            <div class="col-md-3">
               <br>
-              <a href="#" class="btn btn-primary filter" id="filter" >Create</a>
-            </div> -->
+              <div class="btn btn-primary" id="filter" (click)="showSuccessHeader()" >Create Header</div>
+            </div>
         </div>
         <hr />
        <div class="row">
-          <div class="col-md-12">
-              <table>
-                  <tr>
-                      <td>
-                          <div class="card">
-                              <div class="card-body">
-                                <div class="row">
-                                  <div class="col-md-3">
-                                    <label for="">Step No:</label><br>
-                                    <input type="text" class="form-control" id="">
+          <form class="form-inline row" [formGroup]="routingCreateForm" >
+              <div class="row">
+                <div class="col-md-4 lig">
+                    <h5>Steps:</h5>
+                    <button class="btn btn-warning" (click)="addAlias()">Add Step</button>
+                    <hr/>
+                  <div class="list-group1">
+                    <div formArrayName="aliases" >
+                          <div class="list-group-item-action btn-default ddc"  *ngFor="let address of aliases.controls; let i=index">
+                              <div [formControlName]="i" ><b>Step No. #{{ i + 1}} </b>
+                                <span  (click)="deleteRow()" class="btn btn-danger" style="margin-left:20px"><i class="fa fa-minus-circle" aria-hidden="true"></i>
+                                </span>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+                  <div class="col-md-8 gil">
+                      <h4>Step Details: </h4>
+                      <div class="card">
+                          <div class="card-body">
+                            <div class="container">
+                                <div id="primary" class="row">
+                                  <div class= "col-md-4" scope="row">
+                                      <label for="plt">Step No#</label>
+                                      <input type="number" id="plt" class="form-control pocTableInput" >
                                   </div>
-                                  <div class="col-md-3">
-                                    <label for="">Procedure:</label><br>
-                                    <input type="text" class="form-control" id="">
+                                  <div class= "col-md-4" scope="row">
+                                      <label for="pat">Description</label>
+                                      <input type="time" id="pat" class="form-control pocTableInput"  placeholder="HH:MM">
                                   </div>
-                                  <div class="col-md-3">
-                                    <label for="">Work Centre:</label><br>
-                                    <input type="text" class="form-control" id="">
+                                  <div class= "col-md-4" scope="row">
+                                      <label for="pmt">Work Centre</label>
+                                      <input type="time" id="pmt" class="form-control pocTableInput"  placeholder="HH:MM">
                                   </div>
-                                  <div class="col-md-3">
-                                    <label for="">Time UOM:</label><br>
-                                    <input type="text" class="form-control" id="">
+                                  <div class= "col-md-4" scope="row">
+                                      <label for="ptt">Actual Labour Time</label>
+                                      <input type="time" id="ptt" class="form-control pocTableInput"  placeholder="HH:MM">
                                   </div>
-                                 
-                                 
-                                  <div class="col-md-12 pull-right">
-                                  <br>
-                                    <i id="grandparentIcon" class="fa fa-chevron-circle-down fa-2x pull-right" aria-hidden="true" data-target="#grandparentContent" data-toggle="collapse"></i>
+                                  <div class= "col-md-4" scope="row">
+                                      <label for="ptt">Actual Machine Time</label>
+                                      <input type="time" id="ptt" class="form-control pocTableInput"  placeholder="HH:MM">
                                   </div>
+                                  <div class= "col-md-4" scope="row">
+                                      <label for="ptt">Actual Setup Time</label>
+                                      <input type="time" id="ptt" class="form-control pocTableInput"  placeholder="HH:MM">
                                   </div>
-                      
-                                  <div class="row collapse" id="grandparentContent">
-                                  <div class="col-md-3">
-                                     <label for="">Planned Labour Time:</label><br>
-                                     <input type="text" class="form-control" id="">
+                                  <div class= "col-md-4" scope="row">
+                                      <label for="ptt">Total Actual Time</label>
+                                      <input type="time" id="ptt" class="form-control pocTableInput"  placeholder="HH:MM">
                                   </div>
-                                 <div class="col-md-3">
-                                    <label for="">Actual Labour Time:</label><br>
-                                    <input type="text" class="form-control" id="">
-                                   </div>
-                                  <div class="col-md-3">
-                                    <label for="">Planned M/C Time:</label><br>
-                                    <input type="text" class="form-control" id="">
-                                  </div>
-                                  <div class="col-md-3">
-                                    <label for="">Actual M/C Time:</label><br>
-                                    <input type="text" class="form-control" id="">
-                                  </div>
-                                  <br><br><br><br><br>
-                                  <div class="col-md-3">
-                                      <label for="">Planned Setup Time:</label><br>
-                                      <input type="text" class="form-control" id="">
-                                    </div>
-                                  <div class="col-md-3">
-                                      <label for="">Actual Setup Time:</label><br>
-                                      <input type="text" class="form-control" id="">
-                                    </div>
-                                    <div class="col-md-3">
-                                    <label for="">Total Planned Time:</label><br>
-                                    <input type="text" class="form-control" id="">
-                                  </div>
-                                  <div class="col-md-3">
-                                    <label for="">Total Actual Time:</label><br>
-                                    <input type="text" class="form-control" id="">
-                                  </div>
-                                  <br><br><br><br><br>
-                                    <div class="col-md-3">
-                                        <label for="">Step Type:</label><br>
-                                        <input type="text" class="form-control" id="">
-                                      </div>
-                                    <div class="col-md-3">
-                                        <label for="">Step Category:</label><br>
-                                        <input type="text" class="form-control" id="">
-                                      </div>
-                                    <div class="col-md-3">
-                                    <label for="">Step Status:</label><br>
-                                    <input type="text" class="form-control" id="">
-                                  </div>
-                                  <div class="col-md-3">
-                                    <label for="">User Name:</label><br>
-                                    <input type="text" class="form-control" id="">
-                                  </div>
-                                  <br><br><br><br><br>
-                                  <div class="col-md-3">
-                                    <label for="">Supervisor Name:</label><br>
-                                    <input type="text" class="form-control" id="">
-                                  </div>
-                                  <div class="col-md-3">
-                                  <br><br>
-                                        <span><i class="fa fa-trash fa-2x del" aria-hidden="true"></i></span>           
-                                  </div>
-                                  </div>							
-                                </div>
-                            </div>
+                                  <div class= "col-md-4" scope="row">
+                                      <br>
+                                      <a href="#secondary" class="btn btn-primary" data-toggle="collapse" aria-expanded="false" aria-controls="secondary">
+                                        <span class="collapsed">
+                                          Show more
+                                        </span>
+                                        <span class="expanded">
+                                          Show Less
+                                        </span>
+                                      </a>
                           
-                      </td>
-                  </tr>
-                  
-              </table>
+                                  </div>
+                                </div>
+                                <br>
+                                <div id="secondary" class="row collapse" >
+                                  <div class= "col-md-4" scope="row">
+                                      <label for="plt">Planned Labour Time</label>
+                                      <input type="time" id="plt" class="form-control pocTableInput"  placeholder="HH:MM">
+                                  </div>
+                                  <div class= "col-md-4" scope="row">
+                                      <label for="pat">Planned Actual Time</label>
+                                      <input type="time" id="pat" class="form-control pocTableInput"  placeholder="HH:MM">
+                                  </div>
+                                  <div class= "col-md-4" scope="row">
+                                      <label for="pmt">Planned Machine Time</label>
+                                      <input type="time" id="pmt" class="form-control pocTableInput"  placeholder="HH:MM">
+                                  </div>
+                                  <div class= "col-md-4" scope="row">
+                                      <label for="ptt">Planned Total Time</label>
+                                      <input type="time" id="ptt" class="form-control pocTableInput"  placeholder="HH:MM">
+                                  </div>
+                                  <div class= "col-md-4" scope="row">
+                                      <label for="st">Step Type</label><br>
+                                      <input type="text" id="st" class="form-control pocTableInput"  placeholder="Step Type">
+                                  </div>
+                                  <div class= "col-md-4" scope="row">
+                                      <label for="sc">Step Category</label><br>
+                                      <input type="text" id="sc" class="form-control pocTableInput"  placeholder="Step Cat.">
+                                  </div>
+                                  <div class= "col-md-4" scope="row">
+                                      <label for="ss">Step Status</label><br>
+                                      <input type="text" id="ss" class="form-control pocTableInput"  placeholder="Step Status">
+                                  </div>
+                                  <div class= "col-md-4" scope="row">
+                                      <label for="un">User Name </label><br>
+                                      <input type="text" id="un" class="form-control pocTableInput"  placeholder="Step Status">
+                                  </div>
+                                  <div class= "col-md-4" scope="row">
+                                      <label for="sun">Supervisor Name </label><br>
+                                      <input type="text" id="sun" class="form-control pocTableInput"  placeholder="Step Status">
+                                  </div><div class= "col-md-6" scope="row">
+                                      <br>
+                                      <button type="button" class="btn btn-success" (click)="showStepAdded()">Add</button>
+                                  </div>
+                                </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </form>
           </div>
+          <br>
+          <br>
+          <br>
       </div>
-    </div>
+      
