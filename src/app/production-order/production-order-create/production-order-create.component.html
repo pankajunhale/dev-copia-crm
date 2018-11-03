@@ -10,7 +10,6 @@
               <div (click)="showSuccess()" class="btn btn-primary upBtn" id="submit" >Submit</div> 
             </div>
      </div>
-    <h4>Production Order Header</h4>
       <div class="form-inline row">
             <div class="col-md-3">
               <label for="plan-name">Item Code:</label><br>
@@ -34,11 +33,15 @@
             <br><br><br>
             <div class="col-md-2">
                 <label for="plan-name">Order No:</label><br>
-                <input type="text" class="form-control">
+                <input type="text" class="form-control" value="203549" readonly>
               </div>
               <div class="col-md-3">
-                  <label for="plan-name">Order Type:</label><br>
-                  <input type="text" class="form-control">
+                    <label for="plan-name">Order Type:</label><br>
+                    <select class="form-control">
+                      <option>Select</option>
+                      <option>A</option>
+                      <option>B</option>
+                    </select>
                 </div>
                 <div class="col-md-2">
                     <label for="plan-name">Item Qty:</label><br>

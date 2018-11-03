@@ -5,7 +5,7 @@
                <h2>PO / List</h2>
           </div>
           <div class="col-md-4">
-            <a href ="/production-order/create" class="btn btn-primary upBtn" id="create" >Create New</a>
+            <a class="btn btn-primary upBtn" id="create" >Create New</a>
           </div>
     </div>
     
@@ -55,67 +55,57 @@
             
             <div class="col-md-3">
               <br>
-                <a href="#" class="btn btn-primary dBtn"  id="create" >Search</a>
+                <a class="btn btn-primary dBtn"  id="create" >Search</a>
             </div> 
       </div>
         <hr />
 
         <div class="row">
           <div class="col-md-12 table-responsive ">
-              <table class="table table-hover">
+              <table class="table table-bordered">
                   <thead>
-                      <tr>
-                        <th></th>
-                        <th>Order No</th>
-                        <th>Order Type</th>
-                        <th>Header Status</th>
-                        <th>Item Code</th>
-                        <th>Description</th>
-                        <th>Quantity</th>
-                        <th>UOM</th> 
-                        <th>SO No</th>
-                        <th>DP No</th> 
-                      
-                        
-                      </tr>
+                    <tr>
+                      <th scope="col">Order No#</th>
+                      <th scope="col">Order Type</th>
+                      <th scope="col">Item Code</th>
+                      <th scope="col">Item Desc.</th>
+                      <th scope="col">Quantity</th>
+                      <th scope="col">Status</th>
+                      <th scope="col">Edit</th>
+                      <th scope="col">View</th>
+                      <th scope="col">Delete</th>
+                    </tr>
                   </thead>
                   <tbody>
-                      <tr class="clickable" >
-                          <td><i class="fa fa-plus" aria-hidden="true"data-toggle="collapse" data-target="#group-of-rows-1" aria-expanded="false" aria-controls="group-of-rows-1"></i></td>
-                          <td>52112</td>
-                          <td>ABC</td>
-                          <td>XYZ</td>
-                          <td>800652</td>
-                          <td>Bottles</td>
-                          <td>zxx</td>
-                          <td>Pcs</td>
-                          <td>154220</td>
-                          <td>24151</td>
-                      
-                      </tr>
+                    <tr >
+                      <th scope="row">#52112</th>
+                      <td>Bulk</td>
+                      <td>800652</td>
+                      <td nowrap>Kisan Engineering Mold Plastic Single Phase 4 Layer upto 1Hp (2 SET)</td>
+                      <td>15</td>
+                      <td>Drafted</td>
+                      <td><button type="button" class="btn btn-outline-info"><i class="fa fa-pencil"></i>Edit</button></td>
+                      <td><button type="button" class="btn btn-outline-info"><i class="fa fa-eye"></i>View</button></td>
+                      <td><button type="button" class="btn btn-outline-danger"><i class="fa fa-trash"></i>Delete</button></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">#52113</th>
+                      <td>Bulk</td>
+                      <td>800652</td>
+                      <td >Dravid Engineering Mold Copper Single Phase 16 Layer upto 1Hp (24 SET)</td>
+                      <td>150</td>
+                      <td>Drafted</td>
+                      <td><button type="button" class="btn btn-outline-info"><i class="fa fa-pencil"></i>Edit</button></td>
+                      <td><button type="button" class="btn btn-outline-info"><i class="fa fa-eye"></i>View</button></td>
+                      <td><button type="button" class="btn btn-outline-danger"><i class="fa fa-trash"></i>Delete</button></td>
+                    </tr>
                   </tbody>
-                  <tbody id="group-of-rows-1" class="collapse">
-                      <tr>
-                          
-                          
-                          <th>Confirmation</th>
-                          <th>Edit</th> 
-                          <th>View</th> 
-                          <th>Delete</th>       
-                      </tr>
-                      <tr>
-                          
-                        
-                          <td><a href="#" class="btn btn-primary">Create</a></td>
-                          <td style="text-align:center"> <a href="/production-order/edit"><i class="fa fa-pencil edit" aria-hidden="true"></i></a></td>
-                          <td style="text-align:center"> <a href="/production-order/view"> <i class="fa fa-folder-open view" aria-hidden="true"></i></a></td>  
-                          <td style="text-align:center"><i class="fa fa-trash del" aria-hidden="true"></i></td>
-                      </tr> 
-                  </tbody>
-              </table>
+                </table>
            </div>
         </div> 
-
-
+        <br>
+        <br>
+        <br>
+        
 
     </div>
