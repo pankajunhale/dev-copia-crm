@@ -49,89 +49,59 @@
           </div>
       </div>
       <hr />
+
       <div class="row">
-    
-        <div class="card shadow p-3 mb-5 bg-white rounded" style="margin: 3px;">
-          <div class="card-body">
-            <h5 class="card-title">BOM No. : <span id="spanish">#4006483</span></h5>
-            <h6 class="card-subtitle ">BOM Status : <span id="status">Created</span></h6><br>
-            <div class="row container-fluid" style="margin-bottom: 30px;">
-              <div class="col-md-2 col-sm-4 col-xs-2">
-                  <label for="plan-name">WH Name :</label><br><input class="form-control" type="text" readonly value="Fracktal Works">
-              </div>
-              <div class="col-md-2 col-sm-4 col-xs-2">
-                <label for="plan-name">Item Code:</label><br><input class="form-control" type="text" readonly value="KEM-PSP4">
-              </div>
-              <div class="col-md-4 col-sm-10 col-xs-4">
-                <label for="plan-name">Item Desc.:</label><br><input class="form-control" type="text" readonly value="Kisan Engineering Mold Plastic Single Phase 4 Layer upto 1Hp (2 SET)">
-              </div>
-              <div class="col-md-2 col-sm-4 col-xs-2">
-                <label for="plan-name">Last Edited:</label><br><input class="form-control" type="text" readonly value="14/10/2018">
-              </div>
-           <div class="col-md-2 col-sm-2">
-                  <label for="plan-name">Edited By :</label><br><input class="form-control" type="text" readonly value="Rohit">
-              </div>
-            </div>
-            <a (click)="gobomedit()" class="card-link"><i class="fa fa-edit edit"></i>Edit</a>
-            <a (click)="gobomview()" class="card-link"><i class="fa fa-folder-open view"></i> View</a>
-            <a class="card-link"><i class="fa fa-trash del"></i> Delete</a>
-          </div>
-        </div>
-        
-        <div class="card shadow p-3 mb-5 bg-white rounded" style="margin: 3px;">
-          <div class="card-body">
-            <h5 class="card-title">BOM No. : <span id="spanish">#4006484</span></h5>
-            <h6 class="card-subtitle ">BOM Status : <span id="status">Created</span></h6><br>
-            <div class="row container-fluid" style="margin-bottom: 30px;">
-              <div class="col-md-2 col-sm-4 col-xs-2">
-                  <label for="plan-name">WH Name :</label><br><input class="form-control" type="text" readonly value="Fracktal Works">
-              </div>
-              <div class="col-md-2 col-sm-4 col-xs-2">
-                <label for="plan-name">Item Code:</label><br><input class="form-control" type="text" readonly value="KEM-PSP4">
-              </div>
-              <div class="col-md-4 col-sm-10 col-xs-4">
-                <label for="plan-name">Item Desc.:</label><br><input class="form-control" type="text" readonly value="Kisan Engineering Mold Plastic Single Phase 4 Layer upto 1Hp (2 SET)">
-              </div>
-              <div class="col-md-2 col-sm-4 col-xs-2">
-                <label for="plan-name">Last Edited:</label><br><input class="form-control" type="text" readonly value="14/10/2018">
-              </div>
-          <div class="col-md-2 col-sm-2">
-                  <label for="plan-name">Edited By :</label><br><input class="form-control" type="text" readonly value="Rohit">
-              </div>
-            </div>
-            <a (click)="gobomedit()" class="card-link"><i class="fa fa-edit edit"></i>Edit</a>
-            <a (click)="gobomview()" class="card-link"><i class="fa fa-folder-open view"></i> View</a>
-            <a class="card-link"><i class="fa fa-trash del"></i> Delete</a>
-          </div>
-        </div>
-    
-        <div class="card shadow p-3 mb-5 bg-white rounded" style="margin: 3px;">
-          <div class="card-body">
-            <h5 class="card-title">BOM No. : <span id="spanish">#4006483</span></h5>
-            <h6 class="card-subtitle ">BOM Status : <span id="status">Created</span></h6><br>
-            <div class="row container-fluid" style="margin-bottom: 30px;">
-              <div class="col-md-2 col-sm-4 col-xs-2">
-                  <label for="plan-name">WH Name :</label><br><input class="form-control" type="text" readonly value="Fracktal Works">
-              </div>
-              <div class="col-md-2 col-sm-4 col-xs-2">
-                <label for="plan-name">Item Code:</label><br><input class="form-control" type="text" readonly value="KEM-PSP4">
-              </div>
-              <div class="col-md-4 col-sm-10 col-xs-4">
-                <label for="plan-name">Item Desc.:</label><br><input class="form-control" type="text" readonly value="Kisan Engineering Mold Plastic Single Phase 4 Layer upto 1Hp (2 SET)">
-              </div>
-              <div class="col-md-2 col-sm-4 col-xs-2">
-                <label for="plan-name">Last Edited:</label><br><input class="form-control" type="text" readonly value="14/10/2018">
-              </div>
-          <div class="col-md-2 col-sm-2">
-                  <label for="plan-name">Edited By :</label><br><input class="form-control" type="text" readonly value="Rohit">
-              </div>
-            </div>
-            <a (click)="gobomedit()" class="card-link"><i class="fa fa-edit edit"></i>Edit</a>
-            <a (click)="gobomview()" class="card-link"><i class="fa fa-folder-open view"></i> View</a>
-            <a class="card-link"><i class="fa fa-trash del"></i> Delete</a>
-          </div>
-        </div>
-    </div>
+          <div class="col-md-12 table-responsive ">
+              <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th scope="col">BOM No.</th>
+                      <th scope="col">BOM Status</th>
+                      <th scope="col">WH Name</th>
+                      <th scope="col">Item Code</th>
+                      <th scope="col">Item Description</th>
+                      <th scope="col">Last Edited</th>
+                      <th scope="col">Last Edited By</th>
+                      <th>Edit</th>
+                      <th>View</th>
+                      <th>Delete</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr >
+                      <th scope="row">#4006483</th>
+                      <td>Created</td>
+                      <td>Fracktal Work</td>
+                      <td>KEM-PSP4</td>
+                      <td>Kisan Engineering Mold Plastic Single Phase 4 Layer upto 1Hp (2 SET)</td>
+                      <td>Rohit</td> 
+                      <td>14/10/2018</td>                     
+                      <td><button type="button" class="btn btn-outline-info"><i class="fa fa-pencil"></i>Edit</button></td>
+                      <td><button type="button" class="btn btn-outline-info"><i class="fa fa-eye"></i>View</button></td>
+                      <td><button type="button" class="btn btn-outline-danger"><i class="fa fa-trash"></i>Delete</button></td>
+                    </tr>
+                    <tr >
+                      <th scope="row">#4006484</th>
+                      <td>Created</td>
+                      <td>Fracktal Work</td>
+                      <td>KEM-PSP4</td>
+                      <td>Kisan Engineering Mold Plastic Single Phase 4 Layer upto 1Hp (2 SET)</td>
+                      <td>Kamlesh</td> 
+                      <td>14/10/2018</td>                     
+                      <td><button type="button" class="btn btn-outline-info"><i class="fa fa-pencil"></i>Edit</button></td>
+                      <td><button type="button" class="btn btn-outline-info"><i class="fa fa-eye"></i>View</button></td>
+                      <td><button type="button" class="btn btn-outline-danger"><i class="fa fa-trash"></i>Delete</button></td>
+                    </tr>
+                  </tbody>
+                </table>
+           </div>
+        </div> 
+        <br>
+        <br>
+        <br>
+
+
+     
 
 
   </div>
