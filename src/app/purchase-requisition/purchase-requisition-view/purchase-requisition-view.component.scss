@@ -257,3 +257,35 @@
  i{
    cursor: pointer;
  }
+ 
+
+.list-group{
+  max-height:500px;;
+  margin-bottom: 10px;
+  overflow:scroll;
+  -webkit-overflow-scrolling: touch;
+  }
+  .btn-success{
+    width: 100%;
+    margin-top:5px;
+  }
+
+
+  .btn-danger{
+    width: 100%;
+    margin-top:5px;
+  }
+  
+.ripple {
+  background-position: center;
+  cursor: pointer;
+  transition: background 0.8s;
+}
+.ripple:hover {
+  background: #c2c2c2 radial-gradient(circle, transparent 1%, #e8e8e8 1%) center/15000%;
+}
+.ripple:active {
+  background-color: #e8e8e8;
+  background-size: 100%;
+  transition: background 0s;
+}
