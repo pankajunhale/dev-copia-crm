@@ -14,9 +14,8 @@ label{
     float: left;
 
 }
-.upBtn{
+.create-new{
     float: right;
-    margin: 2px;
 }
 .dpList{
   overflow-y: auto;
@@ -24,6 +23,10 @@ label{
   margin-right: 10px;
   height: 600px;
   padding-right: 20px;
+}
+.table{
+    margin-right: 20px;
+    
 }
 ::-webkit-scrollbar {
     width: 0.15em;
@@ -225,66 +228,17 @@ label{
     float: right;
     margin: 2px;
   }
-
-  .del{
-    color: red;
-    cursor:pointer;
-  }
-  th{
-    white-space: nowrap;
-
-  }
-  td{
-    width: 25% ;
-  }
-  .data{
-    display: block;
-    height: calc(2.25rem + 2px);
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #495057;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid #ced4da;
-    border-radius: .25rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-  }
-  i{
-    cursor:pointer;
-  }
-  .form-control{
-    width: 100%;
-  }
-
-  
-.list-group{
-  max-height:500px;;
-  margin-bottom: 10px;
-  overflow:scroll;
-  -webkit-overflow-scrolling: touch;
-  }
-  .btn-success{
-    width: 100%;
-    margin-top:5px;
-  }
-
-
-  .btn-danger{
-    width: 100%;
-    margin-top:5px;
+  .dpCreate{
+    margin-right: 20px;
   }
   
-.ripple {
-  background-position: center;
-  cursor: pointer;
-  transition: background 0.8s;
-}
-.ripple:hover {
-  background: #c2c2c2 radial-gradient(circle, transparent 1%, #e8e8e8 1%) center/15000%;
-}
-.ripple:active {
-  background-color: #e8e8e8;
-  background-size: 100%;
-  transition: background 0s;
+  
+  .sqbox{
+    max-width: 35px;
+    max-height:40px;
+    min-width: 35px;
+    min-height:40px;
+  }
+.form-control{
+  width: 100%;
 }

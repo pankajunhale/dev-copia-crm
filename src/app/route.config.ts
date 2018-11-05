@@ -40,6 +40,8 @@ import { ConfirmationViewComponent } from './confirmation/confirmation-view/conf
 import { ConfirmationListComponent } from './confirmation/confirmation-list/confirmation-list.component';
 import { ConfirmationEditComponent } from './confirmation/confirmation-edit/confirmation-edit.component';
 import { ConfirmationBulkComponent } from './confirmation/confirmation-bulk/confirmation-bulk.component';
+import { IssueComponent } from './store-request/issue/issue.component';
+import { ReceivedComponent } from './return-to-store/received/received.component';
 
 export const router: Routes = [
   {path: 'home',component:HomeComponent},
@@ -66,10 +68,12 @@ export const router: Routes = [
   {path: 'store-request/store-request-create',component:StoreRequestCreateComponent},
   {path: 'store-request/store-request-edit',component:StoreRequestEditComponent},
   {path: 'store-request/store-request-view',component:StoreRequestViewComponent},
+  {path: 'store-request/store-issue',component:IssueComponent},
   {path: 'store-issue/store-issue-list',component:StoreIssueListComponent},
   {path: 'store-issue/store-issue-create',component:StoreIssueCreateComponent},
   {path: 'store-issue/store-issue-edit',component:StoreIssueEditComponent},
   {path: 'store-issue/store-issue-view',component:StoreIssueViewComponent},
+  {path: 'store-issue/store-issue',component:StoreIssueViewComponent},
   {path: 'mrp/run',component:MrpRunComponent},
   {path: 'mrp/list',component:MrpListComponent},
   {path: 'purchase-requisition/list',component:PurchaseRequisitionListComponent},
@@ -77,6 +81,7 @@ export const router: Routes = [
   {path: 'return-to-store/return-to-store-create',component:ReturnToStoreCreateComponent},
   {path: 'return-to-store/return-to-store-edit',component:ReturnToStoreEditComponent},
   {path: 'return-to-store/return-to-store-view',component:ReturnToStoreViewComponent},
+  {path: 'return-to-store/received',component:ReceivedComponent},
   {path: 'purchase-requisition/create',component:PurchaseRequisitionCreateComponent},
   {path: 'purchase-requisition/edit',component:PurchaseRequisitionEditComponent},
   {path: 'purchase-requisition/view',component:PurchaseRequisitionViewComponent},
