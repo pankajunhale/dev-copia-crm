@@ -1,10 +1,10 @@
 <div class="dpList">
     <br>
     <div class="row">
-      <div class="col-md-4">
-         <h2>Confirmations/ List</h2>
+      <div class="col-md-6">
+         <h2>Confirmations/ Confirmation</h2>
       </div>
-      <div class="col-md-8">
+      <div class="col-md-6">
           <a href="#" class="btn btn-primary create-new" id="create-new" >Create New</a>
       </div>
     </div>
@@ -55,7 +55,7 @@
     <div id="accordion">
         <div class="card">
           <div class="card-header" id="headingOne">
-            <h5 class="mb-0">Confirmation List</h5>
+            <h5 class="mb-0">Production Orders</h5>
 
               <button class="btn btn-info pull-right" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                 +
@@ -69,10 +69,10 @@
                     <table class="table table-bordered">
                         <thead>
                           <tr>
-                              <th scope="col">Item Code</th>
-                              <th scope="col">Item Description</th>
                               <th scope="col">Prod Order No.</th>
-                              <th scope="col">Status</th>                     
+                              <th scope="col">Status</th>      
+                              <th scope="col">Item Code</th>
+                              <th scope="col">Item Description</th>               
                               <th>Edit</th>
                               <th>View</th>
                               <th>Delete</th>
@@ -80,10 +80,10 @@
                         </thead>
                         <tbody>
                           <tr >
-                            <th scope="row">#52112</th>
-                            <td>Bottle</td>
-                            <td>50</td>
-                            <td>Inprocess</td>                               
+                            <th scope="row">50</th>
+                            <td>Inprocess</td>
+                            <td>#52112</td>
+                            <td>Bottle</td>                               
                             <td><button type="button" class="btn btn-outline-info" ><i class="fa fa-pencil"></i>Edit</button></td>
                             <td><button type="button" class="btn btn-outline-info"><i class="fa fa-eye" data-toggle="collapse" data-target="#collapseTwo"></i>View</button></td>
                             <td><button type="button" class="btn btn-outline-danger"><i class="fa fa-trash"></i>Delete</button></td>
@@ -116,7 +116,7 @@
                    
     <div class="form-inline row" id="up_1">
         <div class="col-md-4">
-          <label for="">Step No:</label><br>
+          <label for="">Item No:</label><br>
           <input type="text" class="form-control" id="" readonly>
         </div>
         <div class="col-md-4">
@@ -124,7 +124,7 @@
             <input type="text" class="form-control" id="" readonly>
           </div>
         <div class="col-md-4">
-          <label for="">Actual Time</label><br>
+          <label for="">Qty:</label><br>
           <input type="text" class="form-control" id="" readonly>
         </div>
         
@@ -145,14 +145,18 @@
               <tr >
                 <th scope="row">20</th>
                 <td>Bottle</td>
-                <td>5 Hrs</td>
+                <td>
+                  <input type="time" class="form-control">
+                  </td>
                 <td><button type="button" class="btn btn-outline-info" data-toggle="collapse" data-target="#collapseThree">Details</button></td>                               
                 
               </tr>
               <tr >
                   <th scope="row">30</th>
                   <td>Bag</td>
-                  <td>6 Hrs</td>
+                  <td>
+                  <input type="time" class="form-control">
+                  </td>
                   <td><button type="button" class="btn btn-outline-info" data-toggle="collapse" data-target="#collapseThree">Details</button></td>                               
                   
                 </tr>
@@ -277,7 +281,12 @@
           </div>
         </div>
       </div>
- 
+</div>
+<div class="col-md-12">
+    <br>
+    <button type="button" class="btn btn-success">Submit</button>
+    <br>
+    <br>
 </div>
 
     
