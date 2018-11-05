@@ -408,6 +408,24 @@ thead{
 .card{
   border-radius: 10 px;
 }
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;} 
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+.upbtn{
+  border-radius: 4px !important;
+  }
 #myDIV{
   border-radius: 15px;
 }

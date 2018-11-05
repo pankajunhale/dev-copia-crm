@@ -260,3 +260,9 @@ i{
 .form-control{
 width: 100%;
 }
+th,td{
+  white-space: nowrap;
+}
+.mb-0{
+  display: inline-block;
+}
