@@ -67,6 +67,8 @@ import { BOMModule } from './bill-of-material/BOM.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
  
 import { ToastrModule } from 'ngx-toastr';
+import { IssueComponent } from './store-request/issue/issue.component';
+import { ReceivedComponent } from './return-to-store/received/received.component';
 
 @NgModule({
   declarations: [
@@ -128,6 +130,8 @@ import { ToastrModule } from 'ngx-toastr';
     ConfirmationListComponent,
     ConfirmationEditComponent,
     ConfirmationBulkComponent,
+    IssueComponent,
+    ReceivedComponent,
   ],
   imports: [
     BrowserModule,
