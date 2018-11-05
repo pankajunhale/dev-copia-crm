@@ -185,69 +185,119 @@
               </div>
           </div>
     </div>
-    
-      
-      <h2>Table</h2>
-      
                 <div class="row">
                     <div class="col-md-12">
-                    <div class="list-group-item" id="grandparent">
-                      <table>        
-                        <tr>
-                            <td>
-                                <div class="card form-everytable">
+                      <table class="table table-responsive table-bordered">
+                          <thead>
+                            <tr>
+                              <th scope="col">Confirmation</th>
+                              <th scope="col">Production Order No#</th>
+                              <th scope="col">Status</th>
+                              <th scope="col">Item Code</th>
+                              <th scope="col">Item Desc.</th>
+                              <th scope="col">Qty.</th>
+                              <th scope="col">Details </th>
+                              <th scope="col">Edit</th>
+                              <th scope="col">View </th>
+                              <th scope="col">Delete </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                <input type="checkbox">
+                              </td>
+                              <th scope="row">123</th>
+                              <td>Created</td>
+                              <td>KEM-PSP4</td>
+                              <td nowrap >Kishan Engg. Machines- PlasticMold SP4</td>
+                              <td>10000</td>
+                              <td>
+                                  <button type="button" class="btn btn-outline-info"  data-toggle="modal" data-target="#exampleModalCenter">Details</button>
+                              </td>
+                              <td>
+                                  <button type="button" class="btn btn-outline-info"><i class="fa fa-pencil"></i>Edit</button>                              </td>
+                              <td>
+
+                                  <button type="button" class="btn btn-outline-info"><i class="fa fa-eye"></i>View</button>                              </td>
+                              <td>
+
+                                  <button type="button" class="btn btn-outline-danger"><i class="fa fa-trash"></i>Delete</button>                                    </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 800px">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalCenterTitle">Kishan Engg. Machines- PlasticMold SP4</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
                                     <div class="card-body">
-                                      <div class="row">
-                                          <div class="col-md-3">
-                                            <label for="">Step No:</label><br>
-                                            <input type="text" class="form-control" id="">
-                                          </div>
-                                          <div class="col-md-3">
-                                              <label for="">Step Status:</label><br>
-                                              <input type="text" class="form-control" id="">
-                                            </div>
-                                          <div class="col-md-3">
-                                            <label for="">Time UOM:</label><br>
-                                            <input type="text" class="form-control" id="">
-                                          </div>
-                                          <div class="col-md-3">
-                                            <label for="">Planned Labour Time:</label><br>
-                                            <input type="text" class="form-control" id="">
-                                          </div>
-                                          <div class="col-md-12 pull-right">                           
-                                            <br>
-                                            <i id="grandparentIcon" class="fa fa-chevron-circle-down fa-2x pull-right" aria-hidden="true" data-target="#grandparentContenta" data-toggle="collapse"></i>
-                                          </div>
-                                      </div> 
-                                      
-                                      <div class="row collapse" id="grandparentContenta">
-                                         <div class="col-md-12">
-                                          <hr/>
-                                        </div>
+                                        <div class="row">
                                             <div class="col-md-3">
-                                                <label for="">Actual Labour Time:</label><br>
+                                                <label for="">Confirmation No:</label><br>
+                                                <input type="text" class="form-control" id="">
+                                              </div>
+                                            <div class="col-md-3">
+                                                <label for="">Last Changed By:</label><br>
                                                 <input type="text" class="form-control" id="">
                                             </div>
                                             <div class="col-md-3">
-                                              <label for="">Planned M/C Time:</label><br>
+                                                <label for="">Last Changed Date:</label><br>
+                                                <input type="text" class="form-control" id="">
+                                            </div>
+                        
+                                            <div class="col-md-3">
+                                              <label for="">Step No:</label><br>
                                               <input type="text" class="form-control" id="">
                                             </div>
+                                        </div>
+                              
+                                        <br>
+                                        <div class="row">
                                             <div class="col-md-3">
-                                              <label for="">Actual M/C Time:</label><br>
-                                              <input type="text" class="form-control" id="">
-                                            </div>
+                                                <label for="">Step Status:</label><br>
+                                                <input type="text" class="form-control" id="">
+                                                </div>
                                             <div class="col-md-3">
-                                              <label for="">Planned Setup Time:</label><br>
-                                              <input type="text" class="form-control" id="">
-                                            </div> 
-                                        
-                                            <br><br><br><br><br>
-                                          
-                                              <div class="col-md-3">
-                                                <label for="">Actual Setup Time:</label><br>
+                                                <label for="">Time UOM:</label><br>
                                                 <input type="text" class="form-control" id="">
                                               </div>
                                               <div class="col-md-3">
+                                                <label for="">Planned Labour Time:</label><br>
+                                                <input type="text" class="form-control" id="">
+                                              </div>
+                                              <div class="col-md-3">
+                                                <label for="">Actual Labour Time:</label><br>
+                                                <input type="text" class="form-control" id="">
+                                              </div>
+                                          
+                                        
+                                              <br><br><br><br>
+                                              <div class="col-md-3">
+                                                  <label for="">Planned M/C Time:</label><br>
+                                                  <input type="text" class="form-control" id="">
+                                                </div>
+                                                <div class="col-md-3">
+                                                  <label for="">Actual M/C Time:</label><br>
+                                                  <input type="text" class="form-control" id="">
+                                                </div>
+                                                <div class="col-md-3">
+                                                  <label for="">Planned Setup Time:</label><br>
+                                                  <input type="text" class="form-control" id="">
+                                                </div>
+                                                <div class="col-md-3">
+                                                  <label for="">Actual Setup Time:</label><br>
+                                                  <input type="text" class="form-control" id="">
+                                                </div>
+                                          
+                                            
+                                            <br><br><br><br>
+                                            <div class="col-md-3">
                                                 <label for="">Total Planned Time:</label><br>
                                                 <input type="text" class="form-control" id="">
                                               </div>
@@ -259,50 +309,47 @@
                                                 <label for="">Step Type:</label><br>
                                                 <input type="text" class="form-control" id="">
                                               </div>
-                                          
-                                          <br><br><br><br><br>
-                                          <div class="col-md-3">
-                                            <label for="">Step Category:</label><br>
+                                              <div class="col-md-3">
+                                                <label for="">Step Category:</label><br>
+                                                <input type="text" class="form-control" id="">
+                                              </div>
+                                              <br> <br> <br> <br>
+                                            <div class="col-md-3">
+                                            <label for="">Step Status:</label><br>
                                             <input type="text" class="form-control" id="">
-                                          </div>
-                                          <div class="col-md-3">
-                                          <label for="">Step Status:</label><br>
-                                          <input type="text" class="form-control" id="">
-                                          </div>
-                                          <div class="col-md-3">
-                                          <label for="">Labour Type:</label><br>
-                                          <input type="text" class="form-control" id="">
-                                          </div>
-                                          <div class="col-md-3">
-                                          <label for="">User Name:</label><br>
-                                          <input type="text" class="form-control" id="">
-                                          </div>
-                                          <br><br><br><br><br>
-                                          <div class="col-md-3">
-                                              <label for="">Supervisor Name:</label><br>
-                                              <input type="text" class="form-control" id="">
-                                          </div>
-                                          <!-- <div class="col-md-3">
-                                            <br>
-                                              <span style="margin-right:25px;"><i class="fa fa-pencil fa-2x" aria-hidden="true"></i></span>
-                                              <span style="margin-right:25px;"><i class="fa fa-folder-open fa-2x" aria-hidden="true"></i></span>
-                                              <span><i class="fa fa-trash fa-2x" aria-hidden="true"></i></span>           
-                                          </div> -->
-                                        </div>
-                                      </div>							
+                                            </div>
+                                            <div class="col-md-3">
+                                                <label for="">Labour Type:</label><br>
+                                                <input type="text" class="form-control" id="">
+                                                </div>
+                                            <div class="col-md-3">
+                                            <label for="">User Name:</label><br>
+                                            <input type="text" class="form-control" id="">
+                                            </div>
+                                            <div class="col-md-3">
+                                            <label for="">Supervisor Name:</label><br>
+                                            <input type="text" class="form-control" id="">
+                                            </div>
+                                            <br><br><br><br>
+                                            
+                                        </div>			
                                     </div>
-                                
-                            </td>
-                        </tr>           
-                      </table>
-                    </div> 
-                    <br>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                              </div>
+                            </div>
+
+
+                          </div>							
                     <a href="#" class="btn btn-primary upBtn" id="cancel" >Cancel</a>
                     <a href="#" class="btn btn-primary upBtn" id="submit" >Submit</a> 
                   </div>
                 </div>
-      <br><br>
 </div>
+
         
   
 
