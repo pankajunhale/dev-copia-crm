@@ -12,7 +12,7 @@
     </div>
   </div>
   
-  <form class="form-inline row" [formGroup]="routingCreateForm" >
+  <form class="form-inline row" [formGroup]="routingHeader" >
       <div class="col-md-4">
           <label for="">Item Code:</label><br>
           <input type="text" class="form-control" formControlName="itemcode">
@@ -41,6 +41,8 @@
         <div class="col-md-12">
             <hr />
           </div>
+  </form>
+  <form class="form-inline row" [formGroup]="routingSteps" >
         <div class="row">
           <div class="col-md-4 lig">
               <h5>Steps:</h5>
@@ -64,77 +66,73 @@
                     <div class="row">
                         <div class="col-md-4">
                             <label for="">Step No:</label><br>
-                            <input type="text" class="form-control" id="" value="1" readonly>
+                            <input type="text" class="form-control" value="1" readonly >
                         </div>
                         <div class="col-md-4">
                             <label for="">Step Name:</label><br>
-                            <input type="text" class="form-control" id="">
+                            <input type="text" class="form-control" formControlName="stepName">
                         </div>
                         <div class="col-md-4">
                           <label for="">Procedure:</label><br>
-                          <input type="text" class="form-control" id="">
+                          <input type="text" class="form-control" formControlName="procedure">
                         </div>
                         <div class="col-md-4">
                           <label for="">Work Centre:</label><br>
-                          <input type="text" class="form-control" id="">
+                          <input type="text" class="form-control" formControlName="workCentre">
                         </div>
                         <div class="col-md-4">
                             <label for="">Time UOM:</label><br>
-                            <input type="text" class="form-control" id="">
+                            <input type="time" class="form-control"  formControlName="timeUOM">
                           </div>
                           <div class="col-md-4">
                             <label for="">Planned Labour Time:</label><br>
-                            <input type="text" class="form-control" id="">
+                            <input type="time" class="form-control" formControlName="plannedLabourTime">
                           </div>
                         
                         <div class="col-md-4">
                           <label for="">Planned M/C Time:</label><br>
-                          <input type="text" class="form-control" id="">
+                          <input type="time" class="form-control" formControlName="plannedMachineTime">
                         </div>
                         
                         <div class="col-md-4">
                           <label for="">Planned Setup Time:</label><br>
-                          <input type="text" class="form-control" id="">
+                          <input type="time" class="form-control" formControlName="plannedSetupTime">
                         </div>
-                      
-                    
-                            <br><br><br><br>
-                          
+
                         <div class="col-md-4">
                           <label for="">Total Planned Time:</label><br>
-                          <input type="text" class="form-control" id="">
+                          <input type="text" class="form-control" formControlName="totalPlannedTime">
                         </div>
                         
                         <div class="col-md-4">
                           <label for="">Step Type:</label><br>
-                          <input type="text" class="form-control" id="">
+                          <input type="text" class="form-control" formControlName="stepType">
                         </div>
                         
                         <div class="col-md-4">
                             <label for="">Step Category:</label><br>
-                            <input type="text" class="form-control" id="">
+                            <input type="text" class="form-control" formControlName="stepCategory">
                           </div>
                         <div class="col-md-4">
                         <label for="">Step Status:</label><br>
-                        <select class="form-control">
+                        <select class="form-control" formControlName="stepStatus" >
                             <option value=""> Select</option>
                             <option value="">Created</option>
                             <option value="">Inprocess</option>
                         </select>
                         </div>
-                          <br><br><br><br>
                       
                         <div class="col-md-4">
                         <label for="">User Name:</label><br>
-                        <input type="text" class="form-control" id="">
+                        <input type="text" class="form-control" formControlName="userName">
                         </div>
                         <div class="col-md-4">
                         <label for="">Supervisor Name:</label><br>
-                        <input type="text" class="form-control" id="">
+                        <input type="text" class="form-control" formControlName="supervisorName">
                         </div>
                         <div class="col-md-4">
                        <br>
-                        <div class="btn btn-success" (click)="showStepAdded()">ADD</div>
+                        <button class="btn btn-success" (click)="showStepAdded()">ADD</button>
                         </div>
                     
                     </div>
