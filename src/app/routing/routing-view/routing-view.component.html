@@ -10,7 +10,7 @@
       </div>
    
   
-    <div class="form-inline row">
+    <div class="form-inline row" >
         <div class="col-md-3">
           <label for="item-code">Item Code:</label><br>
           <input type="text" class="form-control" id="item-code" disabled>
@@ -38,24 +38,15 @@
     </div>
     <hr />
     
-    <div class="row">
+    <div class="row" [formGroup]="routingData">
         <div class="col-md-4 lig">
             <h5>Routing Steps :</h5>
             <hr/>
-            <div class="list-group">
-                <a class="list-group-item list-group-item-action">Step #1</a>
-                <a class="list-group-item list-group-item-action">Step #2</a>
-                <a class="list-group-item list-group-item-action">Step #3</a>
-                <a class="list-group-item list-group-item-action">Step #4</a>
-                <a class="list-group-item list-group-item-action">Step #5</a>
-                <a class="list-group-item list-group-item-action">Step #6</a>
-                <a class="list-group-item list-group-item-action">Step #7</a>
-                <a class="list-group-item list-group-item-action">Step #8</a>
-                <a class="list-group-item list-group-item-action">Step #9</a>
-                <a class="list-group-item list-group-item-action">Step #10</a>
-                <a class="list-group-item list-group-item-action">Step #11</a>
-                <a class="list-group-item list-group-item-action">Step #12</a>
-              </div>
+            <ul class="list-group">
+                <li  *ngFor="let rvlist of rvlist;let i = index" class="list-group-item list-group-item-action" (click)=stepClicker(i)>Step No. #{{rvlist.stepNo}}
+
+                </li>
+            </ul>
         </div>
           <div class="col-md-8">
             <div class="card">
@@ -64,73 +55,69 @@
                   <div class="row">
                       <div class="col-md-4">
                           <label for="">Step No:</label><br>
-                          <input type="text" readonly class="form-control" id="">
+                          <input type="text" readonly class="form-control" formControlName="stepNo">
                       </div>
                       <div class="col-md-4">
                           <label for="">Step Name:</label><br>
-                          <input type="text" readonly class="form-control" id="">
+                          <input type="text" readonly class="form-control" formControlName="stepName">
                       </div>
                       <div class="col-md-4">
                         <label for="">Procedure:</label><br>
-                        <input type="text" readonly class="form-control" id="">
+                        <input type="text" readonly class="form-control" formControlName="procedure">
                       </div>
                       <div class="col-md-4">
                         <label for="">Work Centre:</label><br>
-                        <input type="text" readonly class="form-control" id="">
+                        <input type="text" readonly class="form-control" formControlName="workCentre">
                       </div>
                       <div class="col-md-4">
                           <label for="">Time UOM:</label><br>
-                          <input type="text" readonly class="form-control" id="">
+                          <input type="text" readonly class="form-control" formControlName="timeUOM">
                         </div>
                         <div class="col-md-4">
                           <label for="">Planned Labour Time:</label><br>
-                          <input type="text" readonly class="form-control" id="">
+                          <input type="text" readonly class="form-control" formControlName="plannedLabourTime">
                         </div>
                       
                       <div class="col-md-4">
                         <label for="">Planned M/C Time:</label><br>
-                        <input type="text" readonly class="form-control" id="">
+                        <input type="text" readonly class="form-control" formControlName="plannedMachineTime">
                       </div>
                       
                       <div class="col-md-4">
                         <label for="">Planned Setup Time:</label><br>
-                        <input type="text" readonly class="form-control" id="">
+                        <input type="text" readonly class="form-control" formControlName="plannedSetupTime">
                       </div>
                     
-                  
-                          <br><br><br><br>
-                        
                       <div class="col-md-4">
                         <label for="">Total Planned Time:</label><br>
-                        <input type="text" readonly class="form-control" id="">
+                        <input type="text" readonly class="form-control" formControlName="totalPlannedTime">
                       </div>
                       
                       <div class="col-md-4">
                         <label for="">Step Type:</label><br>
-                        <input type="text" readonly class="form-control" id="">
+                        <input type="text" readonly class="form-control" formControlName="stepType">
                       </div>
                       
                       <div class="col-md-4">
                           <label for="">Step Category:</label><br>
-                          <input type="text" readonly class="form-control" id="">
+                          <input type="text" readonly class="form-control" formControlName="stepCategory">
                         </div>
                       <div class="col-md-4">
                       <label for="">Step Status:</label><br>
-                      <select class="form-control">
+                      <select class="form-control" formControlName="stepStatus">
                           <option value=""> Select</option>
-                          <option value="">Created</option>
-                          <option value="">Inprocess</option>
+                          <option value="1">Created</option>
+                          <option value="2">Inprocess</option>
                       </select>
                       </div>
-                        <br><br><br><br>
                     
                       <div class="col-md-4">
                       <label for="">User Name:</label><br>
-                      <input type="text" readonly class="form-control" id="">
+                      <input type="text" readonly class="form-control" formControlName="userName">
                       </div>
                       <div class="col-md-4">
                       <label for="">Supervisor Name:</label><br>
-                      <input type="text" readonly class="form-control" id="">
+                      <input type="text" readonly class="form-control" formControlName="supervisorName">
                       </div>
                   
                   </div>
