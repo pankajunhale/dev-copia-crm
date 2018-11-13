@@ -9,25 +9,25 @@
     </div>
     </div>
  
-    <div class="form-inline row">
+    <div class="form-inline row" [formGroup]="routingHeader">
           <div class="col-md-3">
             <label for="item-code">Item Code:</label><br>
-            <input type="text" class="form-control" id="item-code" >
+            <input type="text" class="form-control" formControlName="itemcode" >
           </div>
           
           <div class="col-md-3">
             <label for="item-description">Item Description:</label><br>
-            <input type="text" class="form-control" id="item-description" >
+            <input type="text" class="form-control" formControlName="itemdescription" >
           </div>
           
           <div class="col-md-3">
             <label for="version-no">Version No:</label><br>
-            <input type="text" class="form-control" id="version-no" >
+            <input type="text" class="form-control" formControlName="versionno" >
           </div>
           
           <div class="col-md-3">
             <label for="wh-name">WH Name:</label><br>
-           <select class="form-control" >
+           <select class="form-control" formControlName=whname>
              <option>Select</option>
              <option>A</option>      
              <option>B</option>    
@@ -36,7 +36,7 @@
 
           <div class="col-md-3">
             <br>
-            <a  class="btn btn-primary filter"id="filter" >Search</a>
+            <a  class="btn btn-primary filter" (click)=searchButton()>Search</a>
           </div>
       </div>
       <hr />

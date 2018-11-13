@@ -1,5 +1,4 @@
-
-<div class="dpCreate">
+  <div class="dpCreate">
     <br>
       <div class="row">
         <div class="col-md-6">
@@ -29,14 +28,16 @@
           <label for="">WH Name:</label><br>
           <select class="form-control" formControlName="whname">
               <option value=""> Select</option>
-              <option value="">Mumbai</option>
-              <option value="">Pune</option>
-              <option value="">Delhi</option>
+              <option value="1">Mumbai</option>
+              <option value="2">Pune</option>
+              <option value="3">Delhi</option>
           </select>
         </div>
         <div class="col-md-4">
           <br>
             <a  class="btn btn-primary filter" id="submit" (click)="showSuccessHeader()" >Insert Header</a>
+            
+            
         </div>
         <div class="col-md-12">
             <hr />
@@ -49,12 +50,29 @@
               <button class="btn btn-warning" (click)="addAlias()">Add Step</button>
               <hr/>
             <div class="list-group1">
-              <div formArrayName="aliases" >
-                    <div class="list-group-item-action btn-default ddc"  *ngFor="let address of aliases.controls; let i=index">
+              <div formArrayName="aliases">
+                    <div class="list-group-item-action btn-default ddc"  *ngFor="let address of aliases.controls; let i=index" (click)=stepClicker(i)>
                         <div [formControlName]="i" ><b>Step No. #{{ i + 1}} </b>
-                          <span  (click)="deleteRow()" class="btn btn-danger" style="margin-left:20px"><i class="fa fa-minus-circle" aria-hidden="true"></i>
+                          <span  (click)="deleteRow(i)" class="btn btn-danger" style="margin-left:20px"><i class="fa fa-minus-circle" aria-hidden="true"></i>
                           </span>
                         </div>
+                        <!-- Modal -->
+                        <!-- <div class="modal fade" id="myModal" role="dialog" >
+                          <div class="modal-dialog">
+                          
+                           Modal content--> <!-- 
+                            <div class="modal-content">
+                              <div class="modal-body">
+                                Are you sure that you want to delete Step?
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                <span  (click)="deleteRow(i)" class="btn btn-danger" data-dismiss="modal" style="margin-left:20px">Delete</span>
+                              </div>
+                            </div>
+                            
+                          </div>
+                        </div> -->
                     </div>
                 </div>
               </div>
@@ -66,7 +84,7 @@
                     <div class="row">
                         <div class="col-md-4">
                             <label for="">Step No:</label><br>
-                            <input type="text" class="form-control" value="1" readonly >
+                            <input type="text" class="form-control" value="1" formControlName="stepNo">
                         </div>
                         <div class="col-md-4">
                             <label for="">Step Name:</label><br>
@@ -82,7 +100,7 @@
                         </div>
                         <div class="col-md-4">
                             <label for="">Time UOM:</label><br>
-                            <input type="time" class="form-control"  formControlName="timeUOM">
+                            <input type="text" class="form-control"  formControlName="timeUOM">
                           </div>
                           <div class="col-md-4">
                             <label for="">Planned Labour Time:</label><br>
@@ -117,8 +135,8 @@
                         <label for="">Step Status:</label><br>
                         <select class="form-control" formControlName="stepStatus" >
                             <option value=""> Select</option>
-                            <option value="">Created</option>
-                            <option value="">Inprocess</option>
+                            <option value="1">Created</option>
+                            <option value="2">Inprocess</option>
                         </select>
                         </div>
                       
@@ -134,9 +152,7 @@
                        <br>
                         <button class="btn btn-success" (click)="showStepAdded()">ADD</button>
                         </div>
-                    
                     </div>
-
                   </div>
               </div>
           </div>
